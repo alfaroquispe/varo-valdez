@@ -1,0 +1,285 @@
+/* #5dc1b9 turquesa */
+/* #522520 cafe */
+
+.ffrb {
+    font-family: Roboto-Bold;
+}
+
+.ffsbl {
+    font-family: Spartan-Black;
+}
+.ffsbo {
+    font-family: Spartan-Bold;
+}
+.ffseb {
+    font-family: Spartan-ExtraBold;
+}
+.ffsel {
+    font-family: Spartan-ExtraLight;
+}
+.ffsl {
+    font-family: Spartan-Light;
+}
+.ffsm {
+    font-family: Spartan-Medium;
+}
+.ffsr {
+    font-family: Spartan-Regular;
+}
+.ffssb {
+    font-family: Spartan-SemiBold;
+}
+.ffst {
+    font-family: Spartan-Thin;
+}
+
+/* navbar */
+.navbar-default {            
+    transition: 1s ease !important;
+    /* background: white !important; */
+}
+.navbar-default .navbar-brand {
+    color: #522520 ;    
+}
+.navbar-default .navbar-nav .nav-item .nav-link {
+    color: #522520 ;
+}
+.navbar-default .navbar-nav .nav-item .nav-link:hover {
+    /* border: 1px solid #522520; */
+    background-color: #522520!important;
+    color: white !important;    
+}
+.navbar-default.scrolled {
+    background: #5dc1b9 !important;
+    opacity: 0.9;
+}
+.navbar-default.scrolled .navbar-brand {
+    color: white !important;    
+}
+.navbar-default.scrolled .navbar-nav .nav-item .nav-link {
+    color: white !important;
+}
+.navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    background: #5dc1b9 !important;
+    opacity: 0.9;
+    color: white !important;
+}
+.navbar-default.scrolled .navbar-nav .nav-item .nav-link:hover {
+    background-color: white !important;
+    color: #5dc1b9 !important;
+}
+.navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: white !important;
+    color: #5dc1b9 !important;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("/images/toggle.svg") !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255, 255, 255) !important;
+}
+.navbar-toggler:focus {
+    /* text-decoration: none !important; */
+    border: 2px solid #522520 !important;
+}
+.aqdropdown {
+    color: #522520 !important;
+}
+.aqdropdown:hover{
+    background-color: #522520!important;
+    color: white !important;
+}
+
+.aa:hover:after {
+    left: 0;
+}
+
+/* .navbar-brand {
+    color: blue !important;    
+}
+.navbar-nav .nav-item .nav-link {
+    color: blue !important;
+}
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: white !important;
+} */
+
+.parallax {
+    /* The image used */
+    background-image: url("/Varo/images/imgPrin.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#carrusel {
+    float: left;
+    width: 1000px;
+    overflow: hidden;
+    height: 203px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#carrusel .left-arrow {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -9px;
+}
+
+#carrusel .right-arrow {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.carrusel {
+    width: 4000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+}
+
+.carrusel>div {
+    float: left;
+    height: 203px;
+    margin-right: 5px;
+    width: 195px;
+    text-align: center;
+}
+
+.carrusel img {
+    cursor: pointer;
+}
+
+.product {
+    border: #CCCCCC 1px solid;
+}
+
+.carousel-indicators .active {
+    background-color: #5dc1b9 !important;
+    opacity: 1 !important;
+}
+
+.aqhvup {
+    color: transparent;
+}
+
+.aqhvup:hover div {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    color: white;
+}
+
+.aqhvup:hover img {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    /* opacity: 0.3; */
+    opacity: 0.4;
+}
+
+.link3 {
+    text-decoration: none !important;
+}
+
+/* .aqhvsn {
+    color: transparent;
+} */
+
+/* .aqhvsn:hover div {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    color: white;
+} */
+
+.aqhvsnfb:hover img {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    /* opacity: 0.3; */
+    background-image: url('images/c_fb.png');
+    opacity: 1;
+}
+.aqhvsnig:hover img {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    /* opacity: 0.3; */
+    background-image: url('images/c_ig.png');
+    /* opacity: 0.4; */
+}
+.aqhvsnyt:hover img {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    /* opacity: 0.3; */
+    background-image: url('images/c_yt.png');
+    /* opacity: 0.4; */
+}
+
+
+.bb {
+    border: 1px solid black;
+}
+
+.br {
+    border: 1px solid red;
+}
+.aa {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    /* color: #00a7b5; */
+}
+
+.aa:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: #b85347;
+    transition: left .2s;
+}
+
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar-default {            
+        transition: 1s ease !important;
+        background: transparent !important;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
