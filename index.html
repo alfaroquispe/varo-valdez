@@ -29,9 +29,31 @@
     /* width: 40px !important;
     height: 92px !important; */
 }
-.carousel-control-prev, .carousel-control-next{
-    opacity: 0.5
-    ;
+.carousel-control-prev{
+    opacity: 0.5;
+}
+.carousel-control-next{
+    opacity: 0.5;
+}
+
+
+.carouselExampleFade .carousel-inner .carousel-item img{
+    height: 100vh;
+    width: 100%;
+}
+.carousel-inner .carousel-item > img {
+    /* animation-name: thing; */
+    -webkit-animation: thing 17s;
+    -o-animation: thing 17s;
+    animation: thing 17s;
+}
+@keyframes thing{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05,1.05);
+    }
 }
 
     </style>
@@ -118,7 +140,7 @@
 
     <!-- begin component Parallax -->
     <!-- begin component Carousel -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="position:sticky; top: 0;">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="position:sticky; top: 0;" data-pause="false">
         <!-- <ol class="carousel-indicators ml-4" style="display: table; padding-top: 60px !important; position: absolute !important;right: 0 !important;top:0 !important;left: 0 !important">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color: #522520; width: 40px;height: 4px;"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: #522520; width: 40px;height: 4px;"></li>
@@ -126,16 +148,16 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="3" style="background-color: #522520; width: 40px;height: 4px;"></li>
         </ol> -->
         <div class="carousel-inner">
-            <div class="carousel-item active" >
+            <div class="carousel-item active" data-interval="10000">
                 <img src="images/home/dulces.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="9000">
                 <img src="images/imgPrin.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="9000">
                 <img src="images/imgPrin2.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="9000">
                 <img src="images/imgPrin3.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
@@ -195,7 +217,7 @@
             <div class="row mx-0">
                 <!-- <div class="col-6 px-0"><img class="w-100 h-100" src="images/snacks.png"></div> -->
                 <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;max-height: 250px;">
-                    <a href="" class=" aqhvup d-flex align-self-stretch">
+                    <a href="" class=" aqhvup">
                         <img class="w-100 h-100" src="images/home/dulces.png" style="">
                         <div class="align-self-center" style="position: absolute;">
                             <div class="d-flex justify-content-center ffhn">
@@ -208,7 +230,7 @@
                     </a>
                 </div>
                 <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;max-height: 250px !important;">
-                    <a href="" class="aqhvup d-flex align-self-stretch">
+                    <a href="" class="aqhvup">
                         <img class="w-100 h-100" src="images/home/galletas.png" style="">
                         <div class="align-self-center" style="position: absolute;">
                             <div class="d-flex justify-content-center ffhn">
