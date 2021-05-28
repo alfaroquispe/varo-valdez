@@ -1,4 +1,18 @@
 @font-face {
+    font-family: HelveticaNeue;
+    src: url(./HelveticaNeue/HelveticaNeueLTStd-Lt.otf);
+}
+
+@font-face {
+    font-family: LeagueSpartanO;
+    src: url(./LeagueSpartan/LeagueSpartan-Bold.otf);
+}
+@font-face {
+    font-family: LeagueSpartanT;
+    src: url(./LeagueSpartan/LeagueSpartan-bold.ttf);
+}
+
+@font-face {
     font-family: Roboto-Bold;
     src: url(./Roboto/Roboto-Medium.ttf);
 }

@@ -1,10 +1,20 @@
 /* #5dc1b9 turquesa */
 /* #522520 cafe */
 
+.ffhn {
+    font-family: HelveticaNeue;
+}
+.fflso {
+    font-family: LeagueSpartanO;
+}
+.fflst {
+    font-family: LeagueSpartanT;
+}
+
+
 .ffrb {
     font-family: Roboto-Bold;
 }
-
 .ffsbl {
     font-family: Spartan-Black;
 }
@@ -61,7 +71,7 @@
 }
 .navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item {
     background: #5dc1b9 !important;
-    opacity: 0.9;
+    opacity: 1;
     color: white !important;
 }
 .navbar-default.scrolled .navbar-nav .nav-item .nav-link:hover {
@@ -104,19 +114,19 @@
     color: white !important;
 } */
 
-.parallax {
+/* .parallax { */
     /* The image used */
-    background-image: url("/Varo/images/imgPrin.jpg");
+    /* background-image: url("/Varo/images/imgPrin.jpg"); */
 
     /* Set a specific height */
-    min-height: 500px;
+    /* min-height: 500px; */
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-}
+} */
 
 a {
     text-decoration: none;
@@ -262,6 +272,45 @@ a {
     transition: left .2s;
 }
 
+
+.contenedor {
+    position: relative;
+    height: 50px !important;
+    width: 50px !important;
+    margin: 1px 8px 20px;
+    /* TODO revisar las redes sociales despues del parallax */
+    /* float: left; */
+}
+
+.contenedor1 {
+    position: relative;
+    height: 53px !important;
+    width: 53px !important;
+    margin: 1px 8px 20px;
+    /* TODO revisar las redes sociales despues del parallax */
+    /* float: left; */
+}
+
+.snfb:hover {
+    background-image: url('./images/c_fb2.png') !important;
+    transition: all .5s ease-in-out;
+}
+
+.snig:hover {
+    background-image: url('./images/c_ig.png') !important;
+    transition: all .5s ease-in-out;
+}
+
+.snyt:hover {
+    background-image: url('./images/c_yt2png.png') !important;
+    transition: all .5s ease-in-out;
+}
+
+
+/* footer lines hover */
+.folihv:hover {
+    color: #6e322b !important;
+}
 
 
 /* // Extra small devices (portrait phones, less than 576px) */
