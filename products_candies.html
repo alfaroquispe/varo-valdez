@@ -61,6 +61,7 @@
             position: relative;
             width: 100%;
         }
+
         .overlaypr {
             position: absolute;
             top: 0;
@@ -71,66 +72,86 @@
             width: 100%;
             opacity: 0;
             transition: .1s ease;
-            background-size: cover;            
+            background-size: cover;
         }
-        .bgim{
+
+        .bgimfr1 {
+            background-image: url("images/p_candies/dulce_duro_almohada_pequena_o.png");
+        }
+        .bgimfr2 {
+            background-image: url("images/p_candies/dulce_duro_almohada_mediana_o.png");
+        }
+        .bgimfr3 {
+            background-image: url("images/p_candies/dulce_duro_almohada_grande_o.png");
+        }
+        .bgimfr4 {
+            background-image: url("images/p_candies/chupete_plano_o.png");
+        }
+        .bgimfr5 {
             background-image: url("images/p_candies/caramelo_o.png");
         }
-        .bgim1{
-            background-image: url("images/p_candies/d1_o.png");
+
+        .bgimsr1 {
+            background-image: url("images/p_candies/masticable_o.png");
         }
-        .bgim2{
-            background-image: url("images/p_candies/d2_o.png");
+        .bgimsr2 {
+            background-image: url("images/p_candies/masticable_o.png");
         }
-        .bgim3{
-            background-image: url("images/p_candies/d3_o.png");
+        .bgimsr3 {
+            background-image: url("images/p_candies/masticable_o.png");
         }
 
-        .bgimgo{
+        .bgimtr1 {
+            background-image: url("images/p_candies/gomitas_1_o.png");
+        }
+        .bgimtr2 {
+            background-image: url("images/p_candies/gomitas_2_o.png");
+        }
+        .bgimtr3 {
             background-image: url("images/p_candies/gomita_o.png");
         }
-        .bgimgo1{
-            background-image: url("images/p_candies/marshmallows_o.png");
-        }
 
-        .bgimdb{
-            background-image: url("images/p_candies/dd4.png");
-        }
-        .bgimdb1{
-            background-image: url("images/p_candies/dd5.png");
-        }
-        .bgimdb2{
-            background-image: url("images/p_candies/dd6.png");
-        }
+        .containerpr:hover .imgpr {
+      opacity: 0;
+    }
 
         .containerpr:hover .overlaypr {
             opacity: 1;
         }
-        .containerpr:hover .bgim {
+
+        .containerpr:hover .bgimfr1 {
             opacity: 1;
         }
-        .containerpr:hover .bgim1 {
+        .containerpr:hover .bgimfr2 {
             opacity: 1;
         }
-        .containerpr:hover .bgim2 {
+        .containerpr:hover .bgimfr3 {
             opacity: 1;
         }
-        .containerpr:hover .bgim3 {
+        .containerpr:hover .bgimfr4 {
             opacity: 1;
         }
-        .containerpr:hover .bgimgo {
+        .containerpr:hover .bgimfr5 {
             opacity: 1;
         }
-        .containerpr:hover .bgimgo1 {
+
+        .containerpr:hover .bgimsr1 {
             opacity: 1;
         }
-        .containerpr:hover .bgimdb {
+        .containerpr:hover .bgimsr2 {
             opacity: 1;
         }
-        .containerpr:hover .bgimdb1 {
+        .containerpr:hover .bgimsr3 {
             opacity: 1;
         }
-        .containerpr:hover .bgimdb2 {
+
+        .containerpr:hover .bgimtr1 {
+            opacity: 1;
+        }
+        .containerpr:hover .bgimtr2 {
+            opacity: 1;
+        }
+        .containerpr:hover .bgimtr3 {
             opacity: 1;
         }
 
@@ -202,8 +223,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact_us.html">CONTÁCTANOS<span class="sr-only"></span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">BLOG<span class="sr-only"></span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="">BLOG</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                            <a href="blog.html" class="dropdown-item aqdropdown pt-2">ARTÍCULOS</a>
+                            <a href="b_article.html" class="dropdown-item aqdropdown pt-2">EJ. DE ARTÍCULO</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -213,7 +241,7 @@
 
     <div class="row mx-0" style="background-color: white;position: relative;">
         <div class="bb col-1  px-0"></div>
-        <div class="col-10 px-0">
+        <div class="col-10 px-4">
 
             <!-- begin component Content -->
             <div class=" container pt-5" style="color: #522520">
@@ -222,7 +250,7 @@
                 </div>
                 <!-- <div class=""> TODO quiza se aumente
                 <h4 class="font-weight-normal" style="text-align: center;"></h4>
-            </div> -->
+                </div> -->
 
                 <!-- begin component Lines -->
                 <div class="lines  d-flex justify-content-center font-weight-bold">
@@ -254,13 +282,13 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/caramelo_c.png">
-                                                        <div class="overlaypr bgim"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/dulce_duro_almohada_pequena.png">
+                                                        <div class="overlaypr bgimfr1"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">Caramelo Newo</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Sabor menta sin azúcar</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Almohada Pequeña</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Pastilla</small></div>
                                         </div>
                                     </div>
                                     <div class="carousel-item ">
@@ -268,13 +296,13 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/d1.png">
-                                                        <div class="overlaypr bgim1"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/dulce_duro_almohada_mediana.png">
+                                                        <div class="overlaypr bgimfr2"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">Caramelo New1</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Sabor menta sin azúcar</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Almohada Mediana</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Pastilla</small></div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -282,13 +310,13 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/d2.png">
-                                                        <div class="overlaypr bgim2"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/dulce_duro_almohada_grande.png">
+                                                        <div class="overlaypr bgimfr3"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">Caramelo New2</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Sabor menta sin azúcar</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Almohada Grande</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Pastilla</small></div>
                                         </div>
                                     </div>
                                     <div class="carousel-item ">
@@ -296,15 +324,30 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/d3.png">
-                                                        <div class="overlaypr bgim3"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/chupete_plano.png">
+                                                        <div class="overlaypr bgimfr4"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">Caramelo New3</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Sabor menta sin azúcar</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Chupete Plano</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Chupete</small></div>
                                         </div>
                                     </div>
+                                    <div class="carousel-item ">
+                                        <div class="col-md-4">
+                                            <div class="card card-body ">
+                                                <a href="product.html">
+                                                    <div class="containerpr">
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/caramelo_o.png">
+                                                        <div class="overlaypr bgimfr5"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="mb-0 mt-2 ffhn">Caramelo New</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Pastilla</small></div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                                 <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -330,13 +373,13 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/dd1.png">
-                                                        <div class="overlaypr bgimdb"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/masticable.png">
+                                                        <div class="overlaypr bgimsr1"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">DulceBlando</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Sabor menta sin azúcar</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Masticable</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Masticables</small></div>
                                         </div>
                                     </div>
                                     <div class="carousel-item ">
@@ -344,13 +387,13 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/dd2.png">
-                                                        <div class="overlaypr bgimdb1"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/masticable.png">
+                                                        <div class="overlaypr bgimsr2"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">DulceBlando2</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Sabor menta sin azúcar</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Masticable 2</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Masticable sabor frutilla</small></div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -358,15 +401,15 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/dd3.png">
-                                                        <div class="overlaypr bgimdb2"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/masticable.png">
+                                                        <div class="overlaypr bgimsr3"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">DulceBlando3</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Sabor menta sin azúcar</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Masticable 3</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Masticable sabor frutilla</small></div>
                                         </div>
-                                    </div>
+                                    </div>                                    
                                 </div>
                                 <a class="carousel-control-prev w-auto" href="#recipeCarousel1" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -380,8 +423,8 @@
                         </div>
                         <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
                         <h5 class="ffsbo">Dulces Blandos</h5>
-                    </div>                    
-                
+                    </div>
+
                     <!-- third row -->
                     <div class=" mt-5">
                         <div class="row mx-auto my-auto">
@@ -392,13 +435,13 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/gomita.png">
-                                                        <div class="overlaypr bgimgo"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/gomitas_1.png">
+                                                        <div class="overlaypr bgimtr1"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">Gomita</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Gomita sabor frutilla</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Gomita Corazón</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Lisa</small></div>
                                         </div>
                                     </div>
                                     <div class="carousel-item ">
@@ -406,13 +449,13 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/marshmallows_c.png">
-                                                        <div class="overlaypr bgimgo1"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/gomitas_2.png">
+                                                        <div class="overlaypr bgimtr2"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">Gomita 2</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Gomita sabor frutilla</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Gomita Osito</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Azucara</small></div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -420,13 +463,13 @@
                                             <div class="card card-body ">
                                                 <a href="product.html">
                                                     <div class="containerpr">
-                                                        <img class="img-fluid" src="./images/p_candies/gomita.png">
-                                                        <div class="overlaypr bgimgo"></div>
+                                                        <img class="img-fluid imgpr" src="./images/p_candies/gomita.png">
+                                                        <div class="overlaypr bgimtr3"></div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="mb-0 mt-2 ffhn">Gomita 3</div>
-                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Gomita sabor frutilla</small></div>
+                                            <div class="mb-0 mt-2 ffhn">Gomita</div>
+                                            <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Ácida</small></div>
                                         </div>
                                     </div>
                                 </div>
@@ -443,9 +486,10 @@
                         <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
                         <h5 class="ffsbo">Gomitas</h5>
                     </div>
-                    <!-- end component Slider3Cards -->
 
                 </div>
+                <!-- end component Slider3Cards -->
+
                 <!-- end component Content -->
 
 

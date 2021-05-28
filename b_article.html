@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varo Valdez</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/fonts.css">
+
+    <style>
+        .files input {
+            outline: 2px dashed #92b0b3;
+            outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            padding: 160px 0px 20px 35px;
+            text-align: center !important;
+            margin-bottom: 1.5rem;
+            width: 100% !important;
+        }
+
+        .files input:focus {
+            outline: 2px dashed #92b0b3;
+            outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            border: 1px solid #92b0b3;
+        }
+
+        .files {
+            position: relative
+        }
+
+        .files:after {
+            pointer-events: none;
+            position: absolute;
+            /* width: 80%; */
+            right: 0;
+            /* height: 56px; */
+            content: "Suelta la imagen aquí";
+            color: #eacbc8;
+            font-family: Spartan-Medium;
+            font-size: 1.7rem;
+            text-align: center;
+            /* background-image: url('/images/drop.png'); */
+            /* display: block; */
+            /* margin: 0 auto; */
+            /* background-size: 100%;
+            background-repeat: no-repeat; */
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            /* border: 1px red solid; */
+        }
+
+        .color input {
+            background-color: #f1f1f1;
+        }
+
+        .form-group {
+            margin-bottom: 0.3rem;
+            font-family: HelveticaNeue;
+        }
+
+        .form-control:focus {
+            border-color: rgb(93, 193, 185);
+            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
+        }
+
+        .custom-select:focus {
+            border-color: rgb(93, 193, 185);
+            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- begin component Navbar -->
+    <nav class="navbar navbar-default fixed-top navbar-expand-lg ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="55" height="35" class="d-inline-block align-top" alt="" loading="lazy">
+                <span class="ffseb"> VARO VALDEZ</span>
+            </a>
+            <!-- <a class="navbar-brand pb-0 ffb" href=""></a> -->
+            <button style="color: blue !important;" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ffhn">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">INICIO<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="">NOSOTROS</span>
+                        </a>
+                        <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                            <a href="about.html" class="dropdown-item aqdropdown pt-2">QUIENES SOMOS</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="" class="dropdown-item aqdropdown">PROPÓSITO Y MISIÓN</a>
+                            <a href="#" class="dropdown-item aqdropdown">CRECIMIENTO Y ESTRATEGÍA</a>
+                            <a href="#" class="dropdown-item aqdropdown pb-1">ENFOQUE DE INNOVACIÓN</a>
+                            <a href="#" class="dropdown-item aqdropdown pb-1">VALORES</a>
+                            <a href="#" class="dropdown-item aqdropdown pb-1">HISTORIA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="">PRODUCTOS</span>
+                        </a>
+                        <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                            <a href="products_candies.html" class="dropdown-item aqdropdown pt-2">DULCES</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="products_cookies.html" class="dropdown-item aqdropdown">GALLETAS</a>
+                            <a href="products_chocolates.html" class="dropdown-item aqdropdown">CHOCOLATES</a>
+                            <a href="products_snacks.html" class="dropdown-item aqdropdown pb-1">SNACK'S</a>
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                    <a class="nav-link" href="products.html" target="_blanck">PRODUCTOS<span
+                            class="sr-only"></span></a>
+                </li> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">CATÁLOGO<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="budget.html">PRESUPUESTO<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">CONTÁCTANOS<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="">BLOG</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                            <a href="blog.html" class="dropdown-item aqdropdown pt-2">ARTÍCULOS</a>
+                            <a href="b_article.html" class="dropdown-item aqdropdown pt-2">EJ. DE ARTÍCULO</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end component Navbar -->
+
+    <div class="row mx-0" style="">
+        <div class=" col-1  px-0"></div>
+        <div class="col-10 px-4 ">
+            <div class="" style=" margin-top: 100px;">
+            
+                <!-- <h2 class="my-5">Nosotros</h2> -->
+                <img class="img-fluid w-100" src="images/article.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class=" col-1  px-0"></div>
+    </div>
+
+    <!-- begin component Footer -->
+    <footer>
+        <div id="footer" class="" style="position: relative; background-color: #5dc1b9; color: white !important;">
+
+            <div class=" d-flex justify-content-end pb-3" style="width: 100%;">
+                <div class="mt-3">
+                    <a class="m-3" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-3" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-3" href="https://www.youtube.com/" target="_blanck"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                </div>
+            </div>
+
+            <div class=" mb-3 mx-4">
+                <div class="row mb-2">
+                    <div class=" col-4 d-flex align-items-start flex-column ">
+                        <div class="ffsbo">CONTACTO</div>
+                        <div class=" d-flex align-items-start flex-column">
+                            <div class="">
+                                <img src="images/f_phone.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> +591 2 850851</span>
+                            </div>
+                            <div class="">
+                                <img src="images/f_email.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> info@varovaldez.com.bo</span>
+                            </div>
+                            <div class="">
+                                <img src="images/f_horary.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> Lunes a Viernes: 9:00 a 20:00h</span>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <div class=" h-100 d-flex align-items-center mr-1">
+                                    <img src="images/f_address.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy">
+                                </div>
+                                <div class="">
+                                    <div class="">Av. Montes entre Pando y Bozo Edificio Torre Dimar Nro. 640 La Paz -
+                                        Bolivia</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-4 d-flex align-items-center flex-column ">
+                        <div class="ffsbo">PRODUCTOS</div>
+                        <div class=" d-flex align-items-center flex-column">
+                            <div><a class="text-decoration-none text-light" href="products_candies.html"><span class="folihv">Dulces</span></a>
+                            </div>
+                            <div><a class="text-decoration-none text-light" href="products_cookies.html"><span class="folihv">Galletas</span></a>
+                            </div>
+                            <div><a class="text-decoration-none text-light " href="products_chocolates.html"><span class="folihv">Chocolates</span></a>
+                            </div>
+                            <div><a class="text-decoration-none text-light " href="products_snacks.html"><span class="folihv">Snack's</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-4 d-flex align-items-end">
+                        <h5> </h5>
+                        <div class=" w-100 d-flex align-items-end flex-column">
+                            <div>
+                                <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">De qué
+                                        se trata</span></a>
+                            </div>
+                            <div><a class="text-decoration-none text-light" href="about.html"><span class="folihv">Nuestra historia</span></a>
+                            </div>
+                            <div><a class="text-decoration-none text-light " href="b_faqs.html"><span class="folihv">Preguntas más frecuentes</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" d-flex justify-content-center" style="background-color: #522520;">
+                <div class="mb-4 mt-3">
+                    © 2017-2021 - C&CH Más Que Un Caramelo | Aviso Legal | Política de privacidad | Política de Cookies
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- end component Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+
+    </script>
+
+</body>
+
+</html>

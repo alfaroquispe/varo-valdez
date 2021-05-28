@@ -76,26 +76,33 @@
     }
 
     .bgimfr1 {
-      background-image: url("images/p_chocolates/alfajor_o.png");
+      background-image: url("images/p_snacks/alfajor_o.png");
     }
     .bgimfr2 {
-      background-image: url("images/p_chocolates/beso_de_negro_o.png");
+      background-image: url("images/p_snacks/alfajor_o.png");
     }
     .bgimfr3 {
-      background-image: url("images/p_chocolates/bombon_celeste_o.png");
-    }
-    .bgimfr4 {
-      background-image: url("images/p_chocolates/bombon_rosado_o.png");
+      background-image: url("images/p_snacks/alfajor_o.png");
     }
 
     .bgimsr1 {
-      background-image: url("images/p_chocolates/monedas_o.png");
+      background-image: url("images/p_snacks/beso_de_negro_o.png");
     }
     .bgimsr2 {
-      background-image: url("images/p_chocolates/moldeado_carrito_o.png");
+      background-image: url("images/p_snacks/beso_de_negro_o.png");
     }
     .bgimsr3 {
-      background-image: url("images/p_chocolates/moldeado_mascota_o.png");
+      background-image: url("images/p_snacks/beso_de_negro_o.png");
+    }
+
+    .bgimtr1 {
+      background-image: url("images/p_snacks/marshmallows_o.png");
+    }
+    .bgimtr2 {
+      background-image: url("images/p_snacks/marshmallows_1_o.png");
+    }
+    .bgimtr3 {
+      background-image: url("images/p_snacks/marshmallows_o.png");
     }
 
     /* TODO para las imagenes que son transparentes se debe transparentar las otras imagenes */
@@ -116,9 +123,6 @@
     .containerpr:hover .bgimfr3 {
       opacity: 1;
     }
-    .containerpr:hover .bgimfr4 {
-      opacity: 1;
-    }
 
     .containerpr:hover .bgimsr1 {
       opacity: 1;
@@ -127,6 +131,16 @@
       opacity: 1;
     }
     .containerpr:hover .bgimsr3 {
+      opacity: 1;
+    }
+
+    .containerpr:hover .bgimtr1 {
+      opacity: 1;
+    }
+    .containerpr:hover .bgimtr2 {
+      opacity: 1;
+    }
+    .containerpr:hover .bgimtr3 {
       opacity: 1;
     }
 
@@ -198,9 +212,16 @@
           <li class="nav-item">
             <a class="nav-link" href="contact_us.html">CONTÁCTANOS<span class="sr-only"></span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">BLOG<span class="sr-only"></span></a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="">BLOG</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                <a href="blog.html" class="dropdown-item aqdropdown pt-2">ARTÍCULOS</a>
+                <a href="b_article.html" class="dropdown-item aqdropdown pt-2">EJ. DE ARTÍCULO</a>
+                <!-- <div class="dropdown-divider"></div> -->
+            </div>
+        </li>
         </ul>
       </div>
     </div>
@@ -209,7 +230,7 @@
 
   <div class="row mx-0" style="background-color: white;position: relative;">
     <div class="col-1  px-0"></div>
-    <div class="col-10 px-0">
+    <div class="col-10 px-4">
 
       <!-- begin component Content -->
       <div class=" container pt-5" style="color: #522520;margin-top: 100px;">
@@ -240,11 +261,193 @@
         <!-- begin component Slider3Cards -->
         <div class="container text-center my-5">
 
-          
+          <!-- first row -->
+          <div class=" mt-5">
+              <div class="row mx-auto my-auto">
+                  <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                      <div class="carousel-inner w-100 px-2" role="listbox">
+                          <div class="carousel-item active">
+                              <div class="col-md-4">
+                                  <div class="card card-body ">
+                                      <a href="product.html">
+                                          <div class="containerpr">
+                                              <img class="img-fluid imgpr" src="./images/p_snacks/alfafor.png">
+                                              <div class="overlaypr bgimfr1"></div>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="mb-0 mt-2 ffhn">Alfafor </div>
+                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Alfafor de Chocolate</small></div>
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="col-md-4">
+                                  <div class="card card-body ">
+                                      <a href="product.html">
+                                          <div class="containerpr">
+                                              <img class="img-fluid imgpr" src="./images/p_snacks/alfafor.png">
+                                              <div class="overlaypr bgimfr2"></div>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="mb-0 mt-2 ffhn">Alfafor 2</div>
+                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Alfafor de Leche</small></div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="col-md-4">
+                                  <div class="card card-body ">
+                                      <a href="product.html">
+                                          <div class="containerpr">
+                                              <img class="img-fluid imgpr" src="./images/p_snacks/alfafor.png">
+                                              <div class="overlaypr bgimfr3"></div>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="mb-0 mt-2 ffhn">Alfafor 3</div>
+                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Alfafor de Mix</small></div>
+                              </div>
+                          </div>                          
+                      </div>
+                      <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+              <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
+              <h5 class="ffsbo">Alfafores</h5>
+          </div>
 
-          <!-- end component Slider3Cards -->
+          <!-- second row -->
+          <div class=" mt-5">
+              <div class="row mx-auto my-auto">
+                  <div id="recipeCarousel1" class="carousel slide w-100" data-ride="carousel">
+                      <div class="carousel-inner w-100 px-2" role="listbox">
+                          <div class="carousel-item active">
+                              <div class="col-md-4">
+                                  <div class="card card-body ">
+                                      <a href="product.html">
+                                          <div class="containerpr">
+                                              <img class="img-fluid imgpr" src="./images/p_snacks/beso_de_negro.png">
+                                              <div class="overlaypr bgimsr1"></div>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="mb-0 mt-2 ffhn">Beso de Negro</div>
+                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Beso de Negro</small></div>
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="col-md-4">
+                                  <div class="card card-body ">
+                                      <a href="product.html">
+                                          <div class="containerpr">
+                                              <img class="img-fluid imgpr" src="./images/p_snacks/beso_de_negro.png">
+                                              <div class="overlaypr bgimsr2"></div>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="mb-0 mt-2 ffhn">Beso de Negro 2</div>
+                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Beso de Negro sabor frutilla</small></div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="col-md-4">
+                                  <div class="card card-body ">
+                                      <a href="product.html">
+                                          <div class="containerpr">
+                                              <img class="img-fluid imgpr" src="./images/p_snacks/beso_de_negro.png">
+                                              <div class="overlaypr bgimsr3"></div>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="mb-0 mt-2 ffhn">Beso de Negro 3</div>
+                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Beso de Negro Clásico</small></div>
+                              </div>
+                          </div>                                    
+                      </div>
+                      <a class="carousel-control-prev w-auto" href="#recipeCarousel1" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next w-auto" href="#recipeCarousel1" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+              <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
+              <h5 class="ffsbo">Crema</h5>
+          </div>
 
-        </div>
+          <!-- third row -->
+          <div class=" mt-5">
+              <div class="row mx-auto my-auto">
+                  <div id="recipeCarousel2" class="carousel slide w-100" data-ride="carousel">
+                      <div class="carousel-inner w-100 px-2" role="listbox">
+                          <div class="carousel-item active">
+                              <div class="col-md-4">
+                                  <div class="card card-body ">
+                                      <a href="product.html">
+                                          <div class="containerpr">
+                                              <img class="img-fluid imgpr" src="./images/p_snacks/marshmallows.png">
+                                              <div class="overlaypr bgimtr1"></div>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="mb-0 mt-2 ffhn">Marshmallow</div>
+                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Cubierta de chocolate</small></div>
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="col-md-4">
+                                  <div class="card card-body ">
+                                      <a href="product.html">
+                                          <div class="containerpr">
+                                              <img class="img-fluid imgpr" src="./images/p_snacks/marshmallows_1.png">
+                                              <div class="overlaypr bgimtr2"></div>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="mb-0 mt-2 ffhn">Marshmallow A</div>
+                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Marshmallow sabores</small></div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="col-md-4">
+                                  <div class="card card-body ">
+                                      <a href="product.html">
+                                          <div class="containerpr">
+                                              <img class="img-fluid imgpr" src="./images/p_snacks/marshmallows.png">
+                                              <div class="overlaypr bgimtr3"></div>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="mb-0 mt-2 ffhn">Marshmallow 2</div>
+                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Cubierta de chocolate</small></div>
+                              </div>
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev w-auto" href="#recipeCarousel2" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next w-auto" href="#recipeCarousel2" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+              <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
+              <h5 class="ffsbo">Marshmallows</h5>
+          </div>
+
+      </div>
         <!-- end component Content -->
 
 
