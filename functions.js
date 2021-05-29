@@ -2,6 +2,20 @@ $(window).scroll(function () {
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 
+window.onscroll = function (e){
+    // Obtenemos la posicion del scroll en pantall
+    var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+    // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
+    if(scroll > 50){
+        var element = document.getElementById("active-border");
+        element.classList.add("aqchange");
+    } else {
+        var element = document.getElementById("active-border");
+        element.classList.remove("aqchange");
+    }
+}
+
 // ------- Carousel three cards -------
 
 // ------- Carousel three cards -------
