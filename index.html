@@ -17,7 +17,7 @@
             background-image: url("images/arrow_right_white.png") !important;
             width: 1.5rem;
             height: 3rem;
-            margin-right: -4.5rem !important;
+            margin-right: -4.0rem !important;
             /* top: -20px !important; */
 
         }
@@ -26,7 +26,7 @@
             background-image: url("images/arrow_left_white.png") !important;
             width: 1.5rem;
             height: 3rem;
-            margin-left: -4.5rem !important;
+            margin-left: -4.0rem !important;
             /* width: 40px !important;
     height: 92px !important; */
         }
@@ -61,22 +61,18 @@
                 transform: scale(1.05, 1.05);
             }
         }
-        .aqchange{
-
-        }
     </style>
 </head>
 
-<body>
+<body class="animated fadeIn fast">
     <!-- begin component Navbar -->
     <nav class="navbar navbar-default fixed-top navbar-expand-lg ">
         <div class="container-fluid">
 
-            <a class="navbar-brand d-flex align-items-end" href="#">
-                <img src="images/logo.png" width="55" height="35" class="d-inline-block align-top" alt="" loading="lazy">
-                <h4 class="ml-2 fflst" style="line-height: 0.4;"> VARO VALDEZ</h4>
+            <a class="navbar-brand d-flex align-items-end pb-0" href="#">
+                <img src="images/logo.png" width="auto" height="55" class="d-inline-block align-top" alt="" loading="lazy">
+                <!-- <h4 class="ml-2 fflst" style="line-height: 0.4;"> VARO VALDEZ</h4> -->
             </a>
-            <!-- <a class="navbar-brand pb-0 ffb" href=""></a> -->
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -84,7 +80,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto ffhn">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">INICIO<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">INICIO<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -157,16 +153,16 @@
         </ol> -->
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval="10000">
-                <img src="images/home/dulces_slide.jpg" class="d-block w-100" alt="...">
+                <img src="images/home/dulces.jpg" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item" data-interval="9000">
-                <img src="images/home/chocolates_slide.jpg" class="d-block w-100" alt="...">
+                <img src="images/imgPrin.jpg" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item" data-interval="9000">
-                <img src="images/home/dulces.jpg" class="d-block w-100" alt="...">
+                <img src="images/imgPrin2.jpg" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item" data-interval="9000">
-                <img src="images/imgPrin3.jpg" class="d-block w-100" alt="...">
+                <img src="images/imgPrin3.jpg" class="d-block w-100" alt="">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -205,12 +201,13 @@
     </div>
     <!-- end component SocNet -->
 
+    <!-- begin Presentation -->
     <div class="row mx-0" style="background-color: white;position: relative;">
         <div class=" col-1  px-0"></div>
-        <div class="col-10 px-4 ">
+        <div class="col-10">
 
             <!-- begin component Welcome -->
-            <div class=" container my-5" style="color: #522520">
+            <div class="my-5" style="color: #522520">
                 <div class="d-flex justify-content-center mb-2">
                     <h2 class="fflst">BIENVENIDO</h2>
 
@@ -222,58 +219,58 @@
             <!-- end component Welcome -->
 
             <!-- begin component Products -->
-            <div class="row mx-0">
+            <div class="row mx-0 ffhn">
                 <!-- <div class="col-6 px-0"><img class="w-100 h-100" src="images/snacks.png"></div> -->
-                <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;max-height: 250px;">
-                    <a href="" class=" aqhvup">
-                        <img class="w-100 h-100" src="images/home/dulces.png" style="">
+                <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;">
+                    <a href="" class=" aqhvup  d-flex align-self-stretch">
+                    <img width="100%" src="images/home/linea_dulces.jpg" style="object-fit: cover;">
                         <div class="align-self-center" style="position: absolute;">
-                            <div class="d-flex justify-content-center ffhn">
+                            <div class="d-flex justify-content-center ">
                                 <h4>DULCES</h4>
                             </div>
-                            <div class="ffhn mx-4 d-flex justify-content-center text-center">
+                            <div class=" mx-4 d-flex justify-content-center text-center">
                                 <p>Diponemos de tres tipos de dulces, encuentra el adecuado para tu empresa.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;max-height: 250px !important;">
-                    <a href="" class="aqhvup">
-                        <img class="w-100 h-100" src="images/home/galletas.png" style="">
+                <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;">
+                    <a href="" class="aqhvup  d-flex align-self-stretch">
+                        <img width="100%" src="images/home/galletas.png" style="object-fit: cover;">
                         <div class="align-self-center" style="position: absolute;">
-                            <div class="d-flex justify-content-center ffhn">
+                            <div class="d-flex justify-content-center ">
                                 <h4>GALLETAS</h4>
                             </div>
-                            <div class="ffhn mx-4 d-flex justify-content-center text-center">
+                            <div class=" mx-4 d-flex justify-content-center text-center">
                                 <p>Diponemos de tres tipos de galletas, encuentra el adecuado para tu empresa.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-
             </div>
-            <div class="row mx-0">
-                <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;max-height: 250px !important;">
+
+            <div class="row mx-0 ffhn">
+                <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;">
                     <a href="" class="aqhvup d-flex align-self-stretch">
-                        <img class="w-100 h-100" src="images/home/chcolates.png" style="">
+                        <img width="100%" src="images/home/linea_chocolates.jpg" style="object-fit: cover;">
                         <div class="align-self-center" style="position: absolute;">
-                            <div class="d-flex justify-content-center ffhn">
+                            <div class="d-flex justify-content-center ">
                                 <h4>CHOCOLATES</h4>
                             </div>
-                            <div class="ffhn mx-4 d-flex justify-content-center text-center">
+                            <div class=" mx-4 d-flex justify-content-center text-center">
                                 <p>Diponemos de dos tipos de chocolates, encuentra el adecuado para tu empresa.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;max-height: 250px !important;">
+                <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;">
                     <a href="" class="aqhvup d-flex align-self-stretch">
-                        <img class="w-100 h-100" src="images/home/snacks.png" style="">
+                        <img width="100%" src="images/home/snacks.png" style="object-fit: cover;">
                         <div class="align-self-center" style="position: absolute;">
-                            <div class="d-flex justify-content-center ffhn">
+                            <div class="d-flex justify-content-center ">
                                 <h4>SNACK'S</h4>
                             </div>
-                            <div class="ffhn mx-4 d-flex justify-content-center text-center">
+                            <div class=" mx-4 d-flex justify-content-center text-center">
                                 <p>Diponemos de tres tipos de snack's, encuentra el adecuado para tu empresa.</p>
                             </div>
                         </div>
@@ -313,6 +310,7 @@
         </div>
         <div class=" col-1  px-0"></div>
     </div>
+    <!-- end Presentation -->
     <!-- end component Content -->
 
     <!-- begin component Chat -->
@@ -325,19 +323,19 @@
 
     <!-- begin component Footer -->
     <footer>
-        <div id="footer" class="" style="position: relative; background-color: #5dc1b9; color: white !important;">
+        <div id="footer" class="pb-3 px-4" style="position: relative; background-color: #5dc1b9; color: white !important;">
 
-            <div class=" d-flex justify-content-end pb-3" style="width: 100%;">
+            <div class="d-flex justify-content-end pb-3 pr-2" style="width: 100%;">
                 <div class="mt-3">
-                    <a class="m-3" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-                    <a class="m-3" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-                    <a class="m-3" href="https://www.youtube.com/" target="_blanck"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-2" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-2" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="ml-2" href="https://www.youtube.com/" target="_blanck"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
                 </div>
             </div>
 
-            <div class=" mb-3 mx-4">
-                <div class="row mb-2">
-                    <div class=" col-4 d-flex align-items-start flex-column ">
+            <div class=" mb-3 px-2">
+                <div class="row mx-0 mb-2">
+                    <div class=" col-4 px-0 d-flex align-items-start flex-column ">
                         <div class="ffsbo">CONTACTO</div>
                         <div class=" d-flex align-items-start flex-column">
                             <div class="">
@@ -359,7 +357,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-4 d-flex align-items-center flex-column ">
+                    <div class=" col-4 px-0 d-flex align-items-center flex-column ">
                         <div class="ffsbo">PRODUCTOS</div>
                         <div class=" d-flex align-items-center flex-column">
                             <div><a class="text-decoration-none text-light" href="products_candies.html"><span class="folihv">Dulces</span></a>
@@ -372,7 +370,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-4 d-flex align-items-end">
+                    <div class=" col-4 px-0 d-flex align-items-end">
                         <h5> </h5>
                         <div class=" w-100 d-flex align-items-end flex-column">
                             <div>
@@ -386,13 +384,13 @@
                     </div>
                 </div>
             </div>
-            <div class=" d-flex justify-content-center" style="background-color: #522520;">
-                <div class="mb-4 mt-3">
-                    © 2017-2021 - C&CH Más Que Un Caramelo | Aviso Legal | Política de privacidad | Política de Cookies
-                </div>
-
+        </div>
+        <div class="d-flex justify-content-center" style="background-color: #522520;width: 100%;position: relative; color: white !important;">
+            <div class="mb-4">
+                © 2017-2021 - C&CH Más Que Un Caramelo | Aviso Legal | Política de privacidad | Política de Cookies
             </div>
         </div>
+        <div id="active-border"></div>
     </footer>
     <!-- end component Footer -->
 

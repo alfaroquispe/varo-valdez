@@ -1,0 +1,212 @@
+.sf-container:after,
+        .sf-container:before,
+        .sf-panel:after,
+        .sf-panel:before,
+        .sf-row:after,
+        .sf-row:before,
+        .sf-row-padding:after,
+        .sf-row-padding:before,
+        .sf-cell-row:before,
+        .sf-cell-row:after,
+        .sf-clear:after,
+        .sf-clear:before,
+        .sf-bar:before,
+        .sf-bar:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .sf-container,
+        .sf-panel {
+            padding: 0.01em 16px
+        }
+
+        .sf-panel {
+            margin-top: 16px;
+            margin-bottom: 16px
+        }
+
+        .sf-modal {
+            z-index: 3;
+            display: none;
+            padding-top: 50px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4)
+        }
+
+        .sf-modal-content {
+            margin: auto;
+            background-color: #fff;
+            position: relative;
+            padding: 0;
+            outline: 0;
+            width: 400px
+        }
+
+        @media (max-width:600px) {
+            .sf-modal-content {
+                margin: 0 10px;
+                width: auto !important
+            }
+
+            .sf-modal {
+                padding-top: 30px
+            }
+
+            .sf-dropdown-hover.sf-mobile .sf-dropdown-content,
+            .sf-dropdown-click.sf-mobile .sf-dropdown-content {
+                position: relative
+            }
+
+            .sf-hide-small {
+                display: none !important
+            }
+
+            .sf-mobile {
+                display: block;
+                width: 100% !important
+            }
+
+            .sf-bar-item.sf-mobile,
+            .sf-dropdown-hover.sf-mobile,
+            .sf-dropdown-click.sf-mobile {
+                text-align: center
+            }
+
+            .sf-dropdown-hover.sf-mobile,
+            .sf-dropdown-hover.sf-mobile .sf-btn,
+            .sf-dropdown-hover.sf-mobile .sf-button,
+            .sf-dropdown-click.sf-mobile,
+            .sf-dropdown-click.sf-mobile .sf-btn,
+            .sf-dropdown-click.sf-mobile .sf-button {
+                width: 100%
+            }
+        }
+
+        @media (max-width:768px) {
+            .sf-modal-content {
+                width: 300px
+            }
+
+            .sf-modal {
+                padding-top: 50px
+            }
+        }
+
+        @media (min-width:993px) {
+            .sf-modal-content {
+                width: 700px
+            }
+
+            .sf-hide-large {
+                display: none !important
+            }
+
+            .sf-sidebar.sf-collapse {
+                display: block !important
+            }
+        }
+
+        .sf-btn,
+        .sf-button {
+            border: none;
+            display: inline-block;
+            padding: 8px 16px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            background-color: inherit;
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap
+        }
+
+        .sf-btn,
+        .sf-button {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .sf-disabled,
+        .sf-btn:disabled,
+        .sf-button:disabled {
+            cursor: not-allowed;
+            opacity: 0.3
+        }
+
+        .sf-disabled *,
+        :disabled * {
+            pointer-events: none
+        }
+
+        .sf-dropdown-hover:hover>.sf-button:first-child,
+        .sf-dropdown-click:hover>.sf-button:first-child {
+            background-color: #ccc;
+            color: #000
+        }
+
+        .sf-bar-block .sf-dropdown-hover .sf-button,
+        .sf-bar-block .sf-dropdown-click .sf-button {
+            width: 100%;
+            text-align: left;
+            padding: 8px 16px
+        }
+
+        .sf-bar .sf-button {
+            white-space: normal
+        }
+
+        .sf-red,
+        .sf-hover-red:hover {
+            color: #fff !important;
+            background-color: #f44336 !important
+        }
+
+        /* ------- TODO SIZES AND POSITION ------- */
+        .sf-xlarge {
+            font-size: 24px !important
+        }
+
+        .sf-xxlarge {
+            font-size: 36px !important
+        }
+
+        .sf-xxxlarge {
+            font-size: 48px !important
+        }
+
+        .sf-jumbo {
+            font-size: 64px !important
+        }
+
+        .sf-display-topright {
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .sf-animate-zoom {
+            animation: animatezoom 0.6s
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }

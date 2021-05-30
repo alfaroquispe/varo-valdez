@@ -78,9 +78,11 @@
     .bgimfr1 {
       background-image: url("images/p_snacks/alfajor_o.png");
     }
+
     .bgimfr2 {
       background-image: url("images/p_snacks/alfajor_o.png");
     }
+
     .bgimfr3 {
       background-image: url("images/p_snacks/alfajor_o.png");
     }
@@ -88,9 +90,11 @@
     .bgimsr1 {
       background-image: url("images/p_snacks/beso_de_negro_o.png");
     }
+
     .bgimsr2 {
       background-image: url("images/p_snacks/beso_de_negro_o.png");
     }
+
     .bgimsr3 {
       background-image: url("images/p_snacks/beso_de_negro_o.png");
     }
@@ -98,9 +102,11 @@
     .bgimtr1 {
       background-image: url("images/p_snacks/marshmallows_o.png");
     }
+
     .bgimtr2 {
       background-image: url("images/p_snacks/marshmallows_1_o.png");
     }
+
     .bgimtr3 {
       background-image: url("images/p_snacks/marshmallows_o.png");
     }
@@ -117,9 +123,11 @@
     .containerpr:hover .bgimfr1 {
       opacity: 1;
     }
+
     .containerpr:hover .bgimfr2 {
       opacity: 1;
     }
+
     .containerpr:hover .bgimfr3 {
       opacity: 1;
     }
@@ -127,9 +135,11 @@
     .containerpr:hover .bgimsr1 {
       opacity: 1;
     }
+
     .containerpr:hover .bgimsr2 {
       opacity: 1;
     }
+
     .containerpr:hover .bgimsr3 {
       opacity: 1;
     }
@@ -137,9 +147,11 @@
     .containerpr:hover .bgimtr1 {
       opacity: 1;
     }
+
     .containerpr:hover .bgimtr2 {
       opacity: 1;
     }
+
     .containerpr:hover .bgimtr3 {
       opacity: 1;
     }
@@ -152,34 +164,33 @@
   </style>
 </head>
 
-<body>
+<body class="animated fadeIn fast">
   <!-- begin component Navbar -->
   <nav class="navbar navbar-default fixed-top navbar-expand-lg ">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.png" width="55" height="35" class="d-inline-block align-top" alt="" loading="lazy">
-        <span class="ffseb"> VARO VALDEZ</span>
+      <a class="navbar-brand d-flex align-items-end pb-0" href="index.html">
+        <img src="images/logo.png" width="auto" height="55" class="d-inline-block align-top" alt="" loading="lazy">
+        <!-- <h4 class="ml-2 fflst" style="line-height: 0.4;"> VARO VALDEZ</h4> -->
       </a>
-      <!-- <a class="navbar-brand pb-0 ffb" href=""></a> -->
-      <button style="color: blue !important;" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto ffhn">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">INICIO<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">INICIO</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="">NOSOTROS</span>
             </a>
             <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
               <a href="about.html" class="dropdown-item aqdropdown pt-2">QUIENES SOMOS</a>
               <!-- <div class="dropdown-divider"></div> -->
-              <a href="" class="dropdown-item aqdropdown">PROPÓSITO Y MISIÓN</a>
-              <a href="#" class="dropdown-item aqdropdown">CRECIMIENTO Y ESTRATEGÍA</a>
+              <a href="about.html#porpuse" class="dropdown-item aqdropdown">PROPÓSITO Y MISIÓN</a>
+              <a href="about.html#growth" class="dropdown-item aqdropdown">CRECIMIENTO Y ESTRATEGÍA</a>
               <a href="#" class="dropdown-item aqdropdown pb-1">ENFOQUE DE INNOVACIÓN</a>
               <a href="#" class="dropdown-item aqdropdown pb-1">VALORES</a>
               <a href="#" class="dropdown-item aqdropdown pb-1">HISTORIA</a>
@@ -194,15 +205,9 @@
               <!-- <div class="dropdown-divider"></div> -->
               <a href="products_cookies.html" class="dropdown-item aqdropdown">GALLETAS</a>
               <a href="products_chocolates.html" class="dropdown-item aqdropdown">CHOCOLATES</a>
-              <a href="products_snacks.html" class="dropdown-item aqdropdown pb-1">SNACK'S</a>
+              <a class="dropdown-item aqdropdown pb-1">SNACK'S</a>
             </div>
           </li>
-
-          <!-- <li class="nav-item">
-                    <a class="nav-link" href="products.html" target="_blanck">PRODUCTOS<span
-                            class="sr-only"></span></a>
-                </li> -->
-
           <li class="nav-item">
             <a class="nav-link" href="catalog.html">CATÁLOGO<span class="sr-only"></span></a>
           </li>
@@ -214,26 +219,26 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="">BLOG</span>
+              <span class="">BLOG</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
-                <a href="blog.html" class="dropdown-item aqdropdown pt-2">ARTÍCULOS</a>
-                <a href="b_article.html" class="dropdown-item aqdropdown pt-2">EJ. DE ARTÍCULO</a>
-                <!-- <div class="dropdown-divider"></div> -->
+              <a href="blog.html" class="dropdown-item aqdropdown pt-2">ARTÍCULOS</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a href="b_article.html" class="dropdown-item aqdropdown pt-2">EJ. DE ARTÍCULO</a>
             </div>
-        </li>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- end component Navbar -->
 
-  <div class="row mx-0" style="background-color: white;position: relative;">
+  <div class="row mx-0 mt-5">
     <div class="col-1  px-0"></div>
-    <div class="col-10 px-4">
+    <div class="col-10 px-0">
 
       <!-- begin component Content -->
-      <div class=" container pt-5" style="color: #522520;margin-top: 100px;">
+      <div class=" pt-5" style="color: #522520;">
         <div class=" mt-5 d-flex justify-content-center mb-2">
           <h2 class="ffseb">PRODUCTOS</h2>
         </div>
@@ -259,195 +264,195 @@
         <!-- end component Lines -->
 
         <!-- begin component Slider3Cards -->
-        <div class="container text-center my-5">
+        <div class="text-center my-5">
 
           <!-- first row -->
           <div class=" mt-5">
-              <div class="row mx-auto my-auto">
-                  <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                      <div class="carousel-inner w-100 px-2" role="listbox">
-                          <div class="carousel-item active">
-                              <div class="col-md-4">
-                                  <div class="card card-body ">
-                                      <a href="product.html">
-                                          <div class="containerpr">
-                                              <img class="img-fluid imgpr" src="./images/p_snacks/alfafor.png">
-                                              <div class="overlaypr bgimfr1"></div>
-                                          </div>
-                                      </a>
-                                  </div>
-                                  <div class="mb-0 mt-2 ffhn">Alfafor </div>
-                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Alfafor de Chocolate</small></div>
-                              </div>
+            <div class="row mx-auto my-auto">
+              <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100 px-2" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="col-md-4">
+                      <div class="card card-body ">
+                        <a href="product.html">
+                          <div class="containerpr">
+                            <img class="img-fluid imgpr" src="./images/p_snacks/alfafor.png">
+                            <div class="overlaypr bgimfr1"></div>
                           </div>
-                          <div class="carousel-item ">
-                              <div class="col-md-4">
-                                  <div class="card card-body ">
-                                      <a href="product.html">
-                                          <div class="containerpr">
-                                              <img class="img-fluid imgpr" src="./images/p_snacks/alfafor.png">
-                                              <div class="overlaypr bgimfr2"></div>
-                                          </div>
-                                      </a>
-                                  </div>
-                                  <div class="mb-0 mt-2 ffhn">Alfafor 2</div>
-                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Alfafor de Leche</small></div>
-                              </div>
-                          </div>
-                          <div class="carousel-item">
-                              <div class="col-md-4">
-                                  <div class="card card-body ">
-                                      <a href="product.html">
-                                          <div class="containerpr">
-                                              <img class="img-fluid imgpr" src="./images/p_snacks/alfafor.png">
-                                              <div class="overlaypr bgimfr3"></div>
-                                          </div>
-                                      </a>
-                                  </div>
-                                  <div class="mb-0 mt-2 ffhn">Alfafor 3</div>
-                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Alfafor de Mix</small></div>
-                              </div>
-                          </div>                          
+                        </a>
                       </div>
-                      <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                      </a>
+                      <div class="mb-0 mt-2 ffhn">Alfafor </div>
+                      <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Alfafor de Chocolate</small></div>
+                    </div>
                   </div>
+                  <div class="carousel-item ">
+                    <div class="col-md-4">
+                      <div class="card card-body ">
+                        <a href="product.html">
+                          <div class="containerpr">
+                            <img class="img-fluid imgpr" src="./images/p_snacks/alfafor.png">
+                            <div class="overlaypr bgimfr2"></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mb-0 mt-2 ffhn">Alfafor 2</div>
+                      <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Alfafor de Leche</small></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card card-body ">
+                        <a href="product.html">
+                          <div class="containerpr">
+                            <img class="img-fluid imgpr" src="./images/p_snacks/alfafor.png">
+                            <div class="overlaypr bgimfr3"></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mb-0 mt-2 ffhn">Alfafor 3</div>
+                      <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Alfafor de Mix</small></div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
-              <h5 class="ffsbo">Alfafores</h5>
+            </div>
+            <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
+            <h5 class="ffsbo">Alfafores</h5>
           </div>
 
           <!-- second row -->
           <div class=" mt-5">
-              <div class="row mx-auto my-auto">
-                  <div id="recipeCarousel1" class="carousel slide w-100" data-ride="carousel">
-                      <div class="carousel-inner w-100 px-2" role="listbox">
-                          <div class="carousel-item active">
-                              <div class="col-md-4">
-                                  <div class="card card-body ">
-                                      <a href="product.html">
-                                          <div class="containerpr">
-                                              <img class="img-fluid imgpr" src="./images/p_snacks/beso_de_negro.png">
-                                              <div class="overlaypr bgimsr1"></div>
-                                          </div>
-                                      </a>
-                                  </div>
-                                  <div class="mb-0 mt-2 ffhn">Beso de Negro</div>
-                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Beso de Negro</small></div>
-                              </div>
+            <div class="row mx-auto my-auto">
+              <div id="recipeCarousel1" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100 px-2" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="col-md-4">
+                      <div class="card card-body ">
+                        <a href="product.html">
+                          <div class="containerpr">
+                            <img class="img-fluid imgpr" src="./images/p_snacks/beso_de_negro.png">
+                            <div class="overlaypr bgimsr1"></div>
                           </div>
-                          <div class="carousel-item ">
-                              <div class="col-md-4">
-                                  <div class="card card-body ">
-                                      <a href="product.html">
-                                          <div class="containerpr">
-                                              <img class="img-fluid imgpr" src="./images/p_snacks/beso_de_negro.png">
-                                              <div class="overlaypr bgimsr2"></div>
-                                          </div>
-                                      </a>
-                                  </div>
-                                  <div class="mb-0 mt-2 ffhn">Beso de Negro 2</div>
-                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Beso de Negro sabor frutilla</small></div>
-                              </div>
-                          </div>
-                          <div class="carousel-item">
-                              <div class="col-md-4">
-                                  <div class="card card-body ">
-                                      <a href="product.html">
-                                          <div class="containerpr">
-                                              <img class="img-fluid imgpr" src="./images/p_snacks/beso_de_negro.png">
-                                              <div class="overlaypr bgimsr3"></div>
-                                          </div>
-                                      </a>
-                                  </div>
-                                  <div class="mb-0 mt-2 ffhn">Beso de Negro 3</div>
-                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Beso de Negro Clásico</small></div>
-                              </div>
-                          </div>                                    
+                        </a>
                       </div>
-                      <a class="carousel-control-prev w-auto" href="#recipeCarousel1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next w-auto" href="#recipeCarousel1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                      </a>
+                      <div class="mb-0 mt-2 ffhn">Beso de Negro</div>
+                      <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Beso de Negro</small></div>
+                    </div>
                   </div>
+                  <div class="carousel-item ">
+                    <div class="col-md-4">
+                      <div class="card card-body ">
+                        <a href="product.html">
+                          <div class="containerpr">
+                            <img class="img-fluid imgpr" src="./images/p_snacks/beso_de_negro.png">
+                            <div class="overlaypr bgimsr2"></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mb-0 mt-2 ffhn">Beso de Negro 2</div>
+                      <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Beso de Negro sabor frutilla</small></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card card-body ">
+                        <a href="product.html">
+                          <div class="containerpr">
+                            <img class="img-fluid imgpr" src="./images/p_snacks/beso_de_negro.png">
+                            <div class="overlaypr bgimsr3"></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mb-0 mt-2 ffhn">Beso de Negro 3</div>
+                      <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Beso de Negro Clásico</small></div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#recipeCarousel1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#recipeCarousel1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
-              <h5 class="ffsbo">Crema</h5>
+            </div>
+            <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
+            <h5 class="ffsbo">Crema</h5>
           </div>
 
           <!-- third row -->
           <div class=" mt-5">
-              <div class="row mx-auto my-auto">
-                  <div id="recipeCarousel2" class="carousel slide w-100" data-ride="carousel">
-                      <div class="carousel-inner w-100 px-2" role="listbox">
-                          <div class="carousel-item active">
-                              <div class="col-md-4">
-                                  <div class="card card-body ">
-                                      <a href="product.html">
-                                          <div class="containerpr">
-                                              <img class="img-fluid imgpr" src="./images/p_snacks/marshmallows.png">
-                                              <div class="overlaypr bgimtr1"></div>
-                                          </div>
-                                      </a>
-                                  </div>
-                                  <div class="mb-0 mt-2 ffhn">Marshmallow</div>
-                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Cubierta de chocolate</small></div>
-                              </div>
+            <div class="row mx-auto my-auto">
+              <div id="recipeCarousel2" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100 px-2" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="col-md-4">
+                      <div class="card card-body ">
+                        <a href="product.html">
+                          <div class="containerpr">
+                            <img class="img-fluid imgpr" src="./images/p_snacks/marshmallows.png">
+                            <div class="overlaypr bgimtr1"></div>
                           </div>
-                          <div class="carousel-item ">
-                              <div class="col-md-4">
-                                  <div class="card card-body ">
-                                      <a href="product.html">
-                                          <div class="containerpr">
-                                              <img class="img-fluid imgpr" src="./images/p_snacks/marshmallows_1.png">
-                                              <div class="overlaypr bgimtr2"></div>
-                                          </div>
-                                      </a>
-                                  </div>
-                                  <div class="mb-0 mt-2 ffhn">Marshmallow A</div>
-                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Marshmallow sabores</small></div>
-                              </div>
-                          </div>
-                          <div class="carousel-item">
-                              <div class="col-md-4">
-                                  <div class="card card-body ">
-                                      <a href="product.html">
-                                          <div class="containerpr">
-                                              <img class="img-fluid imgpr" src="./images/p_snacks/marshmallows.png">
-                                              <div class="overlaypr bgimtr3"></div>
-                                          </div>
-                                      </a>
-                                  </div>
-                                  <div class="mb-0 mt-2 ffhn">Marshmallow 2</div>
-                                  <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Cubierta de chocolate</small></div>
-                              </div>
-                          </div>
+                        </a>
                       </div>
-                      <a class="carousel-control-prev w-auto" href="#recipeCarousel2" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next w-auto" href="#recipeCarousel2" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                      </a>
+                      <div class="mb-0 mt-2 ffhn">Marshmallow</div>
+                      <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Cubierta de chocolate</small></div>
+                    </div>
                   </div>
+                  <div class="carousel-item ">
+                    <div class="col-md-4">
+                      <div class="card card-body ">
+                        <a href="product.html">
+                          <div class="containerpr">
+                            <img class="img-fluid imgpr" src="./images/p_snacks/marshmallows_1.png">
+                            <div class="overlaypr bgimtr2"></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mb-0 mt-2 ffhn">Marshmallow A</div>
+                      <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Marshmallow sabores</small></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card card-body ">
+                        <a href="product.html">
+                          <div class="containerpr">
+                            <img class="img-fluid imgpr" src="./images/p_snacks/marshmallows.png">
+                            <div class="overlaypr bgimtr3"></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mb-0 mt-2 ffhn">Marshmallow 2</div>
+                      <div class="card-text ctmuted" style="position: relative;"><small class="text-muted">Cubierta de chocolate</small></div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#recipeCarousel2" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#recipeCarousel2" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
-              <h5 class="ffsbo">Marshmallows</h5>
+            </div>
+            <hr class="mb-3 mt-2" style="background-color: #5dc1b9 !important;">
+            <h5 class="ffsbo">Marshmallows</h5>
           </div>
 
-      </div>
+        </div>
         <!-- end component Content -->
 
 
@@ -480,24 +485,50 @@
       </div>
     </div>
     <div class="col-1  px-0"></div>
+    <div class="col-12 px-0">
+      <div class="row mx-0" style="background-color: #efefef;">
+        <div class="col-1 px-0"></div>
+        <div class="col-5 px-0">
+          <div class="my-5 px-4">
+            <img width="100%" src="images/desc_snacks2.png" alt="" style="object-fit: contain;">
+          </div>
+        </div>
+        <div class="col-5 px-0">
+          <div class="my-5 px-4">
+            <img width="100%" src="images/desc_snacks1.png" alt="" style="object-fit: contain;">
+          </div>
+        </div>
+        <div class="col-1 px-0"></div>
+        <div class="col-1 px-0 text-center mb-5">
+        </div>
+        <div class="col-10 px-0 text-center mb-5" style="color: #522520;">
+          <h2 class="fflst">SNACK'S</h2>
+          <h4 class="ffhn">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas vel suscipit animi fuga labore similique eum vitae tempora ex rem minima necessitatibus tenetur excepturi optio sit neque, dicta natus? Quasi.
+          </h4>
+        </div>
+        <div class="col-1 px-0 text-center mb-5">
+        </div>
+      </div>
+    </div>
 
   </div>
 
   <!-- begin component Footer -->
   <footer>
-    <div id="footer" class="" style="position: relative; background-color: #5dc1b9; color: white !important;">
+    <div id="footer" class="pb-3 px-4" style="position: relative; background-color: #5dc1b9; color: white !important;">
 
-      <div class=" d-flex justify-content-end pb-3" style="width: 100%;">
+      <div class="d-flex justify-content-end pb-3 pr-2" style="width: 100%;">
         <div class="mt-3">
-          <a class="m-3" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-          <a class="m-3" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-          <a class="m-3" href="https://www.youtube.com/" target="_blanck"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+          <a class="m-2" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+          <a class="m-2" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+          <a class="ml-2" href="https://www.youtube.com/" target="_blanck"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
         </div>
       </div>
 
-      <div class=" mb-3 mx-4">
-        <div class="row mb-2">
-          <div class=" col-4 d-flex align-items-start flex-column ">
+      <div class=" mb-3 px-2">
+        <div class="row mx-0 mb-2">
+          <div class=" col-4 px-0 d-flex align-items-start flex-column ">
             <div class="ffsbo">CONTACTO</div>
             <div class=" d-flex align-items-start flex-column">
               <div class="">
@@ -514,13 +545,12 @@
                   <img src="images/f_address.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy">
                 </div>
                 <div class="">
-                  <div class="">Av. Montes entre Pando y Bozo Edificio Torre Dimar Nro. 640 La Paz -
-                    Bolivia</div>
+                  <div class="" style="line-height: 1.2;">Av. Montes entre Pando y Bozo Edificio Torre Dimar Nro. 640 La Paz - Bolivia</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class=" col-4 d-flex align-items-center flex-column ">
+          <div class=" col-4 px-0 d-flex align-items-center flex-column ">
             <div class="ffsbo">PRODUCTOS</div>
             <div class=" d-flex align-items-center flex-column">
               <div><a class="text-decoration-none text-light" href="products_candies.html"><span class="folihv">Dulces</span></a>
@@ -533,26 +563,24 @@
               </div>
             </div>
           </div>
-          <div class=" col-4 d-flex align-items-end">
+          <div class=" col-4 px-0 d-flex align-items-end">
             <h5> </h5>
             <div class=" w-100 d-flex align-items-end flex-column">
               <div>
-                <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">De qué
-                    se trata</span></a>
+                <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">De quése trata</span></a>
               </div>
               <div><a class="text-decoration-none text-light" href="about.html"><span class="folihv">Nuestra historia</span></a>
               </div>
-              <div><a class="text-decoration-none text-light " href="b_faqs.html"><span class="folihv">Preguntas más frecuentes</span></a>
+              <div class="mb-3"><a class="text-decoration-none text-light " href="b_faqs.html"><span class="folihv">Preguntas más frecuentes</span></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class=" d-flex justify-content-center" style="background-color: #522520;">
-        <div class="mb-4 mt-3">
-          © 2017-2021 - C&CH Más Que Un Caramelo | Aviso Legal | Política de privacidad | Política de Cookies
-        </div>
-
+    </div>
+    <div class="d-flex justify-content-center" style="background-color: #522520;width: 100%;position: relative; color: white !important;">
+      <div class="mb-4">
+        © 2017-2021 - C&CH Más Que Un Caramelo | Aviso Legal | Política de privacidad | Política de Cookies
       </div>
     </div>
   </footer>
