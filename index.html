@@ -31,12 +31,30 @@
     height: 92px !important; */
         }
 
+
         .carousel-control-prev {
-            opacity: 0.5;
+            opacity: 0.9;
         }
+        .carousel-control-prev:hover {
+            opacity: 1;
+            -ms-transform: translateX(-5%);
+            transform: translateX(-5%);
+            transition: transform 1s;
+        }
+        /* .carousel-control-prev:hover:after {
+            -ms-transform: translateX(5%);
+            transform: translateX(5%);
+            transition: transform 1s;
+        } */
 
         .carousel-control-next {
-            opacity: 0.5;
+            opacity: 0.9;
+        }
+        .carousel-control-next:hover {
+            opacity: 1;
+            -ms-transform: translate(20px,0);
+            transform: translate(20px,0); 
+            transition: 1s;
         }
 
 
@@ -155,14 +173,14 @@
             <div class="carousel-item active" data-interval="10000">
                 <img src="images/home/dulces.jpg" class="d-block w-100" alt="">
             </div>
-            <div class="carousel-item" data-interval="9000">
-                <img src="images/imgPrin.jpg" class="d-block w-100" alt="">
+            <div class="carousel-item" data-interval="9000" style="background-image: url(images/finales/14.jpg);object-fit: cover;">
+                <img src="images/finales/15.png" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item" data-interval="9000">
                 <img src="images/imgPrin2.jpg" class="d-block w-100" alt="">
             </div>
-            <div class="carousel-item" data-interval="9000">
-                <img src="images/imgPrin3.jpg" class="d-block w-100" alt="">
+            <div class="carousel-item" data-interval="9000" style="background-image: url(images/finales/14.jpg);object-fit: cover;">
+                <img src="images/finales/15.png" class="d-block w-100" alt="">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -223,7 +241,7 @@
                 <!-- <div class="col-6 px-0"><img class="w-100 h-100" src="images/snacks.png"></div> -->
                 <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;">
                     <a href="" class=" aqhvup  d-flex align-self-stretch">
-                    <img width="100%" src="images/home/linea_dulces.jpg" style="object-fit: cover;">
+                    <img width="100%" src="images/finales/Dulces 2.jpg" style="object-fit: cover;">
                         <div class="align-self-center" style="position: absolute;">
                             <div class="d-flex justify-content-center ">
                                 <h4>DULCES</h4>
@@ -236,7 +254,7 @@
                 </div>
                 <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;">
                     <a href="" class="aqhvup  d-flex align-self-stretch">
-                        <img width="100%" src="images/home/galletas.png" style="object-fit: cover;">
+                        <img width="100%" src="images/finales/galletas.jpg" style="object-fit: cover;">
                         <div class="align-self-center" style="position: absolute;">
                             <div class="d-flex justify-content-center ">
                                 <h4>GALLETAS</h4>
@@ -265,7 +283,7 @@
                 </div>
                 <div class="col-6 px-0 d-flex" style="background-color: #5dc1b9;">
                     <a href="" class="aqhvup d-flex align-self-stretch">
-                        <img width="100%" src="images/home/snacks.png" style="object-fit: cover;">
+                        <img width="100%" src="images/finales/Snacks.jpg" style="object-fit: cover;">
                         <div class="align-self-center" style="position: absolute;">
                             <div class="d-flex justify-content-center ">
                                 <h4>SNACK'S</h4>
@@ -323,7 +341,7 @@
 
     <!-- begin component Footer -->
     <footer>
-        <div id="footer" class="pb-3 px-4" style="position: relative; background-color: #5dc1b9; color: white !important;">
+        <div id="footer" class="pb-3 px-4" style="position: relative; background-color: #111820; color: white !important;">
 
             <div class="d-flex justify-content-end pb-3 pr-2" style="width: 100%;">
                 <div class="mt-3">

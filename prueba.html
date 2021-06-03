@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Efecto de zoom en una imagen y texto con CSS3</title>
 
+<head>
+    <title>Efecto de zoom en una imagen y texto con CSS3</title>
+    <style>
+        .efecto {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: 1s;
+        }
+
+        .efecto:hover {
+            transform: translateZ(-20%);
+        }
+    </style>
 </head>
- 
+
 <body>
-<h2>Efecto zoom</h2>
-<div style='text-align:center;'>
-</div>
+    <h2>Efecto zoom</h2>
+    <div style='text-align:center;'>
+
+
+        <div class="">12
+            <div class="efecto">
+                <img class="" src="images/home/linea_dulces.jpg" alt="">
+
+            </div>
+
+        </div>
+
+        <div class="carousel-item" data-interval="9000" style="background-image: url(images/finales/14.jpg);">
+            <img src="images/finales/15.png" class="d-block w-100 h-100"  alt="">
+        </div>
+    </div>
 </body>
+
 </html>
