@@ -101,6 +101,15 @@ p{
 .navbar-default.scrolled .navbar-brand {
     color: white !important;    
 }
+.navbar-default.scrolled .navbar-brand .img-navbar {
+    /* display: block; TODO 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("/images/logo4.png") no-repeat;
+    width: 130px;
+    height: auto;
+    padding-left: 130px; */
+}
 .navbar-default.scrolled .navbar-nav .nav-item .nav-link {
     color: white !important;
 }
