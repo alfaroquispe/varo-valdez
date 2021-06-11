@@ -10,9 +10,13 @@ window.onscroll = function (e){
     if(scroll > 50){
         var element = document.getElementById("active-border");
         element.classList.add("aqchange");
+        $("#logo").attr("src","/images/logo2.png");
+        $("#logo").attr("width","80");
     } else {
         var element = document.getElementById("active-border");
         element.classList.remove("aqchange");
+        $("#logo").attr("src","/images/logo3.png");
+        $("#logo").attr("width","115");
     }
 }
 

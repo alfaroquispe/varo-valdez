@@ -1,6 +1,10 @@
 /* #35B6B5 turquesa */
 /* #00c4ba turquesa2 */
 /* #152B46 cafe */
+/* #152B46 */
+
+
+
 p{
     line-height: 1.4;
 }
@@ -43,7 +47,6 @@ p{
 .fflst {
     font-family: LeagueSpartanT;
     letter-spacing: 0.03em;
-
 }
 
 
@@ -95,36 +98,28 @@ p{
     color: white !important;    
 }
 .navbar-default.scrolled {
-    background: #35B6B5 !important;
+    background: #152B46 !important;
     opacity: 0.9;
 }
 .navbar-default.scrolled .navbar-brand {
     color: white !important;    
 }
-.navbar-default.scrolled .navbar-brand .img-navbar {
-    /* display: block; TODO 
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: url("/images/logo4.png") no-repeat;
-    width: 130px;
-    height: auto;
-    padding-left: 130px; */
-}
+
 .navbar-default.scrolled .navbar-nav .nav-item .nav-link {
     color: white !important;
 }
 .navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-    background: #35B6B5 !important;
+    background: #152B46 !important;
     opacity: 1;
     color: white !important;
 }
 .navbar-default.scrolled .navbar-nav .nav-item .nav-link:hover {
     background-color: white !important;
-    color: #35B6B5 !important;
+    color: #152B46 !important;
 }
 .navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
     background-color: white !important;
-    color: #35B6B5 !important;
+    color: #152B46 !important;
 }
 .custom-toggler .navbar-toggler-icon {
     background-image: url("/images/toggle.svg") !important;
@@ -237,6 +232,7 @@ a {
 
 .aqhvup {
     color: transparent;
+    transition: transform .2s;
 }
 
 .aqhvup:hover div {
@@ -252,6 +248,9 @@ a {
     transition: 0.5s;
     /* opacity: 0.3; */
     opacity: 0.4;
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 
 .link3 {
@@ -356,6 +355,10 @@ a {
 
 .snyt:hover {
     background-image: url('./images/c_yt2png.png') !important;
+    transition: all .5s ease-in-out;
+}
+.snli:hover {
+    background-image: url('./images/c_li.png') !important;
     transition: all .5s ease-in-out;
 }
 
