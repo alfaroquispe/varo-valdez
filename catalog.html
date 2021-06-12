@@ -87,31 +87,26 @@
     <nav class="navbar navbar-default fixed-top navbar-expand-lg ">
         <div class="container-fluid">
 
-            <a class="navbar-brand d-flex align-items-end pb-0" href="index.html">
-                <img src="images/logo3.png" width="130" height="" class="d-inline-block align-top img-navbar" alt="" loading="lazy">
-                <!-- <h4 class="ml-2 fflst" style="line-height: 0.4;"> VARO VALDEZ</h4> -->
+            <a class="navbar-brand d-flex align-items-end py-0" href="index.html">
+                <img id="logo" src="images/logo3.png" width="115" height="" class="d-inline-block align-top img-navbar" alt="" loading="lazy">
             </a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse align-self-start" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto ffssb">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="about.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="">Nosotros</span>
                         </a>
                         <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="about.html" class="dropdown-item aqdropdown pt-2">Quienes Somos</a>
-                            <!-- <div class="dropdown-divider"></div> -->
-                            <a href="about.html#porpuse" class="dropdown-item aqdropdown">Propósito y Misión</a>
-                            <a href="about.html#growth" class="dropdown-item aqdropdown">Crecimiento y Estrategía</a>
-                            <a href="#" class="dropdown-item aqdropdown pb-1">Enfoque de Innovación</a>
+                            <a href="about.html#porpuse" class="dropdown-item aqdropdown">Misión</a>
+                            <a href="about.html#growth" class="dropdown-item aqdropdown">Visión</a>
                             <a href="#" class="dropdown-item aqdropdown pb-1">Valores</a>
-                            <a href="#" class="dropdown-item aqdropdown pb-1">Historia</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -120,20 +115,22 @@
                         </a>
                         <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="products_candies.html" class="dropdown-item aqdropdown pt-2">Dulces</a>
-                            <!-- <div class="dropdown-divider"></div> -->
                             <a href="products_cookies.html" class="dropdown-item aqdropdown">Galletas</a>
                             <a href="products_chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
                             <a href="products_snacks.html" class="dropdown-item aqdropdown pb-1">Snack's</a>
                         </div>
                     </li>
+                    <li class="nav-item" id="active-border">
+                        <a class="nav-link" href="#">Catálogo<span class="sr-only"></span></a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link"  id="active-border" >Catálogo<span class="sr-only"></span></a>
+                        <a class="nav-link" href="shopping_guide.html">Guía Compras<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="budget.html">Presupuesto<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contáctanos<span class="sr-only"></span></a>
+                        <a class="nav-link" href="mailto:ventas@varo-va.com">Contáctanos<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -141,7 +138,6 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
-                            <!-- <div class="dropdown-divider"></div> -->
                             <a href="b_article.html" class="dropdown-item aqdropdown pt-2">Ej. Artículo</a>
                         </div>
                     </li>
@@ -150,10 +146,19 @@
         </div>
     </nav>
     <!-- end component Navbar -->
-<div class="row mx-0 px-5" style="margin-top: 77px;">
-    <img class="px-5" width="100%" src="images/Catalogo.png" alt="">
+    <div class="row mx-0 px-5" style="margin-top: 77px;">
+        <img class="px-5" width="100%" src="images/Catalogo.png" alt="">
 
-</div>
+    </div>
+
+    <!-- begin component Chat -->
+    <div style="position: fixed; bottom: 20px;right: 20px;">
+        <a href="https://api.whatsapp.com/send?phone=+59169720118&text=Me gustaría obtener información en línea" target="_blank">
+
+            <img src="images/whatsapp.png" width="50" class="d-inline-block align-middle" alt="" loading="lazy">
+        </a>
+    </div>
+    <!-- end component Chat -->
 
     <!-- begin component Footer -->
     <footer>
@@ -161,9 +166,10 @@
 
             <div class="d-flex justify-content-end pb-3 pr-2" style="width: 100%;">
                 <div class="mt-3">
-                    <a class="m-2" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-                    <a class="m-2" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.linkedin.com/" target="_blanck"><img src="images/logo_li_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
                     <a class="ml-2" href="https://www.youtube.com/" target="_blanck"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
                 </div>
             </div>
 
@@ -176,7 +182,7 @@
                                 <img src="images/f_phone.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> +591 2 850851</span>
                             </div>
                             <div class="">
-                                <img src="images/f_email.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> info@varovaldez.com.bo</span>
+                                <img src="images/f_email.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> info@varo-va.com</span>
                             </div>
                             <div class="">
                                 <img src="images/f_horary.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> Lunes a Viernes: 9:00 a 20:00h</span>
@@ -220,10 +226,11 @@
             </div>
         </div>
         <div class="d-flex justify-content-center" style="background-color: #152B46;width: 100%;position: relative; color: white !important;">
-            <div class="mb-4">
+            <div class="mb-4 mt-2">
                 © 2017-2021 - C&CH Más Que Un Caramelo | Aviso Legal | Política de privacidad | Política de Cookies
             </div>
         </div>
+        <div id="active-border"></div>
     </footer>
     <!-- end component Footer -->
 

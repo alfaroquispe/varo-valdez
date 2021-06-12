@@ -69,31 +69,26 @@
     <nav class="navbar navbar-default fixed-top navbar-expand-lg ">
         <div class="container-fluid">
 
-            <a class="navbar-brand d-flex align-items-end pb-0" href="index.html">
-                <img src="images/logo3.png" width="130" height="" class="d-inline-block align-top img-navbar" alt="" loading="lazy">
-                <!-- <h4 class="ml-2 fflst" style="line-height: 0.4;"> VARO VALDEZ</h4> -->
+            <a class="navbar-brand d-flex align-items-end py-0" href="index.html">
+                <img id="logo" src="images/logo3.png" width="115" height="" class="d-inline-block align-top img-navbar" alt="" loading="lazy">
             </a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse align-self-start" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto ffssb">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="about.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="">Nosotros</span>
                         </a>
                         <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="about.html" class="dropdown-item aqdropdown pt-2">Quienes Somos</a>
-                            <!-- <div class="dropdown-divider"></div> -->
-                            <a href="about.html#porpuse" class="dropdown-item aqdropdown">Propósito y Misión</a>
-                            <a href="about.html#growth" class="dropdown-item aqdropdown">Crecimiento y Estrategía</a>
-                            <a href="#" class="dropdown-item aqdropdown pb-1">Enfoque de Innovación</a>
+                            <a href="about.html#porpuse" class="dropdown-item aqdropdown">Misión</a>
+                            <a href="about.html#growth" class="dropdown-item aqdropdown">Visión</a>
                             <a href="#" class="dropdown-item aqdropdown pb-1">Valores</a>
-                            <a href="#" class="dropdown-item aqdropdown pb-1">Historia</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -102,7 +97,6 @@
                         </a>
                         <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="products_candies.html" class="dropdown-item aqdropdown pt-2">Dulces</a>
-                            <!-- <div class="dropdown-divider"></div> -->
                             <a href="products_cookies.html" class="dropdown-item aqdropdown">Galletas</a>
                             <a href="products_chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
                             <a href="products_snacks.html" class="dropdown-item aqdropdown pb-1">Snack's</a>
@@ -111,11 +105,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="catalog.html">Catálogo<span class="sr-only"></span></a>
                     </li>
+                    <li class="nav-item" id="active-border">
+                        <a class="nav-link" href="#">Guía Compras<span class="sr-only"></span></a>
+                    </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="budget.html">Presupuesto<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contáctanos<span class="sr-only"></span></a>
+                        <a class="nav-link" href="mailto:ventas@varo-va.com">Contáctanos<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -123,7 +120,6 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
-                            <!-- <div class="dropdown-divider"></div> -->
                             <a href="b_article.html" class="dropdown-item aqdropdown pt-2">Ej. Artículo</a>
                         </div>
                     </li>
@@ -135,190 +131,188 @@
 
     <!-- begin component Content -->
     <div class="row mx-0">
-        <div class=" col-1  px-0"></div>
-        <div class="col-10 px-0 my-5" id="about" style="">
-            <div class="my-5">
-
-                <!-- begin shopping_guide -->
-                <div class="" style="position: relative;">
-                    <div class="" style="position: absolute;">
-                        <!-- <img width="100%" src="images/guia_de_compras.jpg" alt="" style="opacity: 0.6;object-fit: contain;"> -->
-                    </div>
-                </div>
-
-                <div class="" style="color: #152B46">
-                    <div class="text-center mb-2">
-                        <h2 class="fflst">GUÍA DE COMPRA</h2>
-                        <div class="ffhn mt-4" style="letter-spacing: normal !important;">
-                            <div class="pt-2" style="line-height: 0 !important;">
-                                <h4 class="mb-3" style="line-height: 1.1 !important;">Todo lo que necesitas saber para elegir el Producto Personalizado para tu empresa.</h4>
-                                <h4 class="mb-3" style="line-height: 1.1 !important;">Existen muchas opciones de Productos personalizados, variedad en: sabores, envasado y packaging.</h4>
-                                <h4 class="mb-3" style="line-height: 1.1 !important;">La variedad es amplia y es necesario conocer los aspectos más importantes que te van a permitir escoger el producto personalizado que más se adapta a tus necesidades y presupuesto.</h4>
-                                <h4 class="mb-3" style="line-height: 1.1 !important;">Esta guia esta creada para ayudarte a tomar la mejor decisión al comprar los productos personalizados que mejor se adaptan a tu presupuesto y a tus necesidades reales de promoción o publicitarias. Encuentra amplia información que te permitirá valorar las distintas opciones hasta elegir el tipo de caramelo publicitario adecuado a tu acción de marketing. </h4>
-                            </div>
+        <div class="row mx-0">
+            <div class="col-2 px-0"></div>
+            <div class="col-8 px-0 my-5" style="color: #152B46">
+                <div class="text-center mb-2 my-5">
+                    <h2 class="fflst">GUÍA DE COMPRA</h2>
+                    <div class="ffhn mt-4" style="letter-spacing: normal !important;">
+                        <div class="pt-2" style="line-height: 0 !important;">
+                            <h5 class="mb-3" style="line-height: 1.1 !important;">Todo lo que necesitas saber para elegir el Producto Personalizado para tu empresa.</h5>
+                            <h5 class="mb-3" style="line-height: 1.1 !important;">Existen muchas opciones de Productos personalizados, variedad en: sabores, envasado y packaging.</h5>
+                            <h5 class="mb-3" style="line-height: 1.1 !important;">La variedad es amplia y es necesario conocer los aspectos más importantes que te van a permitir escoger el producto personalizado que más se adapta a tus necesidades y presupuesto.</h5>
+                            <h5 class="mb-3" style="line-height: 1.1 !important;">Esta guia esta creada para ayudarte a tomar la mejor decisión al comprar los productos personalizados que mejor se adaptan a tu presupuesto y a tus necesidades reales de promoción o publicitarias. Encuentra amplia información que te permitirá valorar las distintas opciones hasta elegir el tipo de caramelo publicitario adecuado a tu acción de marketing. </h5>
                         </div>
                     </div>
                 </div>
-
-                <div class="row mx-0 mt-5">
-                    <div class="col-1 px-0 "></div>
-                    <div class="col-10 px-0 ">
-                        <!-- begin cajas lineas -->
-                        <div class="row mx-0">
-                            <div class="col-3 px-3 py-2 ">
-                                <a href="" class="text-decoration-none">
-                                    <div class="card" style="color: #35B6B5;">
-                                        <img width="100%" src="images/guide1.png" class="card-img-top" alt="...">
-                                        <div class="card-body px-0">
-                                            <h4 class="card-text text-center fflst">DULCES</h4>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-3 px-3 py-2 ">
-                                <a class="aa text-decoration-none" href="sg_chocolate.html">
-                                    <div class="card" style="color: #152B46;">
-                                        <img width="100%" src="images/guide2.png" class="card-img-top" alt="...">
-                                        <div class="card-body px-0 pb-0">
-                                            <h4 class=" card-text text-center fflst">CHOCOLATES</h4>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-3 px-3 py-2 ">
-                                <a class="aa text-decoration-none" href="sg_snacks.html">
-                                    <div class="card" style="color: #152B46;">
-                                        <img width="100%" src="images/guide3.png" class="card-img-top" alt="...">
-                                        <div class="card-body px-0 pb-0">
-                                            <h4 class="card-text text-center fflst">SNACK'S</h4>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-3 px-3 py-2 ">
-                                <a class="aa text-decoration-none" href="sg_galletas.html">
-
-                                    <div class="card" style="color: #152B46;">
-                                        <img width="100%" src="images/guide4.png" class="card-img-top" alt="...">
-                                        <div class="card-body px-0 pb-0">
-                                            <h4 class="card-text text-center fflst">GALLETAS</h4>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-                        <!-- end cajas lineas -->
-                    </div>
-                    <div class="col-1 px-0 "></div>
-                    <div class="col-12 px-0" style="color: #152B46;background-color:#f1f0f2;">
-
-                        <div class=" mt-4" style="">
-                            <!-- <div class=" mt-4" style="color: #152B46; background-color:#efedf3;"> -->
-                            <div class="fflst pt-5 text-center mb-2">
-                                <h2 class="">GUÍA DE COMPRA</h2>
-                                <h2 class="">DULCES PERSONALIZADOS</h2>
-                            </div>
-                            <div class="mx-auto" style="width: 10%; border-bottom: 3px solid #35B6B5;"></div>
-                        </div>
-
-                        <div class="row mx-0 mt-0">
-                            <div class="col-1 px-0 "></div>
-                            <div class="col-10 px-3 ">
-                                <div class=" mt-4 fflst">
-                                    <div class="text-center d-flex justify-content-center flex-wrap" style="color: #152B46 !important;">
-                                        <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
-                                            <h4 class="px-3 pb-0" style="line-height: 1;color: #35B6B5;">Características</h4>
-                                        </a>
-                                        <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
-                                            <h4 class="px-3 pb-0" style="line-height: 1;">Beneficios</h4>
-                                        </a>
-                                        <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
-                                            <h4 class="px-3 pb-0" style="line-height: 1;">Branding</h4>
-                                        </a>
-                                        <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
-                                            <h4 class="px-3 pb-0" style="line-height: 1;">Sabores y colores</h4>
-                                        </a>
-                                        <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
-                                            <h4 class="px-3 pb-0" style="line-height: 1;">Duro vs Blando</h4>
-                                        </a>
-                                        <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
-                                            <h4 class="px-3 pb-0" style="line-height: 1;">Personalización</h4>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="mt-4 d-inline-block ">
-                                    <div class="mt-2 row mx-0">
-                                        <p class="ffhn">
-                                            <img src="" alt="" style="float: left;background-color: #35B6B5;width: 44%; height: 60%; margin-right: 3rem;margin-bottom: 1rem;">
-                                            <span class="fflst" style="line-height: 1.5;font-size: 1.5rem;">Características</span>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Los caramelos personalizados son un tipo de artículo promocional muy utilizado como parte de las acciones publicitarias de una empresa. Habitualmente, los caramelos corporativos se personalizan con el logo de la empresa.</span>
-                                            <br>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Sin embargo, hoy en día es posible crear diseños adaptados a las necesidades de cada cliente. Siempre teniendo en cuenta que el espacio disponible para hacer el diseño es limitado.</span>
-                                            <br>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Con los caramelos personalizados podemos lograr una amplia difusión de la marca. Requieren de poca inversión, y a cambio conseguimos mucho alcance en términos de publicidad de la marca de una empresa.</span>
-                                            <br>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Los caramelos personalizados son un tipo de artículo promocional muy utilizado como parte de las acciones publicitarias de una empresa. Habitualmente, los caramelos corporativos se personalizan con el logo de la empresa.</span>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Con los caramelos personalizados podemos lograr una amplia difusión de la marca. Requieren de poca inversión, y a cambio conseguimos mucho alcance en términos de publicidad de la marca de una empresa.</span>
-                                        </p>
-                                    </div>
-                                    <div class=" row mx-0" style="margin-top: 8rem;padding-bottom: 7rem;">
-                                        <p class="ffhn">
-                                            <img src="" alt="" style="float: right;background-color: #35B6B5;width: 44%; height: 50%; margin-left: 3rem;margin-bottom: 1rem;">
-                                            <span class="fflst" style="line-height: 1.5;font-size: 1.5rem;">Beneficios</span>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Los caramelos personalizados son un tipo de artículo promocional muy utilizado como parte de las acciones publicitarias de una empresa. Habitualmente, los caramelos corporativos se personalizan con el logo de la empresa.</span>
-                                            <br>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Sin embargo, hoy en día es posible crear diseños adaptados a las necesidades de cada cliente. Siempre teniendo en cuenta que el espacio disponible para hacer el diseño es limitado.</span>
-                                            <br>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Con los caramelos personalizados podemos lograr una amplia difusión de la marca. Requieren de poca inversión, y a cambio conseguimos mucho alcance en términos de publicidad de la marca de una empresa.</span>
-                                            <br>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Los caramelos personalizados son un tipo de artículo promocional muy utilizado como parte de las acciones publicitarias de una empresa. Habitualmente, los caramelos corporativos se personalizan con el logo de la empresa.</span>
-                                            <!-- TODO TODO 2 fix  -->
-                                            <!-- <br>
-                                            <br>
-                                            <span style="font-size: 1.25rem;line-height: 1;">Con los caramelos personalizados podemos lograr una amplia difusión de la marca. Requieren de poca inversión, y a cambio conseguimos mucho alcance en términos de publicidad de la marca de una empresa.</span> -->
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <!--  -->
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-
             </div>
+            <div class="col-2 px-0"></div>
+
+        </div>
+        <div class="row mx-0" style="background-image: url('images/about/wallpaper.jpg');">
+            <div class="col-1 px-0"></div>
+            <div class="col-10 px-0 mb-5" id="about" style="">
+                <div class="mb-5">
+
+                    <!-- <div class="" style="position: relative;">
+                    <div class="" style="position: absolute;">
+                        <img width="100%" src="images/guia_de_compras.jpg" alt="" style="opacity: 0.6;object-fit: contain;">
+                    </div>
+                </div> -->
+
+                    <div class="row mx-0">
+                        <div class="col-1 px-0 "></div>
+                        <div class="col-10 px-0 ">
+
+                            <div class="row mx-0" style="margin-top:-4rem;">
+                                <div class="col-3 px-3 py-2 ">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="card" style="color: #35B6B5;background-color: transparent !important;">
+                                            <img style="width: 65% !important;" src="images/shopping_guide/i_blue_candie.png" class="card-img-top mx-auto" alt="...">
+                                            <div class="card-body px-0">
+                                                <h5 class="card-text text-center fflst">DULCES</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-3 px-3 py-2">
+                                    <a class="aa text-decoration-none" href="sg_chocolate.html">
+                                        <div class="card" style="color: #152B46;background-color: transparent !important;">
+                                            <img  style="width: 65% !important;" src="images/shopping_guide/i_green_cookie.png" class="card-img-top mx-auto" alt="...">
+                                            <div class="card-body px-0 pb-0">
+                                                <h5 class=" card-text text-center fflst">CHOCOLATES</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-3 px-3 py-2 ">
+                                    <a class="aa text-decoration-none" href="sg_snacks.html">
+                                        <div class="card" style="color: #152B46;background-color: transparent !important;">
+                                            <img  style="width: 65% !important;" src="images/shopping_guide/i_green_chocolate.png" class="card-img-top mx-auto" alt="...">
+                                            <div class="card-body px-0 pb-0">
+                                                <h5 class="card-text text-center fflst">SNACK'S</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-3 px-3 py-2 ">
+                                    <a class="aa text-decoration-none" href="sg_galletas.html">
+                                        <div class="card" style="color: #152B46;background-color: transparent !important;">
+                                            <img  style="width: 65% !important;" src="images/shopping_guide/i_green_snack.png" class="card-img-top mx-auto" alt="...">
+                                            <div class="card-body px-0 pb-0">
+                                                <h5 class="card-text text-center fflst">GALLETAS</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 px-0 "></div>
+                        <div class="col-12 px-0" style="color: #152B46;background-color:#fff;">
+
+                            <div class=" mt-4" style="">
+                                <div class="fflst pt-5 text-center mb-2">
+                                    <h3 class="">GUÍA DE COMPRA</h3>
+                                    <h3 class="">DULCES PERSONALIZADOS</h3>
+                                </div>
+                                <div class="mx-auto" style="width: 10%; border-bottom: 3px solid #35B6B5;"></div>
+                            </div>
+
+                            <div class="row mx-0 mt-0">
+                                <div class="col-1 px-0 "></div>
+                                <div class="col-10 px-3 ">
+                                    <div class=" mt-4 fflst">
+                                        <div class="text-center d-flex justify-content-center flex-wrap" style="color: #152B46 !important;">
+                                            <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
+                                                <h5 class="px-3 pb-0" style="line-height: 1;color: #35B6B5;">Características</h5>
+                                            </a>
+                                            <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
+                                                <h5 class="px-3 pb-0" style="line-height: 1;">Beneficios</h5>
+                                            </a>
+                                            <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
+                                                <h5 class="px-3 pb-0" style="line-height: 1;">Branding</h5>
+                                            </a>
+                                            <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
+                                                <h5 class="px-3 pb-0" style="line-height: 1;">Sabores y colores</h5>
+                                            </a>
+                                            <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
+                                                <h5 class="px-3 pb-0" style="line-height: 1;">Duro vs Blando</h5>
+                                            </a>
+                                            <a class="tex-decoration-none" style="color: #152B46 !important;" href="">
+                                                <h5 class="px-3 pb-0" style="line-height: 1;">Personalización</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4 d-inline-block ">
+                                        <div class="mt-2 row mx-0">
+                                            <p class="ffhn">
+                                                <img src="images/shopping_guide/duro_blando.jpg" alt="" style="float: left;background-color: #35B6B5;width: 44%; height: 60%; margin-right: 3rem;margin-bottom: 1rem;">
+                                                <span class="fflst" style="line-height: 1.5;font-size: 1.5rem;">Duro vs Blando</span>
+                                                <br>
+                                                <span style="font-size: 1.1rem;line-height: 1;">Los caramelos personalizados son un tipo de artículo promocional muy utilizado como parte de las acciones publicitarias de una empresa. Habitualmente, los caramelos corporativos se personalizan con el logo de la empresa.</span>
+                                                <br>
+                                                <br>
+                                                <span style="font-size: 1.1rem;line-height: 1;">Sin embargo, hoy en día es posible crear diseños adaptados a las necesidades de cada cliente. Siempre teniendo en cuenta que el espacio disponible para hacer el diseño es limitado.</span>
+                                                <br>
+                                                <br>
+                                                <span style="font-size: 1.1rem;line-height: 1;">Con los caramelos personalizados podemos lograr una amplia difusión de la marca. Requieren de poca inversión, y a cambio conseguimos mucho alcance en términos de publicidad de la marca de una empresa.</span>
+                                                <br>
+                                                <br>
+                                                <span style="font-size: 1.1rem;line-height: 1;">Los caramelos personalizados son un tipo de artículo promocional muy utilizado como parte de las acciones publicitarias de una empresa. Habitualmente, los caramelos corporativos se personalizan con el logo de la empresa.</span>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <span style="font-size: 1.1rem;line-height: 1;">Con los caramelos personalizados podemos lograr una amplia difusión de la marca. Requieren de poca inversión, y a cambio conseguimos mucho alcance en términos de publicidad de la marca de una empresa.</span>
+                                            </p>
+                                        </div>
+                                        <div class=" row mx-0 mt-5" style="padding-bottom: 6rem;">
+                                            <p class="ffhn">
+                                                <img src="images/shopping_guide/sabores_colores.jpg" alt="" style="float: right;background-color: #35B6B5;width: 44%; height: 50%; margin-left: 3rem;margin-bottom: 1rem;">
+                                                <span class="fflst" style="line-height: 1.5;font-size: 1.5rem;">Sabores y Colores</span>
+                                                <br>
+                                                <span style="font-size: 1.1rem;line-height: 1;">Los caramelos personalizados son un tipo de artículo promocional muy utilizado como parte de las acciones publicitarias de una empresa. Habitualmente, los caramelos corporativos se personalizan con el logo de la empresa.</span>
+                                                <br>
+                                                <br>
+                                                <span style="font-size: 1.1rem;line-height: 1;">Sin embargo, hoy en día es posible crear diseños adaptados a las necesidades de cada cliente. Siempre teniendo en cuenta que el espacio disponible para hacer el diseño es limitado.</span>
+                                                <br>
+                                                <br>
+                                                <span style="font-size: 1.1rem;line-height: 1;">Con los caramelos personalizados podemos lograr una amplia difusión de la marca. Requieren de poca inversión, y a cambio conseguimos mucho alcance en términos de publicidad de la marca de una empresa.</span>
+                                                <br>
+                                                <br>
+                                                <span style="font-size: 1.1rem;line-height: 1;">Los caramelos personalizados son un tipo de artículo promocional muy utilizado como parte de las acciones publicitarias de una empresa. Habitualmente, los caramelos corporativos se personalizan con el logo de la empresa.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-1 px-0"></div>
         </div>
 
-        <div class="col-1 px-0"></div>
+
+
     </div>
 
 
 
-    <!-- end component Content -->
-
     <!-- begin component Chat -->
-    <!-- <div style="position: fixed; bottom: 20px;right: 10px;">
-        <a class="mx-3 mb-3" href="" target="_blanck">
-            <img src="images/img_chat.png" width="70" class="d-inline-block align-middle" alt="" loading="lazy">
+    <div style="position: fixed; bottom: 20px;right: 20px;">
+        <a href="https://api.whatsapp.com/send?phone=+59169720118&text=Me gustaría obtener información en línea" target="_blank">
+
+            <img src="images/whatsapp.png" width="50" class="d-inline-block align-middle" alt="" loading="lazy">
         </a>
-    </div> -->
+    </div>
     <!-- end component Chat -->
 
     <!-- begin component Footer -->
@@ -327,9 +321,10 @@
 
             <div class="d-flex justify-content-end pb-3 pr-2" style="width: 100%;">
                 <div class="mt-3">
-                    <a class="m-2" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-                    <a class="m-2" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.linkedin.com/" target="_blanck"><img src="images/logo_li_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
                     <a class="ml-2" href="https://www.youtube.com/" target="_blanck"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
                 </div>
             </div>
 
@@ -342,7 +337,7 @@
                                 <img src="images/f_phone.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> +591 2 850851</span>
                             </div>
                             <div class="">
-                                <img src="images/f_email.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> info@varovaldez.com.bo</span>
+                                <img src="images/f_email.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> info@varo-va.com</span>
                             </div>
                             <div class="">
                                 <img src="images/f_horary.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> Lunes a Viernes: 9:00 a 20:00h</span>
@@ -386,7 +381,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center" style="background-color: #152B46;width: 100%;position: relative; color: white !important;">
-            <div class="mb-4">
+            <div class="mb-4 mt-2">
                 © 2017-2021 - C&CH Más Que Un Caramelo | Aviso Legal | Política de privacidad | Política de Cookies
             </div>
         </div>

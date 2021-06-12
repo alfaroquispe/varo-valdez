@@ -269,31 +269,6 @@ a {
     color: white;
 } */
 
-.aqhvsnfb:hover img {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    /* opacity: 0.3; */
-    background-image: url('images/c_fb.png');
-    opacity: 1;
-}
-.aqhvsnig:hover img {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    /* opacity: 0.3; */
-    background-image: url('images/c_ig.png');
-    /* opacity: 0.4; */
-}
-.aqhvsnyt:hover img {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    /* opacity: 0.3; */
-    background-image: url('images/c_yt.png');
-    /* opacity: 0.4; */
-}
-
 
 .bb {
     border: 1px solid black;
@@ -344,6 +319,16 @@ a {
     /* float: left; */
 }
 
+.sgconte {
+    position: relative;
+    min-height: 53px !important;
+    max-width: 65% !important;
+    min-width: 53px !important;
+    margin: 1px 8px 20px;
+    /* TODO revisar las redes sociales despues del parallax */
+    /* float: left; */
+}
+
 .snfb:hover {
     background-image: url('./images/c_fb2.png') !important;
     transition: all .5s ease-in-out;
@@ -360,6 +345,23 @@ a {
 }
 .snli:hover {
     background-image: url('./images/c_li.png') !important;
+    transition: all .5s ease-in-out;
+}
+
+.sgca:hover {
+    background-image: url('./images/shopping_guide/i_blue_candie.png') !important;
+    transition: all .5s ease-in-out;
+}
+.sgco:hover {
+    background-image: url('./images/shopping_guide/i_blue_cookie.png') !important;
+    transition: all .5s ease-in-out;
+}
+.sgch:hover {
+    background-image: url('./images/shopping_guide/i_blue_chocolate.png') !important;
+    transition: all .5s ease-in-out;
+}
+.sgsn:hover {
+    background-image: url('./images/shopping_guide/i_green_snack.png') !important;
     transition: all .5s ease-in-out;
 }
 
