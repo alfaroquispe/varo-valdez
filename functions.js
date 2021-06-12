@@ -12,11 +12,15 @@ window.onscroll = function (e){
         element.classList.add("aqchange");
         $("#logo").attr("src","images/logo2.png");
         $("#logo").attr("width","80");
+        var element = document.getElementById("navbarSupportedContent");
+        element.classList.remove("align-self-start");
     } else {
         var element = document.getElementById("active-border");
         element.classList.remove("aqchange");
         $("#logo").attr("src","images/logo3.png");
         $("#logo").attr("width","115");
+        var element = document.getElementById("navbarSupportedContent");
+        element.classList.add("align-self-start");
     }
 }
 
