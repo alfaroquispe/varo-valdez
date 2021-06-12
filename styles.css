@@ -123,7 +123,7 @@ p{
     color: #17304f !important;
 }
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("/images/toggle.svg") !important;
+    background-image: url("images/toggle.svg") !important;
 }
 .custom-toggler.navbar-toggler {
     border-color: rgb(255, 255, 255) !important;
