@@ -347,6 +347,10 @@ a {
     background-image: url('./images/c_li.png') !important;
     transition: all .5s ease-in-out;
 }
+.snti:hover {
+    background-image: url('./images/c_ti.png') !important;
+    transition: all .5s ease-in-out;
+}
 
 .sgca:hover {
     background-image: url('./images/shopping_guide/i_blue_candie.png') !important;

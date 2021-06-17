@@ -15,69 +15,162 @@
     <link rel="stylesheet" href="fonts/fonts.css">
 
     <style>
-        .files input {
-            outline: 2px dashed #92b0b3;
-            outline-offset: -10px;
-            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            padding: 160px 0px 20px 35px;
-            text-align: center !important;
-            margin-bottom: 1.5rem;
-            width: 100% !important;
+        .bookc {
+            transition: opacity 0.4s 0.2s;
         }
 
-        .files input:focus {
-            outline: 2px dashed #92b0b3;
-            outline-offset: -10px;
-            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            border: 1px solid #92b0b3;
-        }
-
-        .files {
-            position: relative
-        }
-
-        .files:after {
-            pointer-events: none;
-            position: absolute;
-            /* width: 80%; */
-            right: 0;
-            /* height: 56px; */
-            content: "Suelta la imagen aquí";
-            color: #eacbc8;
-            font-family: Spartan-Medium;
-            font-size: 1.7rem;
+        .pc {
+            margin-top: 8vw;
             text-align: center;
-            /* background-image: url('/images/drop.png'); */
-            /* display: block; */
-            /* margin: 0 auto; */
-            /* background-size: 100%;
-            background-repeat: no-repeat; */
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            /* border: 1px red solid; */
+            font-size: 5vw;
+            color: #000000;
         }
 
-        .color input {
-            background-color: #f1f1f1;
+        .pagec {
+            width: 30vw;
+            height: 37vw;
+            background-color: #111111;
+            float: left;
+            margin-bottom: 0.5em;
+            background: left top no-repeat;
+            background-size: cover;
         }
 
-        .form-group {
-            margin-bottom: 0.3rem;
-            font-family: HelveticaNeue;
+        .pagec:nth-child(even) {
+            clear: both;
         }
 
-        .form-control:focus {
-            border-color: rgb(93, 193, 185);
-            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
+        .bookc {
+            perspective: 250vw;
         }
 
-        .custom-select:focus {
-            border-color: rgb(93, 193, 185);
-            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
+        .bookc .pagesc {
+            width: 94vw;
+            height: 37vw;
+            position: relative;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            border-radius: 4px;
+            /* box-shadow: 0 0 0 1px #e3dfd8;
+             */
+        }
+
+        .bookc .pagec {
+            float: none;
+            clear: none;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            width: 47vw;
+            height: 37vw;
+            transform-origin: 0 0;
+            transition: transform 1.4s;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            user-select: none;
+            background-color: #f0f0f0;
+        }
+
+        .bookc .pagec:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.7s;
+            z-index: 2;
+        }
+
+        .bookc .pagec:nth-child(odd) {
+            pointer-events: all;
+            transform: rotateY(0deg);
+            right: 0;
+            border-radius: 0 4px 4px 0;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, 0) 10%);
+        }
+
+        .bookc .pagec:nth-child(odd):hover {
+            transform: rotateY(-15deg);
+        }
+
+        .bookc .pagec:nth-child(odd):hover:before {
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        .bookc .pagec:nth-child(odd):before {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .bookc .pagec:nth-child(even) {
+            pointer-events: none;
+            transform: rotateY(180deg);
+            transform-origin: 100% 0;
+            left: 0;
+            border-radius: 4px 0 0 4px;
+            border-color: black;
+            background-image: linear-gradient(to left, rgba(0, 0, 0, .12) 0%, rgba(0, 0, 0, 0) 10%);
+        }
+
+        .bookc .pagec:nth-child(even):before {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .bookc .pagec.grabbing {
+            transition: none;
+        }
+
+        .bookc .pagec.flippedc:nth-child(odd) {
+            pointer-events: none;
+            transform: rotateY(-180deg);
+        }
+
+        .bookc .pagec.flippedc:nth-child(odd):before {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .bookc .pagec.flippedc:nth-child(even) {
+            pointer-events: all;
+            transform: rotateY(0deg);
+        }
+
+        .bookc .pagec.flippedc:nth-child(even):hover {
+            transform: rotateY(15deg);
+        }
+
+        .bookc .pagec.flippedc:nth-child(even):hover:before {
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        .bookc .pagec.flippedc:nth-child(even):before {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        *,
+        * :before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+        .bodyc {
+            background-image: url('images/about/wallpaper.jpg');
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .bodyc {
+            min-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em 0;
+            line-height: 1.5em;
+        }
+
+        .pagec:nth-child(odd) {
+            background-position: right top;
         }
     </style>
 </head>
@@ -98,16 +191,8 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="about.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="">Nosotros</span>
-                        </a>
-                        <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
-                            <a href="about.html" class="dropdown-item aqdropdown pt-2">Quienes Somos</a>
-                            <a href="about.html#porpuse" class="dropdown-item aqdropdown">Misión</a>
-                            <a href="about.html#growth" class="dropdown-item aqdropdown">Visión</a>
-                            <a href="#" class="dropdown-item aqdropdown pb-1">Valores</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -121,21 +206,19 @@
                         </div>
                     </li>
                     <li class="nav-item" id="active-border">
-                        <a class="nav-link" href="#">Catálogo<span class="sr-only"></span></a>
+                        <a class="nav-link" href="#">Catálogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="shopping_guide.html">Guía Compras<span class="sr-only"></span></a>
+                        <a class="nav-link" href="shopping_guide.html">Guía Compras</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="budget.html">Presupuesto<span class="sr-only"></span></a>
+                        <a class="nav-link" href="budget.html">Presupuesto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mailto:ventas@varo-va.com">Contáctanos<span class="sr-only"></span></a>
+                        <a class="nav-link" href="mailto:ventas@varo-va.com">Contáctanos</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="">Blog</span>
-                        </a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
                         <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
                             <a href="b_article.html" class="dropdown-item aqdropdown pt-2">Ej. Artículo</a>
@@ -146,15 +229,33 @@
         </div>
     </nav>
     <!-- end component Navbar -->
-    <div class="row mx-0 px-5" style="margin-top: 77px;">
+    <!-- <div class="row mx-0 px-5" style="margin-top: 77px;">
         <img class="px-5" width="100%" src="images/Catalogo.png" alt="">
+    </div> -->
 
+    <!-- Catalog -->
+    <div class="bodyc mb-5" style="margin-top: 6rem;">
+        <div class="bookc">
+            <div id="pagesc" class="pagesc">
+                <div class="pagec"> <img width="100%" src="images/catalogo/A.jpg" alt=""></div>
+                <div class="pagec"> <img width="100%" src="images/catalogo/B.jpg" alt=""></div>
+                <div class="pagec"> <img width="100%" src="images/catalogo/C.jpg" alt=""></div>
+                <div class="pagec"> <img width="100%" src="images/catalogo/D.jpg" alt=""></div>
+                <div class="pagec"> <img width="100%" src="images/catalogo/E.jpg" alt=""></div>
+                <div class="pagec"> <img width="100%" src="images/catalogo/F.jpg" alt=""></div>
+                <div class="pagec"> <img width="100%" src="images/catalogo/G.jpg" alt=""></div>
+                <div class="pagec"> <img width="100%" src="images/catalogo/H.jpg" alt=""></div>
+                <div class="pagec"> <img width="100%" src="images/catalogo/I.jpg" alt=""></div>
+                <div class="pagec d-flex align-items-center justify-content-center"> <img width="65%" src="images/logo3.png" alt=""></div>
+            </div>
+        </div>
     </div>
 
-    <!-- begin component Chat -->
-    <div style="position: fixed; bottom: 20px;right: 20px;">
-        <a href="https://api.whatsapp.com/send?phone=+59169720118&text=Me gustaría obtener información en línea" target="_blank">
 
+
+    <!-- begin component Chat -->
+    <div style="position: fixed; bottom: 35px;right: 35px; z-index: 10;">
+        <a href="https://api.whatsapp.com/send?phone=+59169720118&text=Me gustaría obtener información en línea" target="_blank">
             <img src="images/whatsapp.png" width="50" class="d-inline-block align-middle" alt="" loading="lazy">
         </a>
     </div>
@@ -239,7 +340,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
     <script src="functions.js"></script>
-    <script></script>
+    <script>
+        var pagesc = document.getElementsByClassName('pagec');
+        for (var i = 0; i < pagesc.length; i++) {
+            var pagec = pagesc[i];
+            if (i % 2 === 0) {
+                pagec.style.zIndex = (pagesc.length - i);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            for (var i = 0; i < pagesc.length; i++) {
+                //Or var page = pages[i];
+                pagesc[i].pageNum = i + 1;
+                pagesc[i].onclick = function () {
+                    if (this.pageNum % 2 === 0) {
+                        this.classList.remove('flippedc');
+                        this.previousElementSibling.classList.remove('flippedc');
+                    }
+                    else {
+                        this.classList.add('flippedc');
+                        this.nextElementSibling.classList.add('flippedc');
+                    }
+                }
+            }
+        })
+    </script>
 
 </body>
 

@@ -3,76 +3,211 @@
 
 <head>
     <title>Efecto de zoom en una imagen y texto con CSS3</title>
+    <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
+
     <style>
-        .efecto {
-            width: 100px;
-            height: 100px;
-            background: red;
-            transition: 1s;
+        .bookc {
+            transition: opacity 0.4s 0.2s;
         }
 
-        .efecto:hover {
-            transform: translateZ(-20%);
+        .pc {
+            margin-top: 8vw;
+            text-align: center;
+            font-size: 5vw;
+            color: #000000;
+        }
+
+        .pagec {
+            width: 30vw;
+            height: 44vw;
+            background-color: red;
+            float: left;
+            margin-bottom: 0.5em;
+            background: left top no-repeat;
+            background-size: cover;
+        }
+
+        .pagec:nth-child(even) {
+            clear: both;
+        }
+
+        .bookc {
+            perspective: 250vw;
+        }
+
+        .bookc .pagesc {
+            width: 90vw;
+            height: 39vw;
+            position: relative;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            border-radius: 4px;
+            /* box-shadow: 0 0 0 1px #e3dfd8;
+             */
+        }
+
+        .bookc .pagec {
+            float: none;
+            clear: none;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            width: 45vw;
+            height: 39vw;
+            transform-origin: 0 0;
+            transition: transform 1.4s;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            user-select: none;
+            background-color: #f0f0f0;
+        }
+
+        .bookc .pagec:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 150, 250, 1);
+            transition: background 0.7s;
+            z-index: 2;
+        }
+
+        .bookc .pagec:nth-child(odd) {
+            pointer-events: all;
+            transform: rotateY(0deg);
+            right: 0;
+            border-radius: 0 4px 4px 0;
+            background-image: linear-gradient(to right, rgba(150, 15, 150, .85) 0%, rgba(0, 0, 0, 0) 10%);
+        }
+
+        .bookc .pagec:nth-child(odd):hover {
+            transform: rotateY(-15deg);
+        }
+
+        .bookc .pagec:nth-child(odd):hover:before {
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        .bookc .pagec:nth-child(odd):before {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .bookc .pagec:nth-child(even) {
+            pointer-events: none;
+            transform: rotateY(180deg);
+            transform-origin: 100% 0;
+            left: 0;
+            border-radius: 4px 0 0 4px;
+            border-color: black;
+            background-image: linear-gradient(to left, rgba(0, 0, 0, .82) 0%, rgba(0, 0, 0, 0) 10%);
+        }
+
+        .bookc .pagec:nth-child(even):before {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .bookc .pagec.grabbing {
+            transition: none;
+        }
+
+        .bookc .pagec.flippedc:nth-child(odd) {
+            pointer-events: none;
+            transform: rotateY(-180deg);
+        }
+
+        .bookc .pagec.flippedc:nth-child(odd):before {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .bookc .pagec.flippedc:nth-child(even) {
+            pointer-events: all;
+            transform: rotateY(0deg);
+        }
+
+        .bookc .pagec.flippedc:nth-child(even):hover {
+            transform: rotateY(15deg);
+        }
+
+        .bookc .pagec.flippedc:nth-child(even):hover:before {
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        .bookc .pagec.flippedc:nth-child(even):before {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        *,
+        * :before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+        .bodyc {
+            background: #333;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .bodyc {
+            min-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em 0;
+            line-height: 1.5em;
+        }
+
+        .pagec:nth-child(odd) {
+            background-position: right top;
         }
     </style>
 </head>
 
 <body>
-    <h2>Efecto zoom</h2>
-    <div style='text-align:center;'>
-
-
-        <!-- <div class="">12
-            <div class="efecto">
-                <img class="" src="images/home/linea_dulces.jpg" alt="">
-
-            </div>
-
-        </div> -->
-
-        <div class="col-12 px-0" style="background-image: url('images/about/wallpaper.jpg');">
-            <div class="row mx-0">
-                <div class="col-3 px-0"></div>
-                <div class=" col-6 px-0">
-                    <div class=" row mx-0" style="color: #152B46;">
-                        <div class="sgconte text-center" style="width: 25%;">
-                            <div class="" style="width: 65%; height: 100px; min-width: 50px; background-image: url('images/shopping_guide/i_blue_candie.png'); transform: translate(0,-50%);-ms-transform: translate(0,-50%)">
-                            </div>
-                            <h5 class=" fflst" style="transform: translate(0,-150%);-ms-transform: translate(0,-150%)">DULCES</h5>
-                        </div>
-                        <div class=" text-center" style="width: 25%;">
-                            <div class="sgco" style="width: 65%; min-width: 50px; background-image: url('images/shopping_guide/i_green_cookie.png'); transform: translate(0,-50%);-ms-transform: translate(0,-50%)">
-                            </div>
-                            <h5 class=" fflst" style="transform: translate(0,-150%);-ms-transform: translate(0,-150%)">DULCES</h5>
-                        </div>
-                        <div class=" text-center" style="width: 25%;">
-                            <div class="" style="transform: translate(0,-50%);-ms-transform: translate(0,-50%)">
-                                <img width="65%" src="images/shopping_guide/i_green_cookie.png" alt="">
-                            </div>
-                            <h5 class=" fflst" style="transform: translate(0,-150%);-ms-transform: translate(0,-150%)">GALLETAS</h5>
-                        </div>
-                        <div class=" text-center" style="width: 25%;">
-                            <div class="" style="transform: translate(0,-50%);-ms-transform: translate(0,-50%)">
-                                <img width="65%" src="images/shopping_guide/i_green_chocolate.png" alt="">
-                            </div>
-                            <h5 class=" fflst" style="transform: translate(0,-150%);-ms-transform: translate(0,-150%)">CHOCOLATES</h5>
-                        </div>
-                        <div class=" text-center" style="width: 25%;">
-                            <div class="" style="transform: translate(0,-50%);-ms-transform: translate(0,-50%)">
-                                <img width="65%" src="images/shopping_guide/i_green_snack.png" alt="">
-                            </div>
-                            <h5 class=" fflst" style="transform: translate(0,-150%);-ms-transform: translate(0,-150%)">SNACK'S</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 px-0"></div>
-            </div>
-        </div>
-
-        <div class="carousel-item" data-interval="9000" style="background-image: url(images/finales/14.jpg);">
-            <img src="images/finales/15.png" class="d-block w-100 h-100"  alt="">
+    <div class="bookc bodyc">
+        <div id="pagesc" class="pagesc">
+            <div class="pagec"> <img width="100%" src="images/catalogo/A.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/B.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/A.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/B.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/C.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/D.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/E.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/F.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/G.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/H.jpg" alt=""></div>
+            <div class="pagec"> <img width="100%" src="images/catalogo/I.jpg" alt=""></div>            
         </div>
     </div>
+    <script>
+        var pagesc = document.getElementsByClassName('pagec');
+        for (var i = 0; i < pagesc.length; i++) {
+            var pagec = pagesc[i];
+            if (i % 2 === 0) {
+                pagec.style.zIndex = (pagesc.length - i);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            for (var i = 0; i < pagesc.length; i++) {
+                //Or var page = pages[i];
+                pagesc[i].pageNum = i + 1;
+                pagesc[i].onclick = function () {
+                    if (this.pageNum % 2 === 0) {
+                        this.classList.remove('flippedc');
+                        this.previousElementSibling.classList.remove('flippedc');
+                    }
+                    else {
+                        this.classList.add('flippedc');
+                        this.nextElementSibling.classList.add('flippedc');
+                    }
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
