@@ -5,189 +5,34 @@
     <title>Efecto de zoom en una imagen y texto con CSS3</title>
     <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
 
-    <style>
-        .bookc {
-            transition: opacity 0.4s 0.2s;
-        }
-
-        .pc {
-            margin-top: 8vw;
-            text-align: center;
-            font-size: 5vw;
-            color: #000000;
-        }
-
-        .pagec {
-            width: 30vw;
-            height: 44vw;
-            background-color: red;
-            float: left;
-            margin-bottom: 0.5em;
-            background: left top no-repeat;
-            background-size: cover;
-        }
-
-        .pagec:nth-child(even) {
-            clear: both;
-        }
-
-        .bookc {
-            perspective: 250vw;
-        }
-
-        .bookc .pagesc {
-            width: 90vw;
-            height: 39vw;
-            position: relative;
-            transform-style: preserve-3d;
-            backface-visibility: hidden;
-            border-radius: 4px;
-            /* box-shadow: 0 0 0 1px #e3dfd8;
-             */
-        }
-
-        .bookc .pagec {
-            float: none;
-            clear: none;
-            margin: 0;
-            position: absolute;
-            top: 0;
-            width: 45vw;
-            height: 39vw;
-            transform-origin: 0 0;
-            transition: transform 1.4s;
-            backface-visibility: hidden;
-            transform-style: preserve-3d;
-            cursor: pointer;
-            user-select: none;
-            background-color: #f0f0f0;
-        }
-
-        .bookc .pagec:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 150, 250, 1);
-            transition: background 0.7s;
-            z-index: 2;
-        }
-
-        .bookc .pagec:nth-child(odd) {
-            pointer-events: all;
-            transform: rotateY(0deg);
-            right: 0;
-            border-radius: 0 4px 4px 0;
-            background-image: linear-gradient(to right, rgba(150, 15, 150, .85) 0%, rgba(0, 0, 0, 0) 10%);
-        }
-
-        .bookc .pagec:nth-child(odd):hover {
-            transform: rotateY(-15deg);
-        }
-
-        .bookc .pagec:nth-child(odd):hover:before {
-            background: rgba(0, 0, 0, 0.03);
-        }
-
-        .bookc .pagec:nth-child(odd):before {
-            background: rgba(0, 0, 0, 0);
-        }
-
-        .bookc .pagec:nth-child(even) {
-            pointer-events: none;
-            transform: rotateY(180deg);
-            transform-origin: 100% 0;
-            left: 0;
-            border-radius: 4px 0 0 4px;
-            border-color: black;
-            background-image: linear-gradient(to left, rgba(0, 0, 0, .82) 0%, rgba(0, 0, 0, 0) 10%);
-        }
-
-        .bookc .pagec:nth-child(even):before {
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        .bookc .pagec.grabbing {
-            transition: none;
-        }
-
-        .bookc .pagec.flippedc:nth-child(odd) {
-            pointer-events: none;
-            transform: rotateY(-180deg);
-        }
-
-        .bookc .pagec.flippedc:nth-child(odd):before {
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        .bookc .pagec.flippedc:nth-child(even) {
-            pointer-events: all;
-            transform: rotateY(0deg);
-        }
-
-        .bookc .pagec.flippedc:nth-child(even):hover {
-            transform: rotateY(15deg);
-        }
-
-        .bookc .pagec.flippedc:nth-child(even):hover:before {
-            background: rgba(0, 0, 0, 0.03);
-        }
-
-        .bookc .pagec.flippedc:nth-child(even):before {
-            background: rgba(0, 0, 0, 0);
-        }
-
-        *,
-        * :before,
-        *:after {
-            box-sizing: border-box;
-        }
-
-
-        .bodyc {
-            background: #333;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-
-        .bodyc {
-            min-height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2em 0;
-            line-height: 1.5em;
-        }
-
-        .pagec:nth-child(odd) {
-            background-position: right top;
-        }
-    </style>
+   
 </head>
 
 <body>
-    <div class="bookc bodyc">
-        <div id="pagesc" class="pagesc">
-            <div class="pagec"> <img width="100%" src="images/catalogo/A.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/B.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/A.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/B.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/C.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/D.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/E.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/F.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/G.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/H.jpg" alt=""></div>
-            <div class="pagec"> <img width="100%" src="images/catalogo/I.jpg" alt=""></div>            
+    <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+          </div>
         </div>
-    </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+          </div>
+        </div>
+      </div>
     <script>
         var pagesc = document.getElementsByClassName('pagec');
         for (var i = 0; i < pagesc.length; i++) {
-            var pagec = pagesc[i];
+            var page = pagesc[i];
             if (i % 2 === 0) {
-                pagec.style.zIndex = (pagesc.length - i);
+                page.style.zIndex = (pagesc.length - i);
             }
         }
 

@@ -330,7 +330,7 @@ a {
 }
 
 .snfb:hover {
-    background-image: url('./images/c_fb2.png') !important;
+    background-image: url('./images/c_fb.png') !important;
     transition: all .5s ease-in-out;
 }
 
@@ -340,7 +340,7 @@ a {
 }
 
 .snyt:hover {
-    background-image: url('./images/c_yt2png.png') !important;
+    background-image: url('./images/c_yt.png') !important;
     transition: all .5s ease-in-out;
 }
 .snli:hover {

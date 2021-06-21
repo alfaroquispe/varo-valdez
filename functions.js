@@ -10,15 +10,15 @@ window.onscroll = function (e){
     if(scroll > 50){
         var element = document.getElementById("active-border");
         element.classList.add("aqchange");
-        $("#logo").attr("src","images/logo2.png");
-        $("#logo").attr("width","80");
+        $("#logo").attr("src","images/logo_varo-va_neg.png");
+        $("#logo").attr("width","120");
         var element = document.getElementById("navbarSupportedContent");
         element.classList.remove("align-self-start");
     } else {
         var element = document.getElementById("active-border");
         element.classList.remove("aqchange");
-        $("#logo").attr("src","images/logo3.png");
-        $("#logo").attr("width","115");
+        $("#logo").attr("src","images/logo_varo-va_pos.png");
+        $("#logo").attr("width","145");
         var element = document.getElementById("navbarSupportedContent");
         element.classList.add("align-self-start");
     }
