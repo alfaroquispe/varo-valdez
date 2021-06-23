@@ -247,11 +247,10 @@ a {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-    /* opacity: 0.3; */
     opacity: 0.4;
+    transform: scale(1.1); 
     -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
 }
 
 .link3 {
