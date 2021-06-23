@@ -1,0 +1,21 @@
+#1
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:varo-va.com
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?varo-va.com
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:varo-va.com
+
+#2
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:varo-va.com
+#RewriteEngine on
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP_HOST} (www\.)?varo-va.com
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteRule ^/ /index.html [L]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:varo-va.com
+
+
+
+# google-site-verification=ofhGNBbwyijvl_EGMLydGHGNJCFwC5XCHtQhP_FvcO0
+# https://search.google.com/search-console?resource_id=https%3A%2F%2Fwww.varo-va.com%2F

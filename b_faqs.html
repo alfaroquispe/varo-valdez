@@ -1,65 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dulces Personalizados a Pedido Varo Valdez</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas frecuentes | Dulces Personalizados a Pedido - Varo Valdez</title>
+
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap-4.5.2/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/fonts.css">
 
-    <!-- <link rel="Shortcut Icon" href="ce_pharma.ico" type="image/x-icon"/> -->
-
     <style>
-        .carousel-control-next-icon {
-            background-image: url("images/arrow_right_white.png") !important;
-            width: 1.5rem;
-            height: 3rem;
-            margin-right: -4.0rem !important;
-            /* top: -20px !important; */
-
+        .files input {
+            outline: 2px dashed #92b0b3;
+            outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            padding: 160px 0px 20px 35px;
+            text-align: center !important;
+            margin-bottom: 1.5rem;
+            width: 100% !important;
         }
 
-        .carousel-control-prev-icon {
-            background-image: url("images/arrow_left_white.png") !important;
-            width: 1.5rem;
-            height: 3rem;
-            margin-left: -4.0rem !important;
-            /* width: 40px !important;
-    height: 92px !important; */
+        .files input:focus {
+            outline: 2px dashed #92b0b3;
+            outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            border: 1px solid #92b0b3;
         }
 
-        .carousel-control-prev {
-            opacity: 0.5;
+        .files {
+            position: relative
         }
 
-        .carousel-control-next {
-            opacity: 0.5;
+        .files:after {
+            pointer-events: none;
+            position: absolute;
+            /* width: 80%; */
+            right: 0;
+            /* height: 56px; */
+            content: "Suelta la imagen aquí";
+            color: #eacbc8;
+            font-family: Spartan-Medium;
+            font-size: 1.7rem;
+            text-align: center;
+            /* background-image: url('/images/drop.png'); */
+            /* display: block; */
+            /* margin: 0 auto; */
+            /* background-size: 100%;
+            background-repeat: no-repeat; */
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            /* border: 1px red solid; */
         }
 
-
-        .carouselExampleFade .carousel-inner .carousel-item img {
-            height: 100vh;
-            width: 100%;
+        .color input {
+            background-color: #f1f1f1;
         }
 
-        .carousel-inner .carousel-item>img {
-            /* animation-name: thing; */
-            -webkit-animation: thing 13s;
-            -o-animation: thing 13s;
-            animation: thing 13s;
+        .form-group {
+            margin-bottom: 0.3rem;
+            font-family: HelveticaNeue;
         }
 
-        @keyframes thing {
-            from {
-                transform: scale(1);
-            }
+        .form-control:focus {
+            border-color: rgb(93, 193, 185);
+            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
+        }
 
+        .custom-select:focus {
+            border-color: rgb(93, 193, 185);
+            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
+        }
+
+        video::-webkit-media-controls-panel {
+            background-image: linear-gradient(transparent, #00c4ba) !important;
+        }
+
+        /*  */
+        .slide-right {
+            /* overflow: hidden; */
+            /* padding-top: 1rem; */
+        }
+
+        .slide-right div {
+            animation: 1s slide-right 1.5s forwards;
+            transform: translateX(-8%);
+            opacity: 0;
+            -webkit-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+        }
+
+        @keyframes slide-right {
             to {
-                transform: scale(1.05, 1.05);
+                transform: translateX(0);
+                opacity: 1;
             }
+        }
+
+        .slide-right1 div {
+            animation: 2s slide-right1 2.5s forwards;
+            transform: translateX(20%);
+            opacity: 0;
+            -webkit-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+        }
+
+        @keyframes slide-right1 {
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+
+
+        .btn.focus,
+        .btn:focus {
+            outline: 0;
+            box-shadow: none !important;
+            color: white !important;
+            background-color: #152B46 !important;
         }
     </style>
 </head>
@@ -69,32 +136,19 @@
     <nav class="navbar navbar-default fixed-top navbar-expand-lg ">
         <div class="container-fluid">
 
-            <a class="navbar-brand d-flex align-items-end pb-0" href="index.html">
-                <img src="images/logo3.png" width="130" height="" class="d-inline-block align-top img-navbar" alt="" loading="lazy">
-                <!-- <h4 class="ml-2 fflst" style="line-height: 0.4;"> VARO VALDEZ</h4> -->
+            <a class="navbar-brand d-flex align-items-end py-0" href="index.html">
+                <img id="logo" src="images/logo_varo-va_pos.png" width="145" height="" class="d-inline-block align-top img-navbar mt-1" alt="" loading="lazy">
             </a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse align-self-start" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto ffssb">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="">Nosotros</span>
-                        </a>
-                        <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
-                            <a href="about.html" class="dropdown-item aqdropdown pt-2">Quienes Somos</a>
-                            <!-- <div class="dropdown-divider"></div> -->
-                            <a href="about.html#porpuse" class="dropdown-item aqdropdown">Propósito y Misión</a>
-                            <a href="about.html#growth" class="dropdown-item aqdropdown">Crecimiento y Estrategía</a>
-                            <a href="#" class="dropdown-item aqdropdown pb-1">Enfoque de Innovación</a>
-                            <a href="#" class="dropdown-item aqdropdown pb-1">Valores</a>
-                            <a href="#" class="dropdown-item aqdropdown pb-1">Historia</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -102,28 +156,27 @@
                         </a>
                         <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="products_candies.html" class="dropdown-item aqdropdown pt-2">Dulces</a>
-                            <!-- <div class="dropdown-divider"></div> -->
                             <a href="products_cookies.html" class="dropdown-item aqdropdown">Galletas</a>
                             <a href="products_chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
-                            <a href="products_snacks.html" class="dropdown-item aqdropdown pb-1">Snack's</a>
+                            <a href="products_snacks.html" class="dropdown-item aqdropdown pb-1">Snacks</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="catalog.html">Catálogo<span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="budget.html">Presupuesto<span class="sr-only"></span></a>
+                        <a class="nav-link" href="catalog.html">Catálogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contáctanos<span class="sr-only"></span></a>
+                        <a class="nav-link" href="shopping_guide_ca.html">Guía Compras</a>
                     </li>
-                    <li class="nav-item dropdown" id="active-border">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="">Blog</span>
-                        </a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="budget.html">Presupuesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:ventas@varo-va.com">Contáctanos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
                         <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
-                            <!-- <div class="dropdown-divider"></div> -->
                             <a href="b_article.html" class="dropdown-item aqdropdown pt-2">Ej. Artículo</a>
                         </div>
                     </li>
@@ -133,38 +186,281 @@
     </nav>
     <!-- end component Navbar -->
 
-    <div class="row mx-0">
-        <div class="col-12 px-0" style="margin-top: 8rem;">
-          <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
-            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
-          </div>
+    <!-- <div class="" style="position: relative;">
+        <div class="bb" style="position: absolute ;">
+            <img width="100%" height="100%" src="images/faqs2.jpg" alt="" style="opacity: 0.5;object-fit: contain;">
         </div>
-        <div class="col-12">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">a</div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">..b.</div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">..c.</div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">.d..</div>
-          </div>
-        </div>
-      </div>
-
-    <!-- begin component Content -->
-    
-
-    
-    <!-- end component Content -->
-
-    <!-- begin component Chat -->
-    <!-- <div style="position: fixed; bottom: 20px;right: 10px;">
-        <a class="mx-3 mb-3" href="" target="_blanck">
-            <img src="images/img_chat.png" width="70" class="d-inline-block align-middle" alt="" loading="lazy">
-        </a>
     </div> -->
+
+    <div class=" row mx-0" style="">
+
+        <div class="col-12 px-0" id="about">
+
+            <!-- begin about -->
+            <div class=" row mx-0" style="">
+                <div class="col-12 px-0" style="background-color: #70b6b6;">
+                    <div class="row mx-0">
+                        <div class="col-2 px-0"></div>
+                        <div class="col-8 px-0">
+                            <div class="" style="margin: 9rem 0;">
+                                <div class="" style="">
+                                    <div class="text-center fflst mt-2" style="color: white;font-size: 3.5rem; line-height: 1.15;letter-spacing: 3px;">
+                                        Preguntas frecuentes
+                                    </div>
+                                    <div class="text-center ffhn mt-1" style="color: #152B46;">
+                                        <h2>¿Como podemos ayudarte?</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 px-0"></div>
+                    </div>
+                </div>
+                <!-- end about -->
+
+            </div>
+
+            <div class="row mx-0">
+                <div class="col-12 px-0" style="background-image: url('images/about/wallpaper.jpg');">
+                    <div class="row mx-0" style="padding-bottom: 4rem;">
+                        <div class="col-2 px-0"></div>
+                        <div class="col-8 px-0" style="background-color: white;margin-top: -5rem;">
+                            <div class="row mx-0 mb-4">
+                                <div class="col-1 px-0"></div>
+                                <div class="col-10 px-0 py-5 pb-4">
+
+                                    <div class="accordion" id="accordionfaqs">
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingOne">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Qué es VaroVa?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    VaroVa es una empresa que promueve productos en empaques personalizados como un medio promocional corporativo, con el fin de crear soluciones creativas y novedosas para una publicidad de alta efectividad.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingTwo">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Qué es un producto personalizado?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    Es un producto diseñado con las especificaciones que usted requiera, la personalización es la individualización de productos o servicios a través de la interacción personal entre una empresa y sus clientes, estos productos aportarán a tu marca la publicidad y la notoriedad que está buscando.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingThree">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Qué productos ofrece VaroVa?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    VaroVa ofrece, variedad de dulces, chocolates, galletas y snacks, todos estos productos aptos para ser diseñados y personalizados de la manera que más le guste.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingFour">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Por qué personalizar un caramelo?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    <p>Ofrecer un dulce promocional no solamente contribuye a fortalecer la marca, sino que también favorece momentos de lealtad con clientes y colegas, disminuye los momentos de tensión laboral y es un medio de acercamiento a clientes potenciales.</p>
+                                                    <p>Las empresas y compañías que utilizan artículos promocionales, aumentan sus ventas entre un 5 y 15% e incrementan entre un 10 y 30 % el retorno de la inversión en marketing. La personalización representa casi un 20% del volumen de negocio para muchas empresas.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingFive">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Cuáles son los pasos a seguir para adquirir los productos personalizados?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    <p>1.- Comunícate con un asesor de ventas, éste te ayudará a definir los detalles de tu producto personalizado.</p>
+                                                    <p>2.- Envíanos tu logo.</p>
+                                                    <p>3.- Elige el diseño que representará tu marca.</p>
+                                                    <p>4.- Espera por tu pedido.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingSix">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Dónde puedes contactarnos?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    Te puedes comunicar con nuestro asesor de ventas a través de las distintas plataformas de WhatsApp, Facebook, Instagram que te mostramos en la sección de contactos o llamar al +591 77510105.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingSeven">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿En qué formato debo enviar las fotos del logo?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    Los formatos que más se ajustan son Ai (editable), JPG y PNG, siendo 3 MB el peso máximo.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingEigth">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseEigth" aria-expanded="true" aria-controls="collapseEigth">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Cuánto es el pedido mínimo?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseEigth" class="collapse" aria-labelledby="headingEigth" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    El pedido mínimo es de 40kg. de producto para el caso de dulces.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingNine">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿A cuántos colores puedo imprimir?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    Se puede escoger hasta tres colores, pero sin considerar colores extras.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingTen">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Envíos a todo el país?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    Así es, se realizan envíos a todo el País con previa coordinación.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingEleven">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Cuáles son las modalidades de pago?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    Se realiza el pago parcial del 50% al inicio de la elaboración de su producto y el restante 50% al tiempo de entregar el producto. Los medios de pago son en Efectivo, Pago por Cheque y Transferencia Bancaria.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingTwelve">
+                                                <h2 class="mb-0 fflst">
+                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                                                        <div class="px-2">
+                                                            <img src="images/arrow_right_green.png" alt="" width="13">
+                                                        </div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Qué sistemas de impresión utilizamos?</div>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div style="border-bottom: 2px solid #70b6b6;" id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionfaqs">
+                                                <div class="card-body pl-4 px-1">
+                                                    Se utiliza como sistema de impresión la Flexografía. La flexografía es una técnica de impresión que utiliza una la placa flexible con relieve. La placa flexible o cliché, es de un material capaz de adaptarse a una cantidad de soportes o sustratos de impresión muy variados.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class=" col-1 px-0"></div>
+                            </div>
+                        </div>
+                        <div class="col-2 px-0"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- begin component Chat -->
+    <div style="position: fixed; bottom: 35px;right: 35px; z-index: 10;">
+        <a href="https://api.whatsapp.com/send?phone=+59169720118&text=Me gustaría obtener información en línea" target="_blank">
+
+            <img src="images/whatsapp.png" width="50" class="d-inline-block align-middle" alt="" loading="lazy">
+        </a>
+    </div>
     <!-- end component Chat -->
+
 
     <!-- begin component Footer -->
     <footer>
@@ -172,10 +468,11 @@
 
             <div class="d-flex justify-content-end pb-3 pr-2" style="width: 100%;">
                 <div class="mt-3">
-                    <a class="m-1" href="https://www.instagram.com/" target="_blanck"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-                    <a class="m-1" href="https://www.linkedin.com/" target="_blanck"><img src="images/logo_li_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-                    <a class="ml-2" href="https://www.youtube.com/" target="_blanck"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-                    <a class="m-1" href="https://www.facebook.com/" target="_blanck"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.tiktok.com/@varo_va" target="_blanck" title="tiktok"><img src="images/logo_ti_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.instagram.com/_varo_va/" target="_blanck" title="instagram"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.linkedin.com/in/varo-valdez-1a1baa214" target="_blanck" title="linkedin"><img src="images/logo_li_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="ml-2" href="https://www.youtube.com/channel/UCIBdUDhvqwiR6EXMPjM840Q" target="_blanck" title="youtube"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.facebook.com/profile.php?id=100069576066925" target="_blanck" title="facebook"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
                 </div>
             </div>
 
@@ -185,20 +482,27 @@
                         <div class="ffsbo">CONTACTO</div>
                         <div class=" d-flex align-items-start flex-column">
                             <div class="">
-                                <img src="images/f_phone.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> +591 2 850851</span>
+                                <img src="images/f_phone.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> +591 77510105</span>
                             </div>
                             <div class="">
                                 <img src="images/f_email.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> info@varo-va.com</span>
                             </div>
-                            <div class="">
+                            <!-- <div class="">
                                 <img src="images/f_horary.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> Lunes a Viernes: 9:00 a 20:00h</span>
-                            </div>
+                            </div> -->
                             <div class="d-flex align-items-start">
                                 <div class=" h-100 d-flex align-items-center mr-1">
                                     <img src="images/f_address.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy">
                                 </div>
                                 <div class="">
-                                    <div class="" style="line-height: 1.2;">Av. Montes entre Pando y Bozo Edificio Torre Dimar Nro. 640 La Paz - Bolivia</div>
+                                    <div class="" style="line-height: 1.2;">
+                                    <div>
+                                        Miraflores, Av. Busch Esquina Haíti Nro. 1159
+                                    </div>
+                                    <div>
+                                        La Paz - Bolivia
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +516,7 @@
                             </div>
                             <div><a class="text-decoration-none text-light " href="products_chocolates.html"><span class="folihv">Chocolates</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light " href="products_snacks.html"><span class="folihv">Snack's</span></a>
+                            <div><a class="text-decoration-none text-light " href="products_snacks.html"><span class="folihv">Snacks</span></a>
                             </div>
                         </div>
                     </div>
@@ -220,11 +524,11 @@
                         <h5> </h5>
                         <div class=" w-100 d-flex align-items-end flex-column">
                             <div>
-                                <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">De quése trata</span></a>
+                                <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">¿De qué se trata?</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light" href="about.html"><span class="folihv">Nuestra historia</span></a>
+                            <div><a class="text-decoration-none text-light" href="about.html"><span class="folihv">¿Quiénes somos?</span></a>
                             </div>
-                            <div class="mb-3"><a class="text-decoration-none text-light " href="b_faqs.html"><span class="folihv">Preguntas más frecuentes</span></a>
+                            <div class="mb-3"><a class="text-decoration-none text-light " href="b_faqs.html"><span class="folihv">Preguntas Frecuentes</span></a>
                             </div>
                         </div>
                     </div>
@@ -233,7 +537,7 @@
         </div>
         <div class="d-flex justify-content-center" style="background-color: #152B46;width: 100%;position: relative; color: white !important;">
             <div class="mb-4 mt-2">
-                © 2017-2021 - C&CH Más Que Un Caramelo | Aviso Legal | Política de privacidad | Política de Cookies
+                © Varova - Productos Personalizados
             </div>
         </div>
         <div id="active-border"></div>
@@ -243,9 +547,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
     <script src="functions.js"></script>
+
     <script>
+        // window.onscroll = function (e) {  
+        // var element = document.getElementById("active-border");
+        // element.classList.add("aqchange");
+        // }
+
+
     </script>
 
 </body>
