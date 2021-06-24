@@ -14,79 +14,8 @@
     <link rel="stylesheet" href="fonts/fonts.css">
 
     <style>
-        .files input {
-            outline: 2px dashed #92b0b3;
-            outline-offset: -10px;
-            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            padding: 160px 0px 20px 35px;
-            text-align: center !important;
-            margin-bottom: 1.5rem;
-            width: 100% !important;
-        }
-
-        .files input:focus {
-            outline: 2px dashed #92b0b3;
-            outline-offset: -10px;
-            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            border: 1px solid #92b0b3;
-        }
-
-        .files {
-            position: relative
-        }
-
-        .files:after {
-            pointer-events: none;
-            position: absolute;
-            /* width: 80%; */
-            right: 0;
-            /* height: 56px; */
-            content: "Suelta la imagen aquí";
-            color: #eacbc8;
-            font-family: Spartan-Medium;
-            font-size: 1.7rem;
-            text-align: center;
-            /* background-image: url('/images/drop.png'); */
-            /* display: block; */
-            /* margin: 0 auto; */
-            /* background-size: 100%;
-            background-repeat: no-repeat; */
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            /* border: 1px red solid; */
-        }
-
-        .color input {
-            background-color: #f1f1f1;
-        }
-
-        .form-group {
-            margin-bottom: 0.3rem;
-            font-family: HelveticaNeue;
-        }
-
-        .form-control:focus {
-            border-color: rgb(93, 193, 185);
-            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
-        }
-
-        .custom-select:focus {
-            border-color: rgb(93, 193, 185);
-            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
-        }
-
         video::-webkit-media-controls-panel {
             background-image: linear-gradient(transparent, #00c4ba) !important;
-        }
-
-        /*  */
-        .slide-right {
-            /* overflow: hidden; */
-            /* padding-top: 1rem; */
         }
 
         .slide-right div {
@@ -176,44 +105,43 @@
     </nav>
     <!-- end component Navbar -->
 
-    <div class=" row mx-0">
-        <div class="col-12 px-0" id="about">
+    <div class="row mx-0">
+        <div class="col-12 px-0">
 
             <!-- begin about -->
-            <div class=" row mx-0" style="position: relative;">
-                <img width="100%" src="images/about/background.jpg" alt="">
-                <div class="col-12 px-0 fflst" style="position: absolute;right: 50%;bottom: 50%;transform: translate(50%, 50%);-ms-transform: translate(50%, 50%);">
-                    <div class="row mx-0">
-                        <div class="col-2 px-0"></div>
-                        <div class="col-8 px-0 align-self-center">
-                            <div class="" style="width: 60%;color: #152B46;">
-                                <div class="slide-right" style="font-size: 3.0rem; line-height: 1.15;letter-spacing: 3px;">
-                                    <div>
-                                        ¿Quienes
+            <div class="row mx-0">
+                <div class="bb col-12 px-0 fflst aqpadnav" style="position: relative;">
+                    <img width="100%" src="images/about/background.jpg" alt="">
+                    <div class="br row mx-0 aqposimgabo">
+                        <div class="col-0 col-md-2 px-0"></div>
+                        <div class=" col-12 col-md-8 px-0 align-self-center">
+                            <div class="pl-2" style="width: 65%;color: #152B46;">
+                                    <div class="slide-right" style="line-height: 1.15;letter-spacing: 3px;">
+                                        <h1>
+                                            ¿Quienes
+                                        </h1>
+                                        <h1 style="margin-top: -1.2rem;margin-left: 20%;">
+                                            somos?
+                                        </h1>
                                     </div>
-                                    <div style="margin-top: -1.2rem;margin-left: 20%;">
-                                        somos?
+                                    <div class="slide-right1 ffhn mt-4 mr-5" style="color:#152B46;">
+                                        <div>
+                                            <h4 style="line-height: 1.05;">Somos apasionados por el posicionamiento de tu marca, situandonos como el medio corporativo, innovando con un enfoque exclusivo a las necesidades del cliente.</h4>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="slide-right1 ffhn mt-4 mr-5" style="color:#152B46;">
-                                    <div>
-                                        <h4 style="line-height: 1.05;">Somos apasionados por el posicionamiento de tu marca, situandonos como el medio corporativo, innovando con un enfoque exclusivo a las necesidades del cliente.</h4>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="col-2 px-0"></div>
+                        <div class="col-0 col-md-2 px-0"></div>
                     </div>
                 </div>
-                <!-- end about -->
-
-                           </div>
+            </div>
+            <!-- end about -->
 
             <div class="row mx-0">
                 <div class="col-12 px-0" style="background-image: url('images/about/wallpaper.jpg');">
                     <div class="row mx-0" style="padding-bottom: 4rem;">
                         <div class="col-2 px-0"></div>
-                        <div class="col-8 px-0" style="background-color: white;margin-top: -4.5rem;">
+                        <div class="col-8 px-0 aqmarneg" style="background-color: white;">
                             <div class="row mx-0">
                                 <div class=" col-1 px-0"></div>
                                 <div class="col-10 px-5 pt-5 pb-4">
@@ -325,9 +253,9 @@
 
     <!-- begin component Footer -->
     <footer>
-        <div id="footer" class="pb-3 px-4" style="position: relative; background-color: #35B6B5; color: white !important;">
+        <div id="footer" class="pb-3 px-2 px-lg-4" style="position: relative; background-color: #35B6B5; color: white !important;">
 
-            <div class="d-flex justify-content-end pb-3 pr-2" style="width: 100%;">
+            <div class="d-flex justify-content-end py-2 pr-2" style="width: 100%;">
                 <div class="mt-3">
                     <a class="m-1" href="https://www.tiktok.com/@varo_va" target="_blanck" title="tiktok"><img src="images/logo_ti_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
                     <a class="m-1" href="https://www.instagram.com/_varo_va/" target="_blanck" title="instagram"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
@@ -337,11 +265,11 @@
                 </div>
             </div>
 
-            <div class=" mb-3 px-2">
-                <div class="row mx-0 mb-2">
-                    <div class=" col-4 px-0 d-flex align-items-start flex-column ">
+            <div class="px-2">
+                <div class="row mx-0">
+                    <div class="col-12 col-sm-6 col-md-4 px-0 py-3 d-flex align-items-start flex-column border-sm-bottom">
                         <div class="ffsbo">CONTACTO</div>
-                        <div class=" d-flex align-items-start flex-column">
+                        <div class=" d-md-flex align-items-start flex-column">
                             <div class="">
                                 <img src="images/f_phone.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> +591 77510105</span>
                             </div>
@@ -357,20 +285,20 @@
                                 </div>
                                 <div class="">
                                     <div class="" style="line-height: 1.2;">
-                                    <div>
-                                        Miraflores, Av. Busch Esquina Haíti Nro. 1159
+                                        <div>
+                                            Miraflores, Av. Busch Esquina Haíti Nro. 1159
+                                        </div>
+                                        <div>
+                                            La Paz - Bolivia
+                                        </div>
                                     </div>
-                                    <div>
-                                        La Paz - Bolivia
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" col-4 px-0 d-flex align-items-center flex-column ">
+                    <div class="col-12 col-sm-6 col-md-4 px-0 py-3 d-flex align-items-sm-end align-items-md-center flex-column border-sm-bottom">
                         <div class="ffsbo">PRODUCTOS</div>
-                        <div class=" d-flex align-items-center flex-column">
+                        <div class=" d-flex align-items-sm-end align-items-md-center flex-column">
                             <div><a class="text-decoration-none text-light" href="products_candies.html"><span class="folihv">Dulces</span></a>
                             </div>
                             <div><a class="text-decoration-none text-light" href="products_cookies.html"><span class="folihv">Galletas</span></a>
@@ -381,13 +309,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-4 px-0 d-flex align-items-end">
+                    <div class="col-12 col-sm-6 col-md-4 m-sm-auto px-0 py-3 d-flex align-items-sm-center">
                         <h5> </h5>
-                        <div class=" w-100 d-flex align-items-end flex-column">
+                        <div class="w-100 d-flex align-items-sm-center align-items-md-end flex-column">
                             <div>
                                 <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">¿De qué se trata?</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light" href="about.html"><span class="folihv">¿Quiénes somos?</span></a>
+                            <div>
+                                <a class="text-decoration-none text-light" href="about.html"><span class="folihv">¿Quiénes somos?</span></a>
                             </div>
                             <div class="mb-3"><a class="text-decoration-none text-light " href="b_faqs.html"><span class="folihv">Preguntas Frecuentes</span></a>
                             </div>
@@ -401,7 +330,6 @@
                 © Varova - Productos Personalizados
             </div>
         </div>
-        <div id="active-border"></div>
     </footer>
     <!-- end component Footer -->
 

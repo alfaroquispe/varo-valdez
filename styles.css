@@ -449,17 +449,59 @@ a {
     border-radius: 0% !important;
 }
 
+h1{
+    font-size: 2rem !important;
+}
+h4{
+    font-size: 1rem !important;
+}
+
+.aqpadnav{
+    /* padding-top: 60px; ABOUT ESTABA CON DIV O H1 3REM*/
+}
+
+.aqposimgabo{
+    padding-top: 200px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(0,0);
+    /*transform: translate(50%, 100%);
+    -ms-transform: translate(50%, 50%); */
+}
+
+.aqmarneg{
+    margin-top: 3.5rem;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) { 
+
+    .aqposimgabo{
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        -ms-transform: translate(50%, 50%);
+    }
+ }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+    .aqmarneg{
+        margin-top: -3.5rem;
+    }
+    /* .aqpadnav{
+        padding-top: 0px;
+    } */
+ }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
+
+}
