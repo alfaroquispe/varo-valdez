@@ -18,7 +18,7 @@ window.onscroll = function (e){
         var element = document.getElementById("active-border");
         element.classList.remove("aqchange");
         $("#logo").attr("src","images/logo_varo-va_pos.png");
-        $("#logo").attr("width","145");
+            $("#logo").attr("width","145");
         var element = document.getElementById("navbarSupportedContent");
         element.classList.add("align-self-start");
     }

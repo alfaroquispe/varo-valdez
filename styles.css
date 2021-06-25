@@ -174,7 +174,7 @@ p{
 } */
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 #carrusel {
@@ -277,43 +277,32 @@ a {
     border: 1px solid red;
 }
 
-.aa:hover:after {
-    left: 0;
-}
-.aa {
+.aqunllin{
     position: relative;
     overflow: hidden;
     display: inline-block;
-    text-decoration: none;
-    /* color: #00a7b5; */
 }
-
-.aa:after {
+.aqunllin:hover:after {
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+.aqunllin:after {
     content: "";
     position: absolute;
     bottom: -2px;
-    left: -100%;
-    width: 100%;
+    right: 50%;
+    left: 50%;
+    width: 0;
     height: 4px;
     background: #152B46;
-    transition: left .2s;
+    transition: all .2s;
 }
 
 
 .contenedor {
-    position: relative;
-    height: 50px !important;
-    width: 50px !important;
-    margin: 1px 8px 20px;
-    /* TODO revisar las redes sociales despues del parallax */
-    /* float: left; */
-}
-
-.contenedor1 {
-    position: relative;
-    height: 53px !important;
-    width: 53px !important;
-    margin: 1px 8px 20px;
+    position: relative;    
+    margin: 1px 4px 0px;
     /* TODO revisar las redes sociales despues del parallax */
     /* float: left; */
 }
@@ -327,7 +316,39 @@ a {
     /* TODO revisar las redes sociales despues del parallax */
     /* float: left; */
 }
+.snicwd {
+    width: 43px;
+    height: 43px;
+    background-size: cover;
+}
+.snicwd2 {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
 
+.snfb {
+    background-image: url('./images/w_fb.png') !important;
+    transition: all .5s ease-in-out;
+}
+
+.snig {
+    background-image: url('./images/w_ig.png') !important;
+    transition: all .5s ease-in-out;
+}
+
+.snyt {
+    background-image: url('./images/w_yt.png') !important;
+    transition: all .5s ease-in-out;
+}
+.snli {
+    background-image: url('./images/w_li.png') !important;
+    transition: all .5s ease-in-out;
+}
+.snti {
+    background-image: url('./images/w_ti.png') !important;
+    transition: all .5s ease-in-out;
+}
 .snfb:hover {
     background-image: url('./images/c_fb.png') !important;
     transition: all .5s ease-in-out;
@@ -452,8 +473,12 @@ a {
 h1{
     font-size: 2rem !important;
 }
-h4{
+h5{
     font-size: 1rem !important;
+}
+
+.aqlogwid{
+    width: 145px;
 }
 
 .aqpadnav{
@@ -461,12 +486,19 @@ h4{
 }
 
 .aqposimgabo{
-    padding-top: 200px;
     position: absolute;
     bottom: 0;
-    transform: translate(0,0);
+    color: #152B46;
     /*transform: translate(50%, 100%);
     -ms-transform: translate(50%, 50%); */
+}
+
+.aqwhois{
+    width: 80%;
+}
+
+.aqmarleftit{
+    padding-left: 1.5rem;
 }
 
 .aqmarneg{
@@ -477,28 +509,60 @@ h4{
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
+    
+    .aqwhois {
+        width: 70%;
+        margin-bottom: 1.5rem;
+    }
+    .aqposicoabo{
+        transform: translate(-50%,0%);
+        -ms-transform: translate(-50%,0);
+    }
 
+    .aqmarleftit{
+        padding-left: 0rem;
+    }
+
+    .snicwd {
+        width: 53px;
+        height: 53px;
+        background-size: cover;
+    }
+    .snicwd2 {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    .contenedor {  
+        margin: 1px 8px 20px;
+    }
+    
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    h5 {
+        font-size: 1.25rem !important;
+    } 
     .aqposimgabo{
+        width: 100%;
         position: absolute;
         right: 50%;
         bottom: 50%;
         transform: translate(50%, 50%);
         -ms-transform: translate(50%, 50%);
     }
- }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
     .aqmarneg{
         margin-top: -3.5rem;
     }
-    /* .aqpadnav{
-        padding-top: 0px;
-    } */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
