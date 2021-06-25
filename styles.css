@@ -126,11 +126,11 @@ p{
     background-image: url("images/toggle.svg") !important;
 }
 .custom-toggler.navbar-toggler {
-    border-color: rgb(255, 255, 255) !important;
+    border-color: #3cbabd !important;
 }
 .navbar-toggler:focus {
     /* text-decoration: none !important; */
-    border: 2px solid #17304f !important;
+    border: 2px solid #3cbabd !important;
 }
 
 #active-border {
@@ -281,6 +281,7 @@ a {
     position: relative;
     overflow: hidden;
     display: inline-block;
+    color: #152B46;
 }
 .aqunllin:hover:after {
     right: 0;
