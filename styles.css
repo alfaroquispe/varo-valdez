@@ -83,7 +83,8 @@ p{
 }
 
 /* navbar */
-.navbar-default {            
+.navbar-default {
+    /* background-color: rgb(255, 255, 255, 30%) !important;      TODO para que sea 305blanco en lo transparente    */
     transition: 1s ease !important;
     /* background: white !important; */
 }
@@ -98,8 +99,16 @@ p{
     background-color: #17304f!important;
     color: white !important;    
 }
-.navbar-default.scrolled {
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    background-color: rgb(255, 255, 255, 30%) !important;
+}
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
     background: #17304f !important;
+}
+
+.navbar-default.scrolled {
+    background:#17304f !important;
     opacity: 0.9;
 }
 .navbar-default.scrolled .navbar-brand {
@@ -116,6 +125,7 @@ p{
 }
 .navbar-default.scrolled .navbar-nav .nav-item .nav-link:hover {
     background-color: white !important;
+    opacity: 8;
     color: #17304f !important;
 }
 .navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
@@ -148,16 +158,14 @@ p{
     color: white !important;
 }
 
-
 /* .navbar-brand {
     color: blue !important;    
 }
 .navbar-nav .nav-item .nav-link {
     color: blue !important;
+
 }
-.navbar-nav .nav-item .dropdown-menu .dropdown-item {
-    color: white !important;
-} */
+
 
 /* .parallax { */
     /* The image used */
@@ -474,6 +482,11 @@ a {
 h1{
     font-size: 2rem !important;
 }
+
+h4{
+    font-size: 1.25rem !important;
+}
+
 h5{
     font-size: 1rem !important;
 }
@@ -511,6 +524,8 @@ h5{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+
+    
     
     .aqwhois {
         width: 70%;
@@ -544,7 +559,10 @@ h5{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     h1 {
-        font-size: 2.5rem !important;
+        font-size: 2.25rem !important;
+    }
+    h4 {
+        font-size: 1.5rem !important;
     }
     h5 {
         font-size: 1.25rem !important;
