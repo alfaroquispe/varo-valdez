@@ -16,6 +16,22 @@ p{
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+.animatedchatbot {
+    border-radius: 25px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+    padding: 0.75rem;
+    background: rgb(40, 138, 138);
+    background: radial-gradient(circle, rgba(53, 182, 181, .30) 0, transparent 100%);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    /* animation-delay: 6s; */
+}
   
 .fast {
     -webkit-animation-duration: 0.5s;
@@ -33,9 +49,23 @@ p{
       opacity: 1;
     }
 }
+
+@keyframes fadeInchatbot {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
   
 .fadeIn {
     animation-name: fadeIn;
+}
+
+.fadeInchatbot {
+    animation-name: fadeInchatbot;
 }
 
 .ffhn {
@@ -519,13 +549,15 @@ h5{
     margin-top: 3.5rem;
 }
 
+.aqborpro{
+    border: #35B6B5 3px solid;
+    border-top: none;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-    
+@media (min-width: 576px) {    
     
     .aqwhois {
         width: 70%;
@@ -553,6 +585,10 @@ h5{
     .contenedor {  
         margin: 1px 8px 20px;
     }
+    .aqborpro{
+        border-top: #35B6B5 3px solid;
+        border-left: none;
+    }
     
  }
 
@@ -578,10 +614,17 @@ h5{
     .aqmarneg{
         margin-top: -3.5rem;
     }
+    
+    .animatedchatbot img {
+        width: 87px !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    .animatedchatbot img {
+        width: 100px !important;
+    }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
