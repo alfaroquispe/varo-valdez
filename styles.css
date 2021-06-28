@@ -23,13 +23,13 @@ p{
     right: 0px;
     z-index: 10;
     padding: 0.75rem;
-    background: rgb(40, 138, 138);
-    background: radial-gradient(circle, rgba(53, 182, 181, .30) 0, transparent 100%);
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, .30) 0, transparent 100%);
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    animation-delay: 1s;
+    animation-delay: 5s;
     /* animation-delay: 6s; */
 }
   
@@ -553,6 +553,27 @@ h5{
     border: #35B6B5 3px solid;
     border-top: none;
 }
+.aqborproleftop{
+    border-top: #35B6B5 3px solid;
+}
+.aqleastborprorigbot{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 60%;
+    border:#35B6B5 3px solid;
+    border-bottom: none;
+    z-index: -10;
+}
+.aqsizesel{
+    width: 12px;
+    height: 12px;
+    border-radius: 7px;
+}
+.aqpxchabox{
+    padding: 1px 0.25rem;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
@@ -588,6 +609,17 @@ h5{
     .aqborpro{
         border-top: #35B6B5 3px solid;
         border-left: none;
+    }
+    .aqborproleftop{
+        border-top: none;
+        border-left: #35B6B5 3px solid;
+    }
+    .aqleastborprorigbot{
+        top: 0;
+        border:#35B6B5 3px solid;
+        border-right: none !important;
+        height: 100%;
+        width: 66%;
     }
     
  }
@@ -625,9 +657,23 @@ h5{
     .animatedchatbot img {
         width: 100px !important;
     }
+    
+    .aqsizesel{
+        width: 14px;
+        height: 14px;        
+        border-radius: 9px;
+    }
+    .aqpxchabox{
+        padding: 1px 0.37rem;
+    }
+    .aqpyprotex{
+        padding: 2rem 0 !important;
+    }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-
+    .aqpyprotex{
+        padding: 2.5rem 0 !important;
+    }
 }

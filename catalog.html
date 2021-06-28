@@ -79,6 +79,10 @@
             right: 0;
             background: rgba(0, 0, 0, 0);
             transition: background 0.7s;
+            -webkit-transition: background 0.7s;
+            -ms-transition: background 0.7s;
+            -moz-transition: background 0.7s;
+            -o-transition: background 0.7s;
             z-index: 2;
         }
 
@@ -92,7 +96,19 @@
 
         .bookc .pagec:nth-child(odd):hover {
             transform: rotateY(-15deg);
+            -webkit-transform: rotateY(-15deg);
+            -ms-transform: rotateY(-15deg);
+            -o-transform: rotateY(-15deg);
         }
+
+        /* Carlos */
+        /* .bookc .pagec.flippedc:nth-child(odd):hover {
+            transform: rotateY(-15deg);
+            -webkit-transform: rotateY(-15deg);
+            -ms-transform: rotateY(-15deg);
+            -o-transform: rotateY(-15deg);
+        } */
+        /* Carlos */
 
         .bookc .pagec:nth-child(odd):hover:before {
             background: rgba(0, 0, 0, 0.03);
@@ -105,6 +121,9 @@
         .bookc .pagec:nth-child(even) {
             pointer-events: none;
             transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
             transform-origin: 100% 0;
             left: 0;
             border-radius: 4px 0 0 4px;
@@ -123,6 +142,9 @@
         .bookc .pagec.flippedc:nth-child(odd) {
             pointer-events: none;
             transform: rotateY(-180deg);
+            -webkit-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
         }
 
         .bookc .pagec.flippedc:nth-child(odd):before {
@@ -132,10 +154,16 @@
         .bookc .pagec.flippedc:nth-child(even) {
             pointer-events: all;
             transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg);
         }
 
         .bookc .pagec.flippedc:nth-child(even):hover {
             transform: rotateY(15deg);
+            -webkit-transform: rotateY(15deg);
+            -ms-transform: rotateY(15deg);
+            -o-transform: rotateY(15deg);
         }
 
         .bookc .pagec.flippedc:nth-child(even):hover:before {
