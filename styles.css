@@ -29,8 +29,11 @@ p{
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    animation-delay: 5s;
     /* animation-delay: 6s; */
+}
+
+.aqfadebot {
+    animation-delay: 5s;
 }
   
 .fast {
@@ -618,7 +621,7 @@ h5{
         top: 0;
         border:#35B6B5 3px solid;
         border-right: none !important;
-        height: 100%;
+        height: 100% !important;
         width: 66%;
     }
     
