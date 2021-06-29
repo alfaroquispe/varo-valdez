@@ -577,6 +577,12 @@ h5{
 .aqpxchabox{
     padding: 1px 0.25rem;
 }
+
+.aqimgsg{
+    width: 100%;
+    height: auto;
+
+}
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
@@ -623,6 +629,12 @@ h5{
         border-right: none !important;
         height: 100% !important;
         width: 66%;
+    }
+    .aqimgsg{
+        float: left;
+        width: 44%;
+        height: auto;
+    
     }
     
  }

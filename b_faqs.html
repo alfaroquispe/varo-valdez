@@ -2,125 +2,16 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="lang" content="es-ES" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas frecuentes | Dulces Personalizados a Pedido - Varo Valdez</title>
+    <title>Preguntas Frecuentes | Productos Personalizados y Regalos Corporativos a pedido - VAROVA</title>
+    <meta name="description" content="Te respondemos todas las preguntas que te haces al momento de elegir un producto personalizado o un regalo corporativo" />
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="bootstrap-4.5.2/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-
     <style>
-        .files input {
-            outline: 2px dashed #92b0b3;
-            outline-offset: -10px;
-            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            padding: 160px 0px 20px 35px;
-            text-align: center !important;
-            margin-bottom: 1.5rem;
-            width: 100% !important;
-        }
-
-        .files input:focus {
-            outline: 2px dashed #92b0b3;
-            outline-offset: -10px;
-            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            transition: outline-offset .15s ease-in-out, background-color .15s linear;
-            border: 1px solid #92b0b3;
-        }
-
-        .files {
-            position: relative
-        }
-
-        .files:after {
-            pointer-events: none;
-            position: absolute;
-            /* width: 80%; */
-            right: 0;
-            /* height: 56px; */
-            content: "Suelta la imagen aquí";
-            color: #eacbc8;
-            font-family: Spartan-Medium;
-            font-size: 1.7rem;
-            text-align: center;
-            /* background-image: url('/images/drop.png'); */
-            /* display: block; */
-            /* margin: 0 auto; */
-            /* background-size: 100%;
-            background-repeat: no-repeat; */
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            /* border: 1px red solid; */
-        }
-
-        .color input {
-            background-color: #f1f1f1;
-        }
-
-        .form-group {
-            margin-bottom: 0.3rem;
-            font-family: HelveticaNeue;
-        }
-
-        .form-control:focus {
-            border-color: rgb(93, 193, 185);
-            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
-        }
-
-        .custom-select:focus {
-            border-color: rgb(93, 193, 185);
-            box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%);
-        }
-
-        video::-webkit-media-controls-panel {
-            background-image: linear-gradient(transparent, #00c4ba) !important;
-        }
-
-        /*  */
-        .slide-right {
-            /* overflow: hidden; */
-            /* padding-top: 1rem; */
-        }
-
-        .slide-right div {
-            animation: 1s slide-right 1.5s forwards;
-            transform: translateX(-8%);
-            opacity: 0;
-            -webkit-transition: opacity 0.4s;
-            transition: opacity 0.4s;
-        }
-
-        @keyframes slide-right {
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        .slide-right1 div {
-            animation: 2s slide-right1 2.5s forwards;
-            transform: translateX(20%);
-            opacity: 0;
-            -webkit-transition: opacity 0.4s;
-            transition: opacity 0.4s;
-        }
-
-        @keyframes slide-right1 {
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-
-
         .btn.focus,
         .btn:focus {
             outline: 0;
@@ -164,8 +55,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="catalog.html">Catálogo</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shopping_guide_ca.html">Guía Compras</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="">Guía Compras</span>
+                        </a>
+                        <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                            <a href="shopping_guide_ca.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
+                            <a href="shopping_guide_co.html" class="dropdown-item aqdropdown">Galletas</a>
+                            <a href="shopping_guide_ch.html" class="dropdown-item aqdropdown">Chocolates</a>
+                            <a href="shopping_guide_sn.html" class="dropdown-item aqdropdown pb-1">Snacks</a>
+                        </div>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="budget.html">Presupuesto</a>
@@ -173,7 +72,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="mailto:ventas@varo-va.com">Contáctanos</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" id="activeborder">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
                         <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
@@ -233,24 +132,24 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingOne">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
-                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Qué es VaroVa?</div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Qué es VAROVA?</div>
                                                     </button>
                                                 </h2>
                                             </div>
                                             <div style="border-bottom: 2px solid #70b6b6;" id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionfaqs">
                                                 <div class="card-body pl-4 px-1">
-                                                    VaroVa es una empresa que promueve productos en empaques personalizados como un medio promocional corporativo, con el fin de crear soluciones creativas y novedosas para una publicidad de alta efectividad.
+                                                    VAROVA es una empresa que promueve productos en empaques personalizados como un medio promocional corporativo, con el fin de crear soluciones creativas y novedosas para una publicidad de alta efectividad.
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingTwo">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -267,24 +166,24 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingThree">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
-                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Qué productos ofrece VaroVa?</div>
+                                                        <div style="font-size: 1.3rem !important;letter-spacing: 0.5px;margin: 0; padding: 0;">¿Qué productos ofrece VAROVA?</div>
                                                     </button>
                                                 </h2>
                                             </div>
                                             <div style="border-bottom: 2px solid #70b6b6;" id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionfaqs">
                                                 <div class="card-body pl-4 px-1">
-                                                    VaroVa ofrece, variedad de dulces, chocolates, galletas y snacks, todos estos productos aptos para ser diseñados y personalizados de la manera que más le guste.
+                                                    VAROVA ofrece, variedad de dulces, chocolates, galletas y snacks, todos estos productos aptos para ser diseñados y personalizados de la manera que más le guste.
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingFour">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -302,7 +201,7 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingFive">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -322,7 +221,7 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingSix">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -339,7 +238,7 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingSeven">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -356,7 +255,7 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingEigth">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseEigth" aria-expanded="true" aria-controls="collapseEigth">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseEigth" aria-expanded="true" aria-controls="collapseEigth">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -373,7 +272,7 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingNine">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -390,7 +289,7 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingTen">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -407,7 +306,7 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingEleven">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -424,7 +323,7 @@
                                         <div class="card">
                                             <div class="card-header mt-1 px-0 pb-0" style="border-bottom: 2px solid #70b6b6;background-color: white;" id="headingTwelve">
                                                 <h2 class="mb-0 fflst">
-                                                    <button class="br btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                                                    <button class="btn btn-link btn-block text-left pl-0 py-2  d-flex align-items-stretch" style="text-decoration: none !important;color: #152B46;" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
                                                         <div class="px-2">
                                                             <img src="images/arrow_right_green.png" alt="" width="13">
                                                         </div>
@@ -453,20 +352,18 @@
         </div>
     </div>
     <!-- begin component Chat -->
-    <div style="position: fixed; bottom: 35px;right: 35px; z-index: 10;">
-        <a href="https://api.whatsapp.com/send?phone=+59169720118&text=Me gustaría obtener información en línea" target="_blank">
-
-            <img src="images/whatsapp.png" width="50" class="d-inline-block align-middle" alt="" loading="lazy">
+    <div class="animatedchatbot fadeInchatbot pr-3 pb-3 pr-md-4 pb-md-4 m-ms-3">
+        <a href="https://api.whatsapp.com/send?phone=+59177500095&text=Me gustaría obtener más información" target="_blank">
+            <img src="images/asistente-compras-whatsapp.png" width="75" class="d-inline-block align-middle" alt="productos-personalizados-comunicate-nosotros" loading="lazy">
         </a>
     </div>
     <!-- end component Chat -->
 
-
     <!-- begin component Footer -->
     <footer>
-        <div id="footer" class="pb-3 px-4" style="position: relative; background-color: #35B6B5; color: white !important;">
+        <div id="footer" class="pb-3 px-2 px-lg-4" style="position: relative; background-color: #35B6B5; color: white !important;">
 
-            <div class="d-flex justify-content-end pb-3 pr-2" style="width: 100%;">
+            <div class="d-flex justify-content-end py-2 pr-2" style="width: 100%;">
                 <div class="mt-3">
                     <a class="m-1" href="https://www.tiktok.com/@varo_va" target="_blanck" title="tiktok"><img src="images/logo_ti_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
                     <a class="m-1" href="https://www.instagram.com/_varo_va/" target="_blanck" title="instagram"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
@@ -476,11 +373,11 @@
                 </div>
             </div>
 
-            <div class=" mb-3 px-2">
-                <div class="row mx-0 mb-2">
-                    <div class=" col-4 px-0 d-flex align-items-start flex-column ">
+            <div class="px-2">
+                <div class="row mx-0">
+                    <div class="col-12 col-sm-6 col-md-4 px-0 py-3 d-flex align-items-start flex-column border-sm-bottom">
                         <div class="ffsbo">CONTACTO</div>
-                        <div class=" d-flex align-items-start flex-column">
+                        <div class=" d-md-flex align-items-start flex-column">
                             <div class="">
                                 <img src="images/f_phone.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> +591 77510105</span>
                             </div>
@@ -496,20 +393,20 @@
                                 </div>
                                 <div class="">
                                     <div class="" style="line-height: 1.2;">
-                                    <div>
-                                        Miraflores, Av. Busch Esquina Haíti Nro. 1159
+                                        <div>
+                                            Miraflores, Av. Busch Esquina Haíti Nro. 1159
+                                        </div>
+                                        <div>
+                                            La Paz - Bolivia
+                                        </div>
                                     </div>
-                                    <div>
-                                        La Paz - Bolivia
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" col-4 px-0 d-flex align-items-center flex-column ">
+                    <div class="col-12 col-sm-6 col-md-4 px-0 py-3 d-flex align-items-sm-end align-items-md-center flex-column border-sm-bottom">
                         <div class="ffsbo">PRODUCTOS</div>
-                        <div class=" d-flex align-items-center flex-column">
+                        <div class=" d-flex align-items-sm-end align-items-md-center flex-column">
                             <div><a class="text-decoration-none text-light" href="products_candies.html"><span class="folihv">Caramelos</span></a>
                             </div>
                             <div><a class="text-decoration-none text-light" href="products_cookies.html"><span class="folihv">Galletas</span></a>
@@ -520,13 +417,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-4 px-0 d-flex align-items-end">
+                    <div class="col-12 col-sm-6 col-md-4 m-sm-auto px-0 py-3 d-flex align-items-sm-center">
                         <h5> </h5>
-                        <div class=" w-100 d-flex align-items-end flex-column">
+                        <div class="w-100 d-flex align-items-sm-center align-items-md-end flex-column">
                             <div>
                                 <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">¿De qué se trata?</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light" href="about.html"><span class="folihv">¿Quiénes somos?</span></a>
+                            <div>
+                                <a class="text-decoration-none text-light" href="about.html"><span class="folihv">¿Quiénes somos?</span></a>
                             </div>
                             <div class="mb-3"><a class="text-decoration-none text-light " href="b_faqs.html"><span class="folihv">Preguntas Frecuentes</span></a>
                             </div>
@@ -537,10 +435,9 @@
         </div>
         <div class="d-flex justify-content-center" style="background-color: #152B46;width: 100%;position: relative; color: white !important;">
             <div class="mb-4 mt-2">
-                © Varova - Productos Personalizados
+                ©copyright Varova - Productos Personalizados
             </div>
         </div>
-        <div id="active-border"></div>
     </footer>
     <!-- end component Footer -->
 
@@ -550,12 +447,6 @@
     <script src="functions.js"></script>
 
     <script>
-        // window.onscroll = function (e) {  
-        // var element = document.getElementById("active-border");
-        // element.classList.add("aqchange");
-        // }
-
-
     </script>
 
 </body>
