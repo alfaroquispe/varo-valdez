@@ -2,23 +2,23 @@ $(window).scroll(function () {
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 
-window.onscroll = function (e){
+window.onscroll = function (e) {
     // Obtenemos la posicion del scroll en pantall
     var scroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-    
-    if(scroll > 50){
+
+    if (scroll > 50) {
         var element = document.getElementById("active-border");
         element.classList.add("aqchange");
-        $("#logo").attr("src","images/logo_varo-va_neg.png");
-        $("#logo").attr("width","120");
+        $("#logo").attr("src", "images/logo_varo-va_neg.png");
+        $("#logo").attr("width", "120");
         var element = document.getElementById("navbarSupportedContent");
         element.classList.remove("align-self-start");
     } else {
         var element = document.getElementById("active-border");
         element.classList.remove("aqchange");
-        $("#logo").attr("src","images/logo_varo-va_pos.png");
-            $("#logo").attr("width","145");
+        $("#logo").attr("src", "images/logo_varo-va_pos.png");
+        $("#logo").attr("width", "145");
         var element = document.getElementById("navbarSupportedContent");
         element.classList.add("align-self-start");
     }

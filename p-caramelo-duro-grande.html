@@ -154,11 +154,10 @@
             </div>
             <!-- end product -->
 
-            <!-- begin budget -->
             <div class="col-12 px-0">
 
                 <!-- begin budget -->
-                <form class="pt-4 row mx-0">
+                <form class="pt-5 my-5 row mx-0" action="guardar.php" method="post" enctype="multipart/form-data">
                     <div class="col-xs-6 col-md-7 px-0 pr-md-4 pr-lg-5" style="color: #152B46 !important;">
                         <!-- begin component Form -->
                         <h4 class="ffseb">Solicita tu presupuesto</h4>
@@ -166,31 +165,31 @@
                         <div class="form-group row mx-0">
                             <label for="name" class="col-form-label mr-2">Nombre</label>
                             <div class="flex-fill">
-                                <input type="text" class="form-control" id="name" value="">
+                                <input oninput="validar(this)" type="text" class="form-control" id="name" name="nombre" onkeypress="return check(event)">
                             </div>
                         </div>
                         <div class="form-group row mx-0">
                             <label for="phone" class="col-form-label mr-2">Teléfono</label>
                             <div class="flex-fill">
-                                <input type="text" class="form-control" id="phone" value="">
+                                <input oninput="validar(this)" type="text" class="form-control" id="phone" name="telefono" onkeypress="return check(event)">
                             </div>
                         </div>
                         <div class="form-group row mx-0">
                             <label for="email" class="col-form-label mr-2">E-mail</label>
                             <div class="flex-fill">
-                                <input type="text" class="form-control" id="email" value="">
+                                <input type="text" class="form-control" id="email" name="email" value="">
                             </div>
                         </div>
                         <div class="form-group row mx-0">
                             <label for="company" class="col-form-label mr-2">Empresa</label>
                             <div class="flex-fill">
-                                <input type="text" class="form-control" id="company" value="">
+                                <input oninput="validar(this)" type="text" class="form-control" id="company" name="empresa" onkeypress="return check(event)">
                             </div>
                         </div>
                         <div class="form-group row mx-0">
                             <label for="delcity" class="col-form-label mr-2">Ciudad de entrega</label>
                             <div class="flex-fill">
-                                <select class="custom-select mr-sm-2" id="delcity">
+                                <select class="custom-select mr-sm-2" id="delcity" name="ciudad">
                                     <option disabled selected value>--- Elija una ciudad ---</option>
                                     <option value="1">La Paz</option>
                                     <option value="2">Santa Cruz</option>
@@ -207,8 +206,8 @@
                         <div class="form-group row mx-0">
                             <label for="product" class="col-form-label mr-2">Producto</label>
                             <div class="flex-fill">
-                                <select class="custom-select mr-sm-2" id="product">
-                                    <option value="Caramelo-Duro-Grande" selected>Caramelo Duro Grande</option>
+                                <select class="custom-select mr-sm-2" id="product" name="producto">
+                                    <option value="Caramelo-Duro-Grande" selected >Caramelo Duro Grande</option>
                                     <option value="2">Dulce B</option>
                                     <option value="3">Dulce C</option>
                                     <option value="4">Galleta A</option>
@@ -224,7 +223,7 @@
                         <div class="form-group row mx-0">
                             <label for="concolor" class="col-form-label mr-2">Color de envase</label>
                             <div class="flex-fill">
-                                <select class="custom-select mr-sm-2 " id="concolor">
+                                <select class="custom-select mr-sm-2 " id="concolor" name="color">
                                     <option disabled selected value>--- Elija un color ---</option>
                                     <option value="1">Azul</option>
                                     <option value="2">Rojo</option>
@@ -242,15 +241,15 @@
                         <div class="form-group row mx-0">
                             <label for="numcolors" class="col-form-label mr-2">Cantidad de colores logo</label>
                             <div class="flex-fill">
-                                <input type="number" class="form-control" id="numcolors" value="" min="1" pattern="^[0-9]+">
+                                <input type="number" class="form-control" id="numcolors" value="" name="cantidad" min="1" pattern="^[0-9]+">
                             </div>
                         </div>
                         <div class="form-group row mx-0">
                             <label class="mb-0" for="exampleFormControlTextarea2">Observaciones</label>
-                            <textarea class="form-control col-12" id="exampleFormControlTextarea2" rows="3"></textarea>
+                            <textarea oninput="validar(this)" class="form-control col-12" onkeypress="return check(event)" id="exampleFormControlTextarea2" name="observacion" rows="3"></textarea>
                         </div>
                         <!-- end component Form -->
-
+    
                     </div>
                     <div class="col-xs-6 col-md-5 px-0">
                         <div class=" my-4 ml-md-2 ml-lg-3" style="background-color: #35B6B5;">
@@ -260,13 +259,12 @@
                                         <label class="mb-1 mt-4 fflst" style="color: white;">
                                             <h4>ADJUNTA TU LOGO AQUÍ</h4>
                                         </label>
-                                        <input style="color: #152B46; font-family: Spartan-Regular;" class="pl-2" type="file" class="form-control">
+                                        <input style="color: #152B46; font-family: Spartan-Regular;" name="foto" class="pl-2" type="file" class="form-control">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="form-group row mx-0 mr-auto my-3">
                         <button style="background-color: #35B6B5;font-family: LeagueSpartanT;" type="submit" class="ml-auto pt-3 btn btn-success btn-lg">ENVIAR</button>
                     </div>
@@ -274,7 +272,6 @@
                 <!-- end budget -->
 
             </div>
-            <!-- end budget -->
 
             <div class="sf-container">
                 <div id="modal01" class="sf-modal" onclick="this.style.display='none'">
@@ -407,7 +404,46 @@
         }
     </script>
     <script>
-
+        $(document).on('change','input[type="file"]',function(){
+            
+            var fileName = this.files[0].name;
+            var fileSize = this.files[0].size;
+        
+            if(fileSize > 3000000){
+                alert('El archivo no debe superar los 3MB');
+                this.value = '';
+                this.files[0].name = '';
+            }
+        });
+        function pregunta() {
+          return confirm('¿Esta seguro de enviar el mensaje?');
+        }
+        function check(e) {
+            tecla = (document.all) ? e.keyCode : e.which;
+        
+            //Tecla de retroceso para borrar, siempre la permite
+            if (tecla == 8) {
+                return true;
+            }
+        
+            // Patron de entrada, en este caso solo acepta numeros y letras
+            patron = /[A-Za-z0-9- ]/;
+            tecla_final = String.fromCharCode(tecla);
+            return patron.test(tecla_final);
+        }
+        const validar = function(campo) {
+          let valor = campo.value;
+          
+          // Verifica si el valor del campo (input) contiene numeros.
+          if(/["#$%&|_.,-"]/.test(valor)) {
+          
+            /* 
+             * Remueve los numeros que contiene el valor y lo establece
+             * en el valor del campo (input).
+             */
+            campo.value = '';
+          }
+        };
     </script>
 
 </body>

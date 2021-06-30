@@ -117,9 +117,8 @@ p{
 
 /* navbar */
 .navbar-default {
-    /* background-color: rgb(255, 255, 255, 30%) !important;      TODO para que sea 305blanco en lo transparente    */
+    /* background-color: rgba(255, 255, 255, .5); !important;      TODO para que sea 305blanco en lo transparente    */
     transition: 1s ease !important;
-    /* background: white !important; */
 }
 .navbar-default .navbar-brand {
     color: #17304f ;    
@@ -134,7 +133,7 @@ p{
 }
 
 .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-    background-color: rgb(255, 255, 255, 30%) !important;
+    background-color: rgba(255, 255, 255, 30%) !important;
 }
 .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
     background: #17304f !important;
@@ -498,12 +497,12 @@ a {
 }
 .form-control:focus {
     border-color: rgb(93, 193, 185) !important;
-    box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%) !important;
+    box-shadow: 0 0 0 0.2rem rgba(93, 193, 185, 25%) !important;
 }
 
 .custom-select:focus {
     border-color: rgb(93, 193, 185) !important;
-    box-shadow: 0 0 0 0.2rem rgb(93, 193, 185, 25%) !important;
+    box-shadow: 0 0 0 0.2rem rgba(93, 193, 185, 25%) !important;
 }
 
 
@@ -514,6 +513,10 @@ a {
 
 h1{
     font-size: 2rem !important;
+}
+
+h3{
+    font-size: 1.5rem !important;
 }
 
 h4{
@@ -583,11 +586,18 @@ h5{
     height: auto;
 
 }
+.aqreq{
+    color: rgb(235, 26, 26);
+}
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {    
+
+    .navbar-default {
+        background-color: transparent !important ;
+    }
     
     .aqwhois {
         width: 70%;
@@ -643,6 +653,9 @@ h5{
 @media (min-width: 768px) { 
     h1 {
         font-size: 2.25rem !important;
+    }    
+    h3{
+        font-size: 1.75rem !important;
     }
     h4 {
         font-size: 1.5rem !important;
