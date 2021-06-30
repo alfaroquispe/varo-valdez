@@ -132,6 +132,10 @@ p{
     color: white !important;    
 }
 
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.01) !important;
+}
+
 .navbar-nav .nav-item .dropdown-menu .dropdown-item {
     background-color: rgba(255, 255, 255, 30%) !important;
 }
@@ -573,9 +577,9 @@ h5{
     z-index: -10;
 }
 .aqsizesel{
-    width: 12px;
-    height: 12px;
-    border-radius: 7px;
+    width: 10px;
+    height: 10px;
+    /* border-radius: 7px; */
 }
 .aqpxchabox{
     padding: 1px 0.25rem;
@@ -687,9 +691,9 @@ h5{
     }
     
     .aqsizesel{
-        width: 14px;
-        height: 14px;        
-        border-radius: 9px;
+        width: 12px;
+        height: 12px;        
+        /* border-radius: 9px; */
     }
     .aqpxchabox{
         padding: 1px 0.37rem;

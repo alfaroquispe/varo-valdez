@@ -113,6 +113,9 @@
         .bgimtr2 {
             background-image: url("images/p_candies/masticables/dispensador-pequeno-masticables-pequenos-promocionales.jpg");
         }
+        .bgimtr3 {
+            background-image: url("images/p_candies/masticables/bolsa-masticables-promocional.jpg");
+        }
 
         /* fourth row */
         .bgimfor1 {
@@ -202,7 +205,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="">Productos</span>
                         </a>
-                        <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu py-0"  aria-labelledby="navbarDropdown">
                             <a href="#" class="dropdown-item aqdropdown pt-2">Caramelos</a>
                             <a href="products_cookies.html" class="dropdown-item aqdropdown">Galletas</a>
                             <a href="products_chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
@@ -214,13 +217,13 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="">Guía Compras</span>
+                            <span class="">Compras</span>
                         </a>
-                        <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
-                            <a href="shopping_guide_ca.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
-                            <a href="shopping_guide_co.html" class="dropdown-item aqdropdown">Galletas</a>
-                            <a href="shopping_guide_ch.html" class="dropdown-item aqdropdown">Chocolates</a>
-                            <a href="shopping_guide_sn.html" class="dropdown-item aqdropdown pb-1">Snacks</a>
+                        <div class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
+                            <a href="shopping_guide_ca.html" class="dropdown-item aqdropdown pt-2">Guía Caramelos</a>
+                            <a href="shopping_guide_co.html" class="dropdown-item aqdropdown">Guía Galletas</a>
+                            <a href="shopping_guide_ch.html" class="dropdown-item aqdropdown">Guía Chocolates</a>
+                            <a href="shopping_guide_sn.html" class="dropdown-item aqdropdown pb-1">Guía Snacks</a>
                         </div>
                     </li>
                     <li class="nav-item ">
@@ -231,7 +234,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-                        <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-right py-0"  aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
                             <a href="b_faqs.html" class="dropdown-item aqdropdown pt-2">Preguntas Frecuentes</a>
                         </div>
@@ -286,38 +289,8 @@
                                 <div class="row mx-auto my-auto">
                                     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                                         <div class="carousel-inner w-100 px-2 px-sm-3" role="listbox">
-                                            <!-- first item -->
-                                            <div class="carousel-item active">
-                                                <div class="col-md-4 px-1">
-                                                    <div class="card card-body">
-                                                        <a href="p-caramelo-duro-grande.html">
-                                                            <div class="containerpr">
-                                                                <img class="img-fluid imgpr" src="images/p_candies/caramelos-duros/dulce-grande-personalizado.jpg" alt="dulce-grande-personalizado" loading="lazy">
-                                                                <div class="overlaypr bgimfr1"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Caramelo Duro Grande</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Pastilla</small></p>
-                                                </div>
-                                            </div>
-                                            <!-- second item -->
-                                            <div class="carousel-item">
-                                                <div class="col-md-4 px-1">
-                                                    <div class="card card-body">
-                                                        <a href="p-caramelo-mediano-doble-twist.html">
-                                                            <div class="containerpr">
-                                                                <img class="img-fluid imgpr" src="images/p_candies/caramelos-duros/dulce-mediano-personalizado.jpg" alt="dulce-mediano-personalizado" loading="lazy">
-                                                                <div class="overlaypr bgimfr2"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Caramelo Mediano Doble Twist</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Pastilla</small></p>
-                                                </div>
-                                            </div>
                                             <!-- third item -->
-                                            <div class="carousel-item">
+                                            <div class="carousel-item active">
                                                 <div class="col-md-4 px-1">
                                                     <div class="card card-body">
                                                         <a href="p-caramelo-duro-pequeno.html">
@@ -327,38 +300,63 @@
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Caramelo Duro Pequeño</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Pastilla</small></p>
+                                                    <h5 class=" mt-0 ffhn">Caramelo Duro Pequeño</h5>
+                                                </div>
+                                            </div>
+                                            <!-- second item -->
+                                            <div class="carousel-item">
+                                                <div class="col-md-4 px-1">
+                                                    <div class="card card-body">
+                                                        <a href="p-caramelo-doble-twist.html">
+                                                            <div class="containerpr">
+                                                                <img class="img-fluid imgpr" src="images/p_candies/caramelos-duros/dulce-mediano-personalizado.jpg" alt="dulce-mediano-personalizado" loading="lazy">
+                                                                <div class="overlaypr bgimfr2"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <h5 class=" mt-0 ffhn">Caramelo Mediano Doble Twist</h5>
+                                                </div>
+                                            </div>
+                                            <!-- first item -->
+                                            <div class="carousel-item">
+                                                <div class="col-md-4 px-1">
+                                                    <div class="card card-body">
+                                                        <a href="p-caramelo-duro-grande.html">
+                                                            <div class="containerpr">
+                                                                <img class="img-fluid imgpr" src="images/p_candies/caramelos-duros/dulce-grande-personalizado.jpg" alt="dulce-grande-personalizado" loading="lazy">
+                                                                <div class="overlaypr bgimfr1"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <h5 class=" mt-0 ffhn">Caramelo Duro Grande</h5>
                                                 </div>
                                             </div>
                                             <!-- fourth item -->
                                             <div class="carousel-item">
                                                 <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <a>
+                                                        <a href="p-dispensador-caramelos-grande.html">
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/caramelos-duros/dispensador-grande-dulces-grandes-personalizado.jpg" alt="chupetin-plano-personalizado" loading="lazy">
                                                                 <div class="overlaypr bgimfr4"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Dispensador Caramelos Grande</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Dispensador</small></p>
+                                                    <h5 class=" mt-0 ffhn">Dispensador de Caramelos Grande</h5>
                                                 </div>
                                             </div>
                                             <!-- fifth item -->
                                             <div class="carousel-item">
                                                 <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <a>
+                                                        <a href="p-dispensador-caramelos-pequeno.html">
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/caramelos-duros/dispensador-pequeno-dulces-pequenos-personalizado.jpg" alt="chupetin-plano-personalizado" loading="lazy">
                                                                 <div class="overlaypr bgimfr5"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Dispensador Caramelos Pequeño</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Dispensador</small></p>
+                                                    <h5 class=" mt-0 ffhn">Dispensador de Caramelos Pequeño</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -390,15 +388,14 @@
                                             <div class="carousel-item active">
                                                 <div class="col-md-12 px-1">
                                                     <div class="card card-body">
-                                                        <a href="p-chupete-plano.html">
+                                                        <a href="p-chupetin-plano.html">
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/chupetes/chupetin-plano-personalizado.jpg" alt="chupetin-plano-personalizado" loading="lazy">
                                                                 <div class="overlaypr bgimsr1"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Chupete Plano</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Chupete</small></p>
+                                                    <h5 class=" mt-0 ffhn">Chupetin Plano</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -422,41 +419,54 @@
                     <!-- third row -->
                     <div class="mt-5">
                         <div class="row mx-0">
-                            <div class="col-0 col-md-3 px-0"></div>
-                            <div class="col-12 col-md-6 px-0">
+                            <div class="col-0 px-0"></div>
+                            <div class="col-12 px-0">
                                 <div class="row mx-auto my-auto">
                                     <div id="recipeCarousel3" class="carousel slide w-100" data-ride="carousel">
                                         <div class="carousel-inner w-100 px-2 px-sm-3" role="listbox">
                                             <!-- first item -->
                                             <div class="carousel-item active">
-                                                <div class="col-md-6 px-1">
+                                                <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <!-- <a href="p-dispensador-grande-masticables-grandes.html"> -->
-                                                        <a>
+                                                        <a href="p-masticables.html">
+                                                        <!-- <a href="p-dispensador-masticables-grande.html"> -->
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/masticables/dispensador-grande-masticables-grandes-personalizados.jpg" alt="dulce-grande-personalizado" loading="lazy">
                                                                 <div class="overlaypr bgimtr1"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Dispensador Masticables Grande</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Dispensador</small></p>
+                                                    <h5 class=" mt-0 ffhn">Dispensador de Masticables Grande</h5>
                                                 </div>
                                             </div>
                                             <!-- second item -->
                                             <div class="carousel-item">
-                                                <div class="col-md-6 px-1">
+                                                <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <!-- <a href="p-dispensador-pequeno-masticables-pequenos.html"> -->
-                                                        <a>
+                                                            <a href="p-masticables.html">
+                                                            <!-- <a href="p-dispensador-masticables-pequeno.html"> -->
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/masticables/dispensador-pequeno-masticables-pequenos-personalizados.jpg" alt="dulce-mediano-personalizado" loading="lazy">
                                                                 <div class="overlaypr bgimtr2"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Dispensador Masticables Pequeño</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Dispensador</small></p>
+                                                    <h5 class=" mt-0 ffhn">Dispensador de Masticables Pequeño</h5>
+                                                </div>
+                                            </div>
+                                            <!-- third item -->
+                                            <div class="carousel-item">
+                                                <div class="col-md-4 px-1">
+                                                    <div class="card card-body">
+                                                            <a href="p-masticables.html">
+                                                            <!-- <a href="p-masticables-bolsa.html"> -->
+                                                            <div class="containerpr">
+                                                                <img class="img-fluid imgpr" src="images/p_candies/masticables/bolsa-masticables-personalizados.jpg" alt="bolsa-masticables-personalizados" loading="lazy">
+                                                                <div class="overlaypr bgimtr3"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <h5 class=" mt-0 ffhn">Masticables en Bolsa </h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -474,7 +484,7 @@
                                 <h4 class="ffsbo">Masticables</h4>
                             </div>
                         </div>
-                        <div class="col-0 col-md-3 px-0"></div>
+                        <div class="col-0 px-0"></div>
                     </div>
 
                     <!-- fourth row -->
@@ -488,90 +498,84 @@
                                             <div class="carousel-item active">
                                                 <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <a href="p-vaso-gomitas-20g.html">
+                                                        <a href="p-gomitas.html">
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/gomitas/vaso-gomitas-lisas-20g-personalizado.jpg" alt="vaso-gomitas-lisas-20g-personalizado" loading="lazy">
                                                                 <div class="overlaypr bgimfor1"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Gomitas Lisas Vaso 20gr</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Vaso</small></p>
+                                                    <h5 class=" mt-0 ffhn">Gomitas Lisas Vaso 20gr</h5>
                                                 </div>
                                             </div>
                                             <!-- second item -->
                                             <div class="carousel-item">
                                                 <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <a href="p-vaso-gomitas-20g.html">
+                                                        <a href="p-gomitas.html">
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/gomitas/vaso-gomitas-azucardas-20g-personalizado.jpg" alt="vaso-gomitas-azucardas-20g-personalizado" loading="lazy">
                                                                 <div class="overlaypr bgimfor2"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Gomitas Azucaradas Vaso 20gr</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Vaso</small></p>
+                                                    <h5 class=" mt-0 ffhn">Gomitas Azucaradas Vaso 20gr</h5>
                                                 </div>
                                             </div>
                                             <!-- third item -->
                                             <div class="carousel-item">
                                                 <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <a href="p-vaso-gomitas-20g.html">
+                                                        <a href="p-gomitas.html">
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/gomitas/vaso-gomitas-acidas-20g-personalizado.jpg" alt="vaso-gomitas-acidas-20g-personalizado" loading="lazy">
                                                                 <div class="overlaypr bgimfor3"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Gomitas Ácidas Vaso 20gr</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Vaso</small></p>
+                                                    <h5 class=" mt-0 ffhn">Gomitas Ácidas Vaso 20gr</h5>
                                                 </div>
                                             </div>
                                             <!-- fourth item -->
                                             <div class="carousel-item">
                                                 <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <a href="p-bolsa-gomitas-20g.html">
+                                                        <a href="p-gomitas.html">
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/gomitas/bolsa-gomitas-lisas-20g-personalizada.jpg" alt="bolsa-gomitas-lisas-20g-personalizada" loading="lazy">
                                                                 <div class="overlaypr bgimfor4"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Gomitas Lisas Bolsa 20gr</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Bolsa</small></p>
+                                                    <h5 class=" mt-0 ffhn">Gomitas Lisas Bolsa 20gr</h5>
                                                 </div>
                                             </div>
                                             <!-- fifth item -->
                                             <div class="carousel-item">
                                                 <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <a href="p-bolsa-gomitas-20g.html">
+                                                        <a href="p-gomitas.html">
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/gomitas/bolsa-gomitas-azucaradas-20g-personalizada.jpg" alt="bolsa-gomitas-azucaradas-20g-personalizada" loading="lazy">
                                                                 <div class="overlaypr bgimfor5"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Gomitas Azucaradas Bolsa 20gr</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Bolsa</small></p>
+                                                    <h5 class=" mt-0 ffhn">Gomitas Azucaradas Bolsa 20gr</h5>
                                                 </div>
                                             </div>
                                             <!-- sixth item -->
                                             <div class="carousel-item">
                                                 <div class="col-md-4 px-1">
                                                     <div class="card card-body">
-                                                        <a href="p-bolsa-gomitas-20g.html">
+                                                        <a href="p-gomitas.html">
                                                             <div class="containerpr">
                                                                 <img class="img-fluid imgpr" src="images/p_candies/gomitas/bolsa-gomitas-acidas-20g-personalizada.jpg" alt="bolsa-gomitas-acidas-20g-personalizada" loading="lazy">
                                                                 <div class="overlaypr bgimfor6"></div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <h5 class="mb-0 mt-0 ffhn">Gomitas Ácidas Bolsa 20gr</h5>
-                                                    <p class="card-text" style="position: relative;"><small class="text-muted" style="font-size: 1rem !important;">Bolsa</small></p>
+                                                    <h5 class=" mt-0 ffhn">Gomitas Ácidas Bolsa 20gr</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -643,14 +647,14 @@
                             <h1 class="fflst">CARAMELOS PERSONALIZADOS</h1>
                             <div class="ffhn text-justify">
                                 <p>Los caramelos promocionales son una de las fórmulas más utilizadas por las empresas a la hora de desarrollar una campaña de promoción y marketing. Dice la expresión popular que “a nadie le amarga un dulce” y es precisamente por ello que los caramelos con logo tienen una alta aceptación y un enorme éxito. En VAROVA trabajamos con diversidad de caramelos promocionales entre los cuales tenemos:</p>
-                                <h5>Caramelos duros</h5>
+                                <h5> <strong>Caramelos duros</strong> </h5>
                                 <p>Dentro de todo nuestro surtido, encontrarás distintas formas y sabores, para así poder ofrecerle a tu cliente aquello que más identifica a tu marca. Para esta línea de productos se tiene una gran variedad de opciones de personalización:</p>
                                 <p>Caramelo duro grande - Caramelo duro mediano - Caramelo duro pequeño - Chupete plano - Chupete redondo</p>
                                 <p>Se pueden solicitar por kilos de caramelos con el logo de tu compañía en cada envoltorio. También puedes elegir entre diferentes tamaños de dispensadores para caramelos con publicidad y pueden ser personalizados con tus colores corporativos o llevar impreso el logotipo de tu compañía. Los chupetes personalizados, al tener una mayor superficie expositiva, son otro de los dulces publicitarios más solicitados.</p>
-                                <h5>Masticables</h5>
+                                <h5> <strong>Masticables</strong> </h5>
                                 <p>Para esta deliciosa opción tenemos los más ricos y suaves masticables, con una gran variedad de sabores para mejorar el sentimiento positivo de tus clientes hacia ti.</p>
                                 <p>Su presentación consiste en una bolsa de 20 gr. donde cada envase lleva el logotipo de tu compañía. Puedes elegir una presentación individual donde cada envase lleve el logotipo de tu compañía. O decidirte por los diferentes tamaños de dispensadores para masticables con publicidad que pueden ser personalizados con tus colores corporativos o llevar impreso el logotipo de tu compañía.</p>
-                                <h5>Gomitas</h5>
+                                <h5> <strong>Gomitas</strong> </h5>
                                 <p>Dentro de las opciones de las gomitas, puedes escoger entre:</p>
                                 <p>Gomitas Lisas - Gomitas Azucaradas - Gomitas Ácidas</p>
                                 <p>Esta línea de productos cuenta con mucha diversidad de sabores, la presentación de las gomitas consiste en una bolsa de 20 gr. donde cada envase lleva el logotipo de tu compañía.</p>

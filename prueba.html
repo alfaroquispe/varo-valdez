@@ -174,7 +174,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="">Productos</span>
                         </a>
-                        <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu py-0"  aria-labelledby="navbarDropdown">
                             <a href="products_candies.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
                             <a href="products_cookies.html" class="dropdown-item aqdropdown">Galletas</a>
                             <a href="products_chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
@@ -186,13 +186,13 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="">Guía Compras</span>
+                            <span class="">Compras</span>
                         </a>
-                        <div class="dropdown-menu py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
-                            <a href="shopping_guide_ca.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
-                            <a href="shopping_guide_co.html" class="dropdown-item aqdropdown">Galletas</a>
-                            <a href="shopping_guide_ch.html" class="dropdown-item aqdropdown">Chocolates</a>
-                            <a href="shopping_guide_sn.html" class="dropdown-item aqdropdown pb-1">Snacks</a>
+                        <div class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
+                            <a href="shopping_guide_ca.html" class="dropdown-item aqdropdown pt-2">Guía Caramelos</a>
+                            <a href="shopping_guide_co.html" class="dropdown-item aqdropdown">Guía Galletas</a>
+                            <a href="shopping_guide_ch.html" class="dropdown-item aqdropdown">Guía Chocolates</a>
+                            <a href="shopping_guide_sn.html" class="dropdown-item aqdropdown pb-1">Guía Snacks</a>
                         </div>
                     </li>
                     <li class="nav-item ">
@@ -203,7 +203,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-                        <div class="dropdown-menu dropdown-menu-right py-0" style="background-color: rgba(255, 255, 255, 0.01);" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-right py-0"  aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
                             <a href="b_faqs.html" class="dropdown-item aqdropdown pt-2">Preguntas Frecuentes</a>
                         </div>
@@ -230,15 +230,15 @@
                                     <img id="imgChange" style="width: 100%;cursor: zoom-in" onclick="document.getElementById('modal01').style.display='block';document.getElementById('modimg').src = document.getElementById('imgChange').src" src="images/p_candies/dulce_duro_almohada_grande.png" alt="" loading="lazy">
                                     <div class="row mx-0 d-flex justify-content-center" style="position: absolute;width: 100%; bottom: 0;right: 50%; transform: translate(50%, 0);-ms-transform: translate(50%, 0);">
                                         <div class="aqpxchabox" style="cursor: pointer;" onclick="changeImage1()">
-                                            <div id="selec1" class=" aqsizesel" style="background-color: #2D756F;">
+                                            <div id="selec1" class=" aqsizesel" style="background-color: #2D3075;">
                                             </div>
                                         </div>
                                         <div class="aqpxchabox" style="cursor: pointer;" onclick="changeImage2()">
-                                            <div id="selec2" class=" aqsizesel" style="background-color: #C27E5D;">
+                                            <div id="selec2" class=" aqsizesel" style="background-color: #ABC6DB;">
                                             </div>
                                         </div>
                                         <div class="aqpxchabox" style="cursor: pointer;" onclick="changeImage3()">
-                                            <div id="selec3" class=" aqsizesel" style="background-color: #C27E5D;">
+                                            <div id="selec3" class=" aqsizesel" style="background-color: #ABC6DB;">
                                             </div>
                                         </div>
                                     </div>
@@ -279,7 +279,7 @@
                     </div>
                     <div class="mt-3 row mx-0">
                         <div class="fflst ml-auto">
-                            <a class="text-decoration-none" style="color: #152B46;" href="products.html">Ver mas productos</a>
+                            <a class="text-decoration-none" style="color: #152B46;" href="products.html">Ver productos similares</a>
                         </div>
                     </div>
                 </div>
@@ -522,21 +522,21 @@
     <script language="javascript">
         function changeImage1() {
             document.getElementById("imgChange").src = "images/p_candies/dulce_duro_almohada_grande.png";
-            document.getElementById("selec1").style.backgroundColor = "#2D756F";
-            document.getElementById("selec2").style.backgroundColor = "#C27E5D";
-            document.getElementById("selec3").style.backgroundColor = "#C27E5D";
+            document.getElementById("selec1").style.backgroundColor = "#2D3075";
+            document.getElementById("selec2").style.backgroundColor = "#ABC6DB";
+            document.getElementById("selec3").style.backgroundColor = "#ABC6DB";
         }
         function changeImage2() {
             document.getElementById("imgChange").src = "images/p_candies/dulce_duro_almohada_grande_o.png"
-            document.getElementById("selec1").style.backgroundColor = "#C27E5D";
-            document.getElementById("selec2").style.backgroundColor = "#2D756F";
-            document.getElementById("selec3").style.backgroundColor = "#C27E5D";
+            document.getElementById("selec1").style.backgroundColor = "#ABC6DB";
+            document.getElementById("selec2").style.backgroundColor = "#2D3075";
+            document.getElementById("selec3").style.backgroundColor = "#ABC6DB";
         }
         function changeImage3() {
             document.getElementById("imgChange").src = "images/p_candies/dulce_duro_almohada_mediana_o.png"
-            document.getElementById("selec1").style.backgroundColor = "#C27E5D";
-            document.getElementById("selec2").style.backgroundColor = "#C27E5D";
-            document.getElementById("selec3").style.backgroundColor = "#2D756F";
+            document.getElementById("selec1").style.backgroundColor = "#ABC6DB";
+            document.getElementById("selec2").style.backgroundColor = "#ABC6DB";
+            document.getElementById("selec3").style.backgroundColor = "#2D3075";
         }
     </script>
     <script>
