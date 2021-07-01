@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <link rel="shortcut icon" href="varova.ico">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="lang" content="es-ES" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +40,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="">Productos</span>
                         </a>
-                        <div class="dropdown-menu py-0"  aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
                             <a href="products_candies.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
                             <a href="products_cookies.html" class="dropdown-item aqdropdown">Galletas</a>
                             <a href="products_chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
@@ -68,7 +69,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-                        <div class="dropdown-menu dropdown-menu-right py-0"  aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
                             <a href="b_faqs.html" class="dropdown-item aqdropdown pt-2">Preguntas Frecuentes</a>
                         </div>
@@ -96,7 +97,7 @@
                     <div class=" col-12 col-sm-4 px-0" style="position: relative;">
                         <div class=" d-flex align-items-sm-center justify-content-center" style="height: 100%; background: transparent;">
                             <div class="mx-4 mx-sm-0">
-                                <div class="py-xl-3" >
+                                <div class="py-xl-3">
                                     <div class="bg-white my-3 mb-md-4 mt-md-3 mb-lg-3 mt-lg-2" style="position: relative;">
                                         <div class="" style="overflow: hidden;">
                                             <img id="imgChange" class="" style="width: 100%;cursor: zoom-in;scale: 1;" onclick="document.getElementById('modal01').style.display='block';document.getElementById('modimg').src = document.getElementById('imgChange').src" src="images/p_candies/chupetes/chupetin-plano-personalizado-1.jpg" alt="dulce-pequeno-cerrado-personalizado">
@@ -121,8 +122,7 @@
                         </div>
                         <div class="aqleastborprorigbot">
                         </div>
-                        <!-- <div style="height: 120px; position: absolute;bottom: 0; right: 0; width: 66%;border:#35B6B5 3px solid; border-right: none; border-top: none;z-index: -10;">
-                        </div> -->
+                        <!--  -->
                     </div>
                     <div class="bb col-12 col-sm-8 px-0 aqpyprotex aqborpro">
                         <!-- <div class="br mx-3 mx-sm-2 ml-sm-4 mr-sm-5 my-4 my-sm-5 aqborpro"> -->
@@ -146,7 +146,7 @@
                 <div class="row mx-0" id="solpres">
                     <div class="ml-auto">
                         <!-- <button type="button" class="btn btn-info" disabled>Compartir en WhatsApp</button> -->
-                        <button type="button" class="btn btn-info"><a class="text-decoration-none" style="color: white;" href="#solpres">Solicitar Presupuesto</a></button>
+                        <button onclick="document.getElementById('product').value='Chupetin-Plano';" type="button" class="btn btn-info"><a class="text-decoration-none" style="color: white;" href="#solpres">Solicitar Presupuesto</a></button>
                     </div>
                 </div>
             </div>
@@ -206,11 +206,10 @@
                             <label for="product" class="col-form-label mr-2">Producto <span class="aqreq">*</span></label>
                             <div class="flex-fill">
                                 <select class="custom-select mr-sm-2" id="product" name="producto" required>
-                                    <option disabled selected value>--- Elija un producto ---</option>
-                                    <option value="Caramelo-Duro-Grande">Caramelo Duro Grande</option>
+                                    <option disabled value selected>--- Elija un producto ---</option>
                                     <option value="Caramelo-Duro-Pequeno">Caramelo Duro Pequeño</option>
-                                    <option value="Caramelo Doble Twist">Caramelo Doble Twist</option>
-                                    <option value="Dispensador-Caramelos-Grande" >Dispensador de Caramelos Grande</option>
+                                    <option value="Caramelo-Doble-Twist">Caramelo Doble Twist</option>
+                                    <option value="Caramelo-Duro-Grande">Caramelo Duro Grande</option>
                                     <option value="Chupetin-Plano">Chupetin-Plano</option>
                                     <option value="Masticables">Masticables</option>
                                     <option value="Gomitas">Gomitas</option>
@@ -247,7 +246,7 @@
                         </div>
                         <p class="mb-0"><small class="text-muted">Los campos con <span class="aqreq">*</span> son requeridos</small></p>
                         <!-- end component Form -->
-    
+
                     </div>
                     <div class="col-xs-6 col-md-5 px-0">
                         <div class=" my-4 ml-md-2 ml-lg-3" style="background-color: #35B6B5;">
@@ -290,7 +289,7 @@
 
     <!-- begin component Chat -->
     <div class="animatedchatbot fadeInchatbot pr-3 pb-3 pr-md-4 pb-md-4 m-ms-3">
-        <a href="https://api.whatsapp.com/send?phone=+59177500095&text=Me gustaría obtener más información" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=+59177510105&text=Me gustaría obtener más información" target="_blank">
             <img src="images/asistente-compras-whatsapp.png" width="100" class="d-inline-block align-middle" alt="productos-personalizados-comunicate-nosotros" loading="lazy">
         </a>
     </div>
