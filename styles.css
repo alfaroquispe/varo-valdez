@@ -348,7 +348,6 @@ a {
 .contenedor {
     position: relative;    
     margin: 1px 4px 0px;
-    /* TODO revisar las redes sociales despues del parallax */
     /* float: left; */
 }
 
@@ -358,7 +357,6 @@ a {
     max-width: 65% !important;
     min-width: 53px !important;
     margin: 1px 8px 20px;
-    /* TODO revisar las redes sociales despues del parallax */
     /* float: left; */
 }
 .snicwd {
