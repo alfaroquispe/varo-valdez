@@ -115,107 +115,6 @@ p{
     font-family: Spartan-Thin;
 }
 
-/* navbar */
-.navbar-default {
-    /* background-color: rgba(255, 255, 255, .5); !important;      TODO para que sea 305blanco en lo transparente    */
-    transition: 1s ease !important;
-}
-.navbar-default .navbar-brand {
-    color: #17304f ;    
-}
-.navbar-default .navbar-nav .nav-item .nav-link {
-    color: #17304f ;
-}
-.navbar-default .navbar-nav .nav-item .nav-link:hover {
-    /* border: 1px solid #17304f; */
-    background-color: #17304f!important;
-    color: white !important;    
-}
-
-.navbar-nav .nav-item .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.01) !important;
-}
-
-.navbar-nav .nav-item .dropdown-menu .dropdown-item {
-    background-color: rgba(255, 255, 255, 30%) !important;
-}
-.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-    background: #17304f !important;
-}
-
-.navbar-default.scrolled {
-    background:#17304f !important;
-    opacity: 0.9;
-}
-.navbar-default.scrolled .navbar-brand {
-    color: white !important;    
-}
-
-.navbar-default.scrolled .navbar-nav .nav-item .nav-link {
-    color: white !important;
-}
-.navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-    background: #17304f !important;
-    opacity: 1;
-    color: white !important;
-}
-.navbar-default.scrolled .navbar-nav .nav-item .nav-link:hover {
-    background-color: white !important;
-    opacity: 8;
-    color: #17304f !important;
-}
-.navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-    background-color: white !important;
-    color: #17304f !important;
-}
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("images/toggle.svg") !important;
-}
-.custom-toggler.navbar-toggler {
-    border-color: #3cbabd !important;
-}
-.navbar-toggler:focus {
-    /* text-decoration: none !important; */
-    border: 2px solid #3cbabd !important;
-}
-
-#active-border {
-    border: 1px solid #17304f;
-}
-.aqchange{
-    border: 1px solid white !important;
-}
-
-.aqdropdown {
-    color: #17304f !important;
-}
-.aqdropdown:hover{
-    background-color: #17304f!important;
-    color: white !important;
-}
-
-/* .navbar-brand {
-    color: blue !important;    
-}
-.navbar-nav .nav-item .nav-link {
-    color: blue !important;
-
-}
-
-
-/* .parallax { */
-    /* The image used */
-    /* background-image: url("/Varo/images/imgPrin.jpg"); */
-
-    /* Set a specific height */
-    /* min-height: 500px; */
-
-    /* Create the parallax scrolling effect */
-    /* background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-} */
 
 a {
     text-decoration: none !important;
@@ -591,16 +490,126 @@ h5{
 .aqreq{
     color: rgb(235, 26, 26);
 }
+
+/* navbar */
+.navbar-default {
+    /* background-color: rgba(255, 255, 255, .5); !important;      TODO para que sea 305blanco en lo transparente    */
+    transition: 1s ease !important;
+}
+.navbar-default .navbar-brand {
+    color: #17304f ;    
+}
+.navbar-default .navbar-nav .nav-item .nav-link {
+    color: #17304f ;
+    background-color: rgba(255, 255, 255, .70);
+}
+.navbar-default .navbar-nav .nav-item .nav-link:hover {
+    /* border: 1px solid #17304f; */
+    background-color: #17304f!important;
+    color: white !important;    
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.01) !important;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    background-color: rgba(255, 255, 255, .8) !important;
+}
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background: #17304f !important;
+}
+
+.navbar-default.scrolled {
+    background:#17304f !important;
+    opacity: 0.9;
+}
+.navbar-default.scrolled .navbar-brand {
+    color: white !important;    
+}
+
+.navbar-default.scrolled .navbar-nav .nav-item .nav-link {
+    color: white !important;
+    background:#17304f !important;
+    opacity: 0.9;    
+    transition: all 0.3 ease;
+}
+.navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    background: #17304f !important;
+    opacity: 1;
+    color: white !important;
+}
+.navbar-default.scrolled .navbar-nav .nav-item .nav-link:hover {
+    background-color: white !important;
+    opacity: 8;
+    color: #17304f !important;
+}
+.navbar-default.scrolled .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: white !important;
+    color: #17304f !important;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("images/toggle.svg") !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: #3cbabd !important;
+}
+.navbar-toggler:focus {
+    /* text-decoration: none !important; */
+    border: 2px solid #3cbabd !important;
+}
+
+#active-border {
+    border: 1px solid #17304f;
+}
+.aqchange{
+    border: 1px solid white !important;
+}
+
+.aqdropdown {
+    color: #17304f !important;
+}
+.aqdropdown:hover{
+    background-color: #17304f!important;
+    color: white !important;
+}
+
+/* .navbar-brand {
+    color: blue !important;    
+}
+.navbar-nav .nav-item .nav-link {
+    color: blue !important;
+}
+/* .parallax { */
+    /* The image used */
+    /* background-image: url("/Varo/images/imgPrin.jpg"); */
+
+    /* Set a specific height */
+    /* min-height: 500px; */
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+} */
+
+
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {    
+@media (min-width: 576px) {
 
-    .navbar-default {
-        background-color: transparent !important ;
+    .navbar-default .navbar-nav .nav-item .nav-link {
+        color: #17304f ;
+        background-color: transparent;
     }
-    
+
+    .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+        background-color: rgba(255, 255, 255, 30%) !important;
+    }
+
     .aqwhois {
         width: 70%;
         margin-bottom: 1.5rem;
