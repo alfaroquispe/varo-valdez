@@ -54,6 +54,8 @@
                 transform: scale(1.12, 1.12);
             }
         }
+
+        
     </style>
     
 </head>
@@ -63,13 +65,13 @@
     <!-- <div id="123" class="aqload"></div> -->
 
     <!-- begin component Navbar -->
-    <nav class="navbar navbar-default fixed-top navbar-expand-lg ">
+    <nav id="aqnavbar" class="navbar navbar-default fixed-top navbar-expand-lg ">
         <div class="container-fluid">
 
             <a class="navbar-brand d-flex align-items-end py-0" href="#">
                 <img id="logo" src="images/logo_varo-va_pos.png" width="145" height="" class="d-inline-block align-top img-navbar mt-1 " alt="" loading="lazy">
             </a>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button onclick="aqtoggle()" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse align-self-start" id="navbarSupportedContent">
@@ -78,7 +80,7 @@
                         <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">
+                        <a class="nav-link" href="nosotros.html">
                             <span class="">Nosotros</span>
                         </a>
                     </li>
@@ -87,28 +89,28 @@
                             <span class="">Productos</span>
                         </a>
                         <div class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
-                            <a href="products_candies.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
-                            <a href="products_cookies.html" class="dropdown-item aqdropdown">Galletas</a>
-                            <a href="products_chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
-                            <a href="products_snacks.html" class="dropdown-item aqdropdown pb-1">Snacks</a>
+                            <a href="caramelos.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
+                            <a href="galletas.html" class="dropdown-item aqdropdown">Galletas</a>
+                            <a href="chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
+                            <a href="snacks.html" class="dropdown-item aqdropdown pb-1">Snacks</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="catalog.html">Catálogo</a>
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="">Compras</span>
                         </a>
                         <div class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
-                            <a href="shopping_guide_ca.html" class="dropdown-item aqdropdown pt-2">Guía Caramelos</a>
-                            <a href="shopping_guide_co.html" class="dropdown-item aqdropdown">Guía Galletas</a>
-                            <a href="shopping_guide_ch.html" class="dropdown-item aqdropdown">Guía Chocolates</a>
-                            <a href="shopping_guide_sn.html" class="dropdown-item aqdropdown pb-1">Guía Snacks</a>
+                            <a href="guia-de-compras-de-caramelos.html" class="dropdown-item aqdropdown pt-2">Guía Caramelos</a>
+                            <a href="guia-de-compras-de-galletas.html" class="dropdown-item aqdropdown">Guía Galletas</a>
+                            <a href="guia-de-compras-de-chocolates.html" class="dropdown-item aqdropdown">Guía Chocolates</a>
+                            <a href="guia-de-compras-de-snacks.html" class="dropdown-item aqdropdown pb-1">Guía Snacks</a>
                         </div>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="budget.html">Presupuesto</a>
+                        <a class="nav-link" href="presupuesto.html">Presupuesto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="mailto:ventas@varo-va.com">Contáctanos</a>
@@ -117,7 +119,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
                         <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
-                            <a href="b_faqs.html" class="dropdown-item aqdropdown pt-2">Preguntas Frecuentes</a>
+                            <a href="preguntas-frecuentes.html" class="dropdown-item aqdropdown pt-2">Preguntas Frecuentes</a>
                         </div>
                     </li>
                 </ul>
@@ -229,7 +231,7 @@
                 <div class="row mx-0 ffhn">
                     <div class="col-12 col-sm-6 px-0">
                         <div class="my-1 m-sm-2" style="background-color: #35B6B5;overflow:hidden;position: relative;">
-                            <a href="products_candies.html" class="aqhvup">
+                            <a href="caramelos.html" class="aqhvup">
                                 <img width="100%" src="images/home/h_dulces.jpg">
                                 <div class="align-self-center" style="position: absolute;top: 50%;left: 0;transform: translate(0,-50%);-ms-transform: translate(-50%, -50%)">
                                     <div class="text-center">
@@ -244,7 +246,7 @@
                     </div>
                     <div class="col-12 col-sm-6 px-0">
                         <div class="my-1 m-sm-2" style="background-color: #35B6B5;overflow:hidden;position: relative;">
-                            <a href="products_cookies.html" class="aqhvup">
+                            <a href="galletas.html" class="aqhvup">
                                 <img width="100%" src="images/home/h_galletas.jpg">
                                 <div class="align-self-center" style="position: absolute;top: 50%;left: 0;transform: translate(0,-50%);-ms-transform: translate(-50%, -50%)">
                                     <div class="text-center">
@@ -261,7 +263,7 @@
                 <div class="row mx-0 ffhn">
                     <div class="col-12 col-sm-6 px-0">
                         <div class="my-1 m-sm-2" style="background-color: #35B6B5;overflow:hidden;position: relative;">
-                            <a href="products_chocolates.html" class="aqhvup">
+                            <a href="chocolates.html" class="aqhvup">
                                 <img width="100%" src="images/home/h_chocolates.jpg">
                                 <div class="align-self-center" style="position: absolute;top: 50%;left: 0;transform: translate(0,-50%);-ms-transform: translate(-50%, -50%)">
                                     <div class="text-center">
@@ -276,7 +278,7 @@
                     </div>
                     <div class="col-12 col-sm-6 px-0">
                         <div class="my-1 m-sm-2" style="background-color: #35B6B5;overflow:hidden;position: relative;">
-                            <a href="products_snacks.html" class="aqhvup">
+                            <a href="snacks.html" class="aqhvup">
                                 <img width="100%" src="images/home/h_snacks.jpg">
                                 <div class="align-self-center" style="position: absolute;top: 50%;left: 0;transform: translate(0,-50%);-ms-transform: translate(-50%, -50%)">
                                     <div class="text-center">
@@ -296,21 +298,21 @@
                 <!-- begin component 3links -->
                 <div class="row m-3" style="color: #152B46;">
                     <div class="col-12 col-sm-4 px-0 py-1 p-sm-2 d-flex justify-content-center justify-content-sm-start">
-                        <a class="link3 font-weight-bold" href="catalog.html">
+                        <a class="link3 font-weight-bold" href="catalogo.html">
                             <div class="aqunllin fflst text-center">
                                 VER CATÁLOGO
                             </div>
                         </a>
                     </div>
                     <div class="col-12 col-sm-4 px-0 py-1 p-sm-2 d-flex justify-content-center">
-                        <a class="font-weight-bold" href="shopping_guide_ca.html">
+                        <a class="font-weight-bold" href="guia-de-compras-de-caramelos.html">
                             <div class="aqunllin fflst text-center">
                                 GUÍA DE COMPRAS
                             </div>
                         </a>
                     </div>
                     <div class="col-12 col-sm-4 px-0 py-1 p-sm-2 d-flex justify-content-center justify-content-sm-end">
-                        <a class="font-weight-bold" href="budget.html">
+                        <a class="font-weight-bold" href="presupuesto.html">
                             <div class="aqunllin fflst">
                                 PRESUPUESTO
                             </div>
@@ -386,13 +388,13 @@
                     <div class="col-12 col-sm-6 col-md-4 px-0 py-3 d-flex align-items-sm-end align-items-md-center flex-column border-sm-bottom">
                         <div class="ffsbo">PRODUCTOS</div>
                         <div class=" d-flex align-items-sm-end align-items-md-center flex-column">
-                            <div><a class="text-decoration-none text-light" href="products_candies.html"><span class="folihv">Caramelos</span></a>
+                            <div><a class="text-decoration-none text-light" href="caramelos.html"><span class="folihv">Caramelos</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light" href="products_cookies.html"><span class="folihv">Galletas</span></a>
+                            <div><a class="text-decoration-none text-light" href="galletas.html"><span class="folihv">Galletas</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light " href="products_chocolates.html"><span class="folihv">Chocolates</span></a>
+                            <div><a class="text-decoration-none text-light " href="chocolates.html"><span class="folihv">Chocolates</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light " href="products_snacks.html"><span class="folihv">Snacks</span></a>
+                            <div><a class="text-decoration-none text-light " href="snacks.html"><span class="folihv">Snacks</span></a>
                             </div>
                         </div>
                     </div>
@@ -403,9 +405,9 @@
                                 <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">¿De qué se trata?</span></a>
                             </div>
                             <div>
-                                <a class="text-decoration-none text-light" href="about.html"><span class="folihv">¿Quiénes somos?</span></a>
+                                <a class="text-decoration-none text-light" href="nosotros.html"><span class="folihv">¿Quiénes somos?</span></a>
                             </div>
-                            <div class="mb-3"><a class="text-decoration-none text-light " href="b_faqs.html"><span class="folihv">Preguntas Frecuentes</span></a>
+                            <div class="mb-3"><a class="text-decoration-none text-light " href="preguntas-frecuentes.html"><span class="folihv">Preguntas Frecuentes</span></a>
                             </div>
                         </div>
                     </div>

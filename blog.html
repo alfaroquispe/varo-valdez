@@ -92,13 +92,13 @@
 
 <body class="animated fadeIn fast">
     <!-- begin component Navbar -->
-    <nav class="navbar navbar-default fixed-top navbar-expand-lg ">
+    <nav id="aqnavbar" class="navbar navbar-default fixed-top navbar-expand-lg ">
         <div class="container-fluid">
 
             <a class="navbar-brand d-flex align-items-end py-0" href="index.html">
                 <img id="logo" src="images/logo_varo-va_pos.png" width="145" height="" class="d-inline-block align-top img-navbar mt-1" alt="" loading="lazy">
             </a>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button onclick="aqtoggle()" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse align-self-start" id="navbarSupportedContent">
@@ -107,35 +107,35 @@
                         <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Nosotros</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="">Productos</span>
                         </a>
                         <div class="dropdown-menu py-0"  aria-labelledby="navbarDropdown">
-                            <a href="products_candies.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
-                            <a href="products_cookies.html" class="dropdown-item aqdropdown">Galletas</a>
-                            <a href="products_chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
-                            <a href="products_snacks.html" class="dropdown-item aqdropdown pb-1">Snacks</a>
+                            <a href="caramelos.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
+                            <a href="galletas.html" class="dropdown-item aqdropdown">Galletas</a>
+                            <a href="chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
+                            <a href="snacks.html" class="dropdown-item aqdropdown pb-1">Snacks</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="catalog.html">Catálogo</a>
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="">Compras</span>
                         </a>
                         <div class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
-                            <a href="shopping_guide_ca.html" class="dropdown-item aqdropdown pt-2">Guía Caramelos</a>
-                            <a href="shopping_guide_co.html" class="dropdown-item aqdropdown">Guía Galletas</a>
-                            <a href="shopping_guide_ch.html" class="dropdown-item aqdropdown">Guía Chocolates</a>
-                            <a href="shopping_guide_sn.html" class="dropdown-item aqdropdown pb-1">Guía Snacks</a>
+                            <a href="guia-de-compras-de-caramelos.html" class="dropdown-item aqdropdown pt-2">Guía Caramelos</a>
+                            <a href="guia-de-compras-de-galletas.html" class="dropdown-item aqdropdown">Guía Galletas</a>
+                            <a href="guia-de-compras-de-chocolates.html" class="dropdown-item aqdropdown">Guía Chocolates</a>
+                            <a href="guia-de-compras-de-snacks.html" class="dropdown-item aqdropdown pb-1">Guía Snacks</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="budget.html">Presupuesto</a>
+                        <a class="nav-link" href="presupuesto.html">Presupuesto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="mailto:ventas@varo-va.com" target="_blanck">Contáctanos</a>
@@ -144,7 +144,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
                         <div class="dropdown-menu dropdown-menu-right py-0"  aria-labelledby="navbarDropdown">
                             <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
-                            <a href="b_faqs.html" class="dropdown-item aqdropdown pt-2">Preguntas Frecuentes</a>
+                            <a href="preguntas-frecuentes.html" class="dropdown-item aqdropdown pt-2">Preguntas Frecuentes</a>
                         </div>
                     </li>
                 </ul>
@@ -177,7 +177,7 @@
             <div class="row mx-0">
                 <!-- article 0 -->
                 <div class="col-12 col-sm-6 col-md-4 py-3 px-3 px-sm-2 px-lg-4">
-                    <a class="aqcbody text-decoration-none" href="b-sabores-colores.html">
+                    <a class="aqcbody text-decoration-none" href="sabores-y-colores.html">
                         <div class="aqcimg">
                             <img class="img-fluid" src="images/blog/b3.png" alt="">
                         </div>
@@ -197,7 +197,7 @@
                 </div>
                 <!-- article 1 -->
                 <div class="col-12 col-sm-6 col-md-4 py-3 px-3 px-sm-2 px-lg-4">
-                    <a class="aqcbody text-decoration-none" href="b-caramelo-vs-chocolate.html">
+                    <a class="aqcbody text-decoration-none" href="caramelo-vs-chocolate.html">
                         <div class="aqcimg">
                             <img class="img-fluid" src="images/blog/b1.png" alt="">
                         </div>
@@ -217,7 +217,7 @@
                 </div>
                 <!-- article 2 -->
                 <div class="col-12 col-sm-6 col-md-4 py-3 px-3 px-sm-2 px-lg-4">
-                    <a class="aqcbody text-decoration-none" href="b-satisfacer-5-sentidos.html">
+                    <a class="aqcbody text-decoration-none" href="como-satisfacer-los-5-sentidos-de-tus-clientes-y-fidelizarlos.html">
                         <div class="aqcimg">
                             <img class="img-fluid" src="images/blog/b2.png" alt="">
                         </div>
@@ -237,7 +237,7 @@
                 </div>
                 <!-- article 3 -->
                 <div class="col-12 col-sm-6 col-md-4 py-3 px-3 px-md-3 px-lg-4">
-                    <a class="aqcbody text-decoration-none" href="b-psicologia-regalo.html">
+                    <a class="aqcbody text-decoration-none" href="sabes-que-es-la-psicologia-del-regalo-y-como-aplicarla.html">
                         <div class="aqcimg">
                             <img class="img-fluid" src="images/blog/b2.png" alt="">
                         </div>
@@ -318,13 +318,13 @@
                     <div class=" col-4 px-0 d-flex align-items-center flex-column ">
                         <div class="ffsbo">PRODUCTOS</div>
                         <div class=" d-flex align-items-center flex-column">
-                            <div><a class="text-decoration-none text-light" href="products_candies.html"><span class="folihv">Caramelos</span></a>
+                            <div><a class="text-decoration-none text-light" href="caramelos.html"><span class="folihv">Caramelos</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light" href="products_cookies.html"><span class="folihv">Galletas</span></a>
+                            <div><a class="text-decoration-none text-light" href="galletas.html"><span class="folihv">Galletas</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light " href="products_chocolates.html"><span class="folihv">Chocolates</span></a>
+                            <div><a class="text-decoration-none text-light " href="chocolates.html"><span class="folihv">Chocolates</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light " href="products_snacks.html"><span class="folihv">Snacks</span></a>
+                            <div><a class="text-decoration-none text-light " href="snacks.html"><span class="folihv">Snacks</span></a>
                             </div>
                         </div>
                     </div>
@@ -334,9 +334,9 @@
                             <div>
                                 <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">¿De qué se trata?</span></a>
                             </div>
-                            <div><a class="text-decoration-none text-light" href="about.html"><span class="folihv">¿Quiénes somos?</span></a>
+                            <div><a class="text-decoration-none text-light" href="nosotros.html"><span class="folihv">¿Quiénes somos?</span></a>
                             </div>
-                            <div class="mb-3"><a class="text-decoration-none text-light " href="b_faqs.html"><span class="folihv">Preguntas Frecuentes</span></a>
+                            <div class="mb-3"><a class="text-decoration-none text-light " href="preguntas-frecuentes.html"><span class="folihv">Preguntas Frecuentes</span></a>
                             </div>
                         </div>
                     </div>

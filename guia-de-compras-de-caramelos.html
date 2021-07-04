@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="varova.ico">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="lang" content="es-ES" />
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Compras - Dulces Personalizados o Corporativos | VAROVA</title>
+    <meta name="description" content="Todo lo que debes saber para la correcta elección de un Dulce Personalizado o Corporativo" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- <link rel="Shortcut Icon" href="ce_pharma.ico" type="image/x-icon"/> -->
+    <style>
+    </style>
+
+
+    <style>
+        .sghvicch:hover {
+            background-image: url('images/shopping_guide/i_blue_chocolate.png') !important;
+            transition: all .5s ease-in-out;
+        }
+
+        .sghvicca:hover {
+            background-image: url('images/shopping_guide/i_blue_candie.png') !important;
+            transition: all .5s ease-in-out;
+        }
+
+        .sghvicco:hover {
+            background-image: url('images/shopping_guide/i_blue_cookie.png') !important;
+            transition: all .5s ease-in-out;
+        }
+
+        .sghvicsn:hover {
+            background-image: url('images/shopping_guide/i_blue_snack.png') !important;
+            transition: all .5s ease-in-out;
+        }
+
+        .list-group-item {
+            padding: .25rem .75rem !important;
+        }
+
+        .list-group-item-action {
+            color: #152B46 !important;
+            width: auto !important;
+            border-color: transparent !important;
+        }
+
+        .list-group-item.active {
+            color: #35B6B5 !important;
+            background-color: white;
+            border-color: transparent !important;
+        }
+
+        .list-group-item-action:active {
+            color: #35B6B5 !important;
+            line-height: 1 !important;
+        }
+
+        .list-group-item-action:hover,
+        .list-group-item-action:focus {
+            color: #35B6B5 !important;
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+
+<body class="animated fadeIn fast">
+    <!-- begin component Navbar -->
+    <nav id="aqnavbar" class="navbar navbar-default fixed-top navbar-expand-lg ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-end py-0" href="index.html">
+                <img id="logo" src="images/logo_varo-va_pos.png" width="145" height="" class="d-inline-block align-top img-navbar mt-1" alt="" loading="lazy">
+            </a>
+            <button onclick="aqtoggle()" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-self-start" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ffssb">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="">Productos</span>
+                        </a>
+                        <div class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
+                            <a href="caramelos.html" class="dropdown-item aqdropdown pt-2">Caramelos</a>
+                            <a href="galletas.html" class="dropdown-item aqdropdown">Galletas</a>
+                            <a href="chocolates.html" class="dropdown-item aqdropdown">Chocolates</a>
+                            <a href="snacks.html" class="dropdown-item aqdropdown pb-1">Snacks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item dropdown" id="active-border">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="">Compras</span>
+                        </a>
+                        <div class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropdown-item aqdropdown pt-2 disabled">Guía Caramelos</a>
+                            <a href="guia-de-compras-de-galletas.html" class="dropdown-item aqdropdown">Guía Galletas</a>
+                            <a href="guia-de-compras-de-chocolates.html" class="dropdown-item aqdropdown">Guía Chocolates</a>
+                            <a href="guia-de-compras-de-snacks.html" class="dropdown-item aqdropdown pb-1">Guía Snacks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="presupuesto.html">Presupuesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:ventas@varo-va.com">Contáctanos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                        <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown">
+                            <a href="blog.html" class="dropdown-item aqdropdown pt-2">Artículos</a>
+                            <a href="preguntas-frecuentes.html" class="dropdown-item aqdropdown pt-2">Preguntas Frecuentes</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end component Navbar -->
+
+    <!-- begin component Content -->
+    <div class="row mx-0 mt-5">
+        <div class="row mx-0">
+            <div class="col-0 col-sm-1 px-0"></div>
+            <div class="col-12 col-sm-10 px-sm-0 mt-5" style="color: #152B46">
+                <div class="mt-3 mt-lg-5">
+                    <h1 class="fflst text-center">GUÍA DE COMPRA - CARAMELOS</h1>
+                    <div class="mt-4 ffhn text-md-center">
+                        <div class="pt-2">
+                            <h5>Todo lo que necesitas saber para elegir el Producto Personalizado para tu empresa.</h5>
+                            <h5>Existen muchas opciones de Productos personalizados, variedad en: sabores, envasado y packaging.</h5>
+                            <h5>La variedad es amplia y es necesario conocer los aspectos más importantes que te van a permitir escoger el producto personalizado que más se adapta a tus necesidades y presupuesto.</h5>
+                            <h5>Esta guia esta creada para ayudarte a tomar la mejor decisión al comprar los productos personalizados que mejor se adaptan a tu presupuesto y a tus necesidades reales de promoción o publicitarias. Encuentra amplia información que te permitirá valorar las distintas opciones hasta elegir el tipo de caramelo publicitario adecuado a tu acción de marketing. </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-0 col-sm-1 px-0"></div>
+        </div>
+        <div id="guia_dulces" class="w-100 text-center pt-5" style="color: #152B46 !important;">
+            <h3 class="mt-3 mt-md-4 fflst" style="line-height: 1.7;">¿Cual elegir?</h3>
+        </div>
+        <div class="row mx-0 w-100 px-md-3 px-lg-4">
+            <div class="col-0 col-sm-1 col-lg-2 px-0 "></div>
+            <div class="col-12 col-sm-10 col-lg-8 px-0 px-lg-5">
+                <div class="row mx-0 mb-4">                    
+                    <div class="col-6 col-sm-3 px-0 py-1 ">
+                        <div class="">
+                            <div class="px-5 px-sm-4 px-md-3 mx-1 mx-sm-0 my-2">
+                                <div class="mx-1 mx-md-3 " style=" background-image: url('images/shopping_guide/i_blue_candie.png');background-size:cover;">
+                                    <img class="img-fluid" src="images/souvenir.svg" alt="" style="visibility:hidden">
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <h5 class="text-center fflst">CARAMELOS</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 px-0 py-1 ">
+                        <a class="" href="guia-de-compras-de-galletas.html#guia_galletas">
+                            <div class="px-5 px-sm-4 px-md-3 mx-1 mx-sm-0 my-2">
+                                <div class="mx-1 mx-md-3  sghvicco" style="background-image: url('images/shopping_guide/i_green_cookie.png');background-size:cover;">
+                                    <img class="img-fluid" src="images/souvenir.svg" alt="" style="visibility:hidden">
+                                </div>
+                            </div>
+                            <div class="pt-2" style="color: #152B46 !important;">
+                                <h5 class="text-center fflst">GALLETAS</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-3 px-0 py-1">
+                        <a class="" href="guia-de-compras-de-chocolates.html#guia_chocolates">
+                            <div class="px-5 px-sm-4 px-md-3 mx-1 mx-sm-0 my-2">
+                                <div class="mx-1 mx-md-3  sghvicch" style="background-image: url('images/shopping_guide/i_green_chocolate.png');background-size:cover;">
+                                    <img class="img-fluid" src="images/souvenir.svg" alt="" style="visibility:hidden">
+                                </div>
+                            </div>
+                            <div class="pt-2" style="color: #152B46 !important;">
+                                <h5 class="text-center fflst">CHOCOLATES</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-3 px-0 py-1">
+                        <a class="" href="guia-de-compras-de-snacks.html#guia_snacks">
+                            <div class="px-5 px-sm-4 px-md-3 mx-1 mx-sm-0 my-2">
+                                <div class="mx-1 mx-md-3  sghvicsn" style="background-image: url('images/shopping_guide/i_green_snack.png');background-size:cover;">
+                                    <img class="img-fluid" src="images/souvenir.svg" alt="" style="visibility:hidden">
+                                </div>
+                            </div>
+                            <div class="pt-2" style="color: #152B46 !important;">
+                                <h5 class="text-center fflst">SNACKS</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-0 col-sm-1 col-lg-2 px-0 "></div>
+        </div>
+        <div class="row mx-0 pt-5 px-2" style="background-image: url('images/wallpaper.jpg');">
+            <div class="col-0 col-sm-1 px-0"></div>
+            <div class="col-12 col-sm-10 px-0 my-4">
+                <div class="mb-5">
+
+                    <div class=" row mx-0">
+                        <div class="col-12 px-0" style="color: #152B46;background-color:#fff;">
+
+                            <div class="">
+                                <div class="fflst pt-5 text-center">
+                                    <h3 class="">GUÍA DE COMPRA</h3>
+                                    <h3 class="">CARAMELOS PERSONALIZADOS</h3>
+                                </div>
+                                <div class="mx-auto my-3" style="width: 10%; border-bottom: 3px solid #35B6B5;"></div>
+                            </div>
+
+                            <div class="row mx-0 mt-4">
+                                <div class="col-0 col-sm-1 px-0"></div>
+                                <div class="col-12 col-sm-10 px-0 px-md-1 px-lg-3 fflst">
+                                    <div class="list-group list-group-horizontal d-flex justify-content-center flex-wrap" id="list-tab" role="tablist">
+                                        <a class="list-group-item list-group-item-action active text-center" id="list-feature-list" data-toggle="list" href="#list-feature" role="tab" aria-controls="feature">
+                                            <h4 class="pb-0 mb-0">Beneficios</h4>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-center" id="list-benefit-list" data-toggle="list" href="#list-benefit" role="tab" aria-controls="benefit">
+                                            <h4 class="pb-0 mb-0">Branding</h4>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-center" id="list-branding-list" data-toggle="list" href="#list-branding" role="tab" aria-controls="branding">
+                                            <h4 class="pb-0 mb-0">Características, sabores y colores</h4>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-center" id="list-flavorscolors-list" data-toggle="list" href="#list-flavorscolors" role="tab" aria-controls="flavorscolors">
+                                            <h4 class="pb-0 mb-0">Personalización</h4>
+                                        </a>
+                                        <!-- <a class="list-group-item list-group-item-action text-center" id="list-hardsoft-list" data-toggle="list" href="#list-hardsoft" role="tab" aria-controls="hardsoft">
+                                            <h4 class="pb-0 mb-0">Masticables</h4>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action text-center" id="list-customized-list" data-toggle="list" href="#list-customized" role="tab" aria-controls="customized">
+                                            <h4 class="pb-0 mb-0">Gomitas</h4>
+                                        </a> -->
+                                    </div>
+                                </div>
+                                <div class="col-0 col-sm-1 px-0"></div>
+
+                                <div class="col-0 col-md-1 px-0"></div>
+                                <div class="col-12 col-md-10 px-1 px-sm-4 px-md-0">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="list-feature" role="tabpanel" aria-labelledby="list-feature-list">
+                                            <div class="row mx-0 my-5">
+                                                <div class="ffhn">
+                                                    <img src="images/home/h_dulces.jpg" class="mr-2 mr-md-3 mb-2 mr-lg-5 mb-lg-3 aqimgsg" alt="">
+                                                    <h4 class="fflst mb-1">Beneficios</h4>
+                                                    <p>Los caramelos promocionales son una de las fórmulas más utilizadas por las empresas a la hora de desarrollar una campaña de promoción y marketing. Dice la expresión popular que “a nadie le amarga un dulce” y es precisamente por ello que los caramelos con logo tienen una alta aceptación y un enorme éxito.</p>
+                                                    <p>En VaroVa trabajamos con diversidad de caramelos promocionales entre los cuales tenemos:</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="list-benefit" role="tabpanel" aria-labelledby="list-benefit-list">
+                                            <div class=" row mx-0 mt-5" style="padding-bottom: 6rem;">
+                                                <div class="ffhn">
+                                                    <img src="images/home/h_dulces.jpg" class="mr-2 mr-md-3 mb-2 mr-lg-5 mb-lg-3 aqimgsg" alt="">
+                                                    <h4 class="fflst mb-1">Branding</h4>
+                                                    <p>Regalar productos personalizados puede ser una estrategia útil en diferentes momentos de la relación con los clientes, empleados, proveedores, medios de comunicación, etc. Pueden ser útiles en los siguientes momentos:</p>
+                                                    <p>•	Productos personalizados para mostrar agradecimiento.</p>
+                                                    <p>•	‘Merchandising corporativo’ para dar mayor visibilidad al lanzamiento de nuevos productos o nuevas líneas.</p>
+                                                    <p>•	Regalos de empresa personalizados destinados a publicitar eventos de la marca.</p>
+                                                    <p>•	Artículos promocionales para celebrar momentos señalados del año: campaña navideña, verano, ‘halloween’, etc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="list-branding" role="tabpanel" aria-labelledby="list-branding-list">
+                                            <div class=" row mx-0 mt-5" style="padding-bottom: 6rem;">
+                                                <div class="ffhn">
+                                                    <img src="images/home/h_dulces.jpg" class="mr-2 mr-md-3 mb-2 mr-lg-5 mb-lg-3 aqimgsg" alt=""s>
+                                                    <h4 class="fflst mb-1">Características, sabores y colores</h4>
+                                                    <p>Dentro de todo nuestro surtido, encontrarás distintas formas y sabores, para así poder ofrecerle a tu cliente aquello que más identifica a tu marca.</p>
+                                                    <p>Caramelo duro - Masticables - Gomitas</p>
+                                                    <h5><strong>Caramelo duro</strong></h5>
+                                                    <p>Se caracteriza por su textura dura y quebradiza, y consiste en realidad en una solución sobresaturada de azúcares que no presenta cristalización debido a la adición de agentes que, como la glucosa líquida, los ácidos o sales ácidas, la controlan o impiden.</p>
+                                                    <p>Se presenta en infinidad de formas, gustos y colores según los aditivos adicionados y en algunas ocasiones con aspecto total o parcialmente satinado, debido a un proceso de oclusión en la masa de pequeñas burbujas de aire, las cuales provocan una refracción de la luz al pasar ésta a través de las mismas; este proceso se denomina vulgarmente «estirado».</p>
+                                                    <h5><strong>Masticables</strong></h5>
+                                                    <p>Presenta una textura suave al paladar. Se elabora generalmente a partir de azúcar, glucosa líquida, leche y grasas calentadas hasta eliminar parcialmente la humedad. Estos caramelos se presentan en forma prismática de base cuadrada.Según las proporciones de ingredientes empleados y la temperatura alcanzada durante la elaboración, este tipo de caramelo presenta una textura más o menos dura. </p>
+                                                    <h5><strong>Gomitas</strong></h5>
+                                                    <p>Las gomitas, además de golosina, se definen como productos de confitería compuestos por una pasta maciza elaborada con azúcar aromatizado y coloreado y una gran cantidad de aditivos. Se presentan de diferentes formas y tamaños para cautivar a los compradores.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="list-flavorscolors" role="tabpanel" aria-labelledby="list-flavorscolors-list">
+                                            <div class=" row mx-0 mt-5" style="padding-bottom: 6rem;">
+                                                <div class="ffhn">
+                                                    <img src="images/home/h_dulces.jpg" class="mr-2 mr-md-3 mb-2 mr-lg-5 mb-lg-3 aqimgsg" alt="">
+                                                    <h4 class="fflst mb-1">Personalización</h4>
+                                                    <p>Para esta línea de productos se tiene una gran variedad de opciones de personalización:</p>
+                                                    <p>Se pueden solicitar por kilos de caramelos con el logo de tu compañía en cada envoltorio.</p>
+                                                    <p>También puedes elegir entre diferentes tamaños de dispensadores para caramelos con publicidad y pueden ser personalizados con tus colores corporativos o llevar impreso el logotipo de tu compañía.</p>
+                                                    <p>Los chupetes personalizados, al tener una mayor superficie expositiva, son otro de los dulces publicitarios más solicitados.</p>
+                                                    <h5><strong>Masticables</strong></h5>
+                                                    <p>Para esta deliciosa opción tenemos los más ricos y suaves masticables, con una gran variedad de sabores para mejorar el sentimiento positivo de tus clientes hacia ti.</p>
+                                                    <p>Su presentación consiste en una bolsa de 20 gr. donde cada envase lleva el logotipo de tu compañía.</p>
+                                                    <p>Puedes elegir una presentación individual donde cada envase lleve el logotipo de tu compañía.</p>
+                                                    <p>O decidirte por los diferentes tamaños de dispensadores para masticables con publicidad que pueden ser personalizados con tus colores corporativos o llevar impreso el logotipo de tu compañía.</p>
+                                                    <h5><strong>Gomitas</strong></h5>
+                                                    <p>Dentro de las opciones de las gomitas, puedes escoger entre:</p>
+                                                    <p>Gomitas Lisas - Gomitas Azucaradas - Gomitas Ácidas:</p>
+                                                    <p>Esta línea de productos cuenta con mucha diversidad de sabores, la presentación de las gomitas consiste en una bolsa de 20 gr. donde cada envase lleva el logotipo de tu compañía.</p>
+                                                    <p>Se pueden solicitar por unidades de pedido, con el logotipo de tu compañía en cada envase.</p>
+                                                    <p>También puedes elegir entre diferentes tamaños de dispensadores con publicidad y pueden ser personalizados con tus colores corporativos o llevar impreso el logotipo de tu compañía</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="tab-pane fade" id="list-hardsoft" role="tabpanel" aria-labelledby="list-hardsoft-list">
+                                            <div class=" row mx-0 mt-5" style="padding-bottom: 6rem;">
+                                                <div class="ffhn">
+                                                    <img src="images/home/h_dulces.jpg" class="mr-2 mr-md-3 mb-2 mr-lg-5 mb-lg-3 aqimgsg" alt="">
+                                                    <h4 class="fflst mb-1">Masticables</h4>
+                                                    <p>Para esta deliciosa opción tenemos los más ricos y suaves masticables, con una gran variedad de sabores para mejorar el sentimiento positivo de tus clientes hacia ti.</p>
+                                                    <p>Su presentación consiste en una bolsa de 20 gr. donde cada envase lleva el logotipo de tu compañía.</p>
+                                                    <p>Puedes elegir una presentación individual donde cada envase lleve el logotipo de tu compañía.</p>
+                                                    <p>O decidirte por los diferentes tamaños de dispensadores para masticables con publicidad que pueden ser personalizados con tus colores corporativos o llevar impreso el logotipo de tu compañía.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="list-customized" role="tabpanel" aria-labelledby="list-customized-list">
+                                            <div class=" row mx-0 mt-5" style="padding-bottom: 6rem;">
+                                                <div class="ffhn">
+                                                    <img src="images/home/h_dulces.jpg" class="mr-2 mr-md-3 mb-2 mr-lg-5 mb-lg-3 aqimgsg" alt="">
+                                                    <h4 class="fflst mb-1">Gomitas</h4>
+                                                    <p>Dentro de las opciones de las gomitas, puedes escoger entre:</p>
+                                                    <p>Gomitas Lisas - Gomitas Azucaradas - Gomitas Ácidas:</p>
+                                                    <p>Esta línea de productos cuenta con mucha diversidad de sabores, la presentación de las gomitas consiste en una bolsa de 20 gr. donde cada envase lleva el logotipo de tu compañía.</p>
+                                                    <p>Se pueden solicitar por unidades de pedido, con el logotipo de tu compañía en cada envase.</p>
+                                                    <p>También puedes elegir entre diferentes tamaños de dispensadores con publicidad y pueden ser personalizados con tus colores corporativos o llevar impreso el logotipo de tu compañía</p>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-0 col-md-1 px-0"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-0 col-sm-1 px-0"></div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- begin component Chat -->
+    <div class="animatedchatbot fadeInchatbot pr-3 pb-3 pr-md-4 pb-md-4 m-ms-3">
+        <a href="https://api.whatsapp.com/send?phone=+59177510105&text=Me gustaría obtener más información" target="_blank">
+            <img src="images/asistente-compras-whatsapp.png" width="75" class="d-inline-block align-middle" alt="productos-personalizados-comunicate-nosotros" loading="lazy">
+        </a>
+    </div>
+    <!-- end component Chat -->
+
+    <!-- begin component Footer -->
+    <footer>
+        <div id="footer" class="pb-3 px-2 px-lg-4" style="position: relative; background-color: #35B6B5; color: white !important;">
+
+            <div class="d-flex justify-content-end py-2 pr-2" style="width: 100%;">
+                <div class="mt-3">
+                    <a class="m-1" href="https://www.tiktok.com/@varo_va" target="_blanck" title="tiktok"><img src="images/logo_ti_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.instagram.com/_varo_va/" target="_blanck" title="instagram"><img src="images/logo_in_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.linkedin.com/in/varo-valdez-1a1baa214" target="_blanck" title="linkedin"><img src="images/logo_li_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="ml-2" href="https://www.youtube.com/channel/UCIBdUDhvqwiR6EXMPjM840Q" target="_blanck" title="youtube"><img src="images/logo_yo_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                    <a class="m-1" href="https://www.facebook.com/profile.php?id=100069576066925" target="_blanck" title="facebook"><img src="images/logo_fa_white.png" height="27" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+                </div>
+            </div>
+
+            <div class="px-2">
+                <div class="row mx-0">
+                    <div class="col-12 col-sm-6 col-md-4 px-0 py-3 d-flex align-items-start flex-column border-sm-bottom">
+                        <div class="ffsbo">CONTACTO</div>
+                        <div class=" d-md-flex align-items-start flex-column">
+                            <div class="">
+                                <img src="images/f_phone.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> +591 77510105</span>
+                            </div>
+                            <div class="">
+                                <img src="images/f_email.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> info@varo-va.com</span>
+                            </div>
+                            <!-- <div class="">
+                                <img src="images/f_horary.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy"><span> Lunes a Viernes: 9:00 a 20:00h</span>
+                            </div> -->
+                            <div class="d-flex align-items-start">
+                                <div class=" h-100 d-flex align-items-center mr-1">
+                                    <img src="images/f_address.png" width="18" class="d-inline-block align-middle mr-1" alt="" loading="lazy">
+                                </div>
+                                <div class="">
+                                    <div class="" style="line-height: 1.2;">
+                                        <div>
+                                            Miraflores, Av. Busch Esquina Haíti Nro. 1159
+                                        </div>
+                                        <div>
+                                            La Paz - Bolivia
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 px-0 py-3 d-flex align-items-sm-end align-items-md-center flex-column border-sm-bottom">
+                        <div class="ffsbo">PRODUCTOS</div>
+                        <div class=" d-flex align-items-sm-end align-items-md-center flex-column">
+                            <div><a class="text-decoration-none text-light" href="caramelos.html"><span class="folihv">Caramelos</span></a>
+                            </div>
+                            <div><a class="text-decoration-none text-light" href="galletas.html"><span class="folihv">Galletas</span></a>
+                            </div>
+                            <div><a class="text-decoration-none text-light " href="chocolates.html"><span class="folihv">Chocolates</span></a>
+                            </div>
+                            <div><a class="text-decoration-none text-light " href="snacks.html"><span class="folihv">Snacks</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 m-sm-auto px-0 py-3 d-flex align-items-sm-center">
+                        <h5> </h5>
+                        <div class="w-100 d-flex align-items-sm-center align-items-md-end flex-column">
+                            <div>
+                                <a class="text-decoration-none text-light" href="blog.html"><span class="folihv">¿De qué se trata?</span></a>
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-light" href="nosotros.html"><span class="folihv">¿Quiénes somos?</span></a>
+                            </div>
+                            <div class="mb-3"><a class="text-decoration-none text-light " href="preguntas-frecuentes.html"><span class="folihv">Preguntas Frecuentes</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center" style="background-color: #152B46;width: 100%;position: relative; color: white !important;">
+            <div class="mb-4 mt-2">
+                ©copyright Varova - Productos Personalizados
+            </div>
+        </div>
+    </footer>
+    <!-- end component Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <script src="functions.js"></script>
+
+</body>
+
+</html>
