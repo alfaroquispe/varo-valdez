@@ -84,36 +84,17 @@ p{
 }
 
 
-.ffrb {
-    font-family: Roboto-Bold;
-}
-.ffsbl {
-    font-family: Spartan-Black;
-}
 .ffsbo {
     font-family: Spartan-Bold;
 }
 .ffseb {
     font-family: Spartan-ExtraBold;
 }
-.ffsel {
-    font-family: Spartan-ExtraLight;
-}
-.ffsl {
-    font-family: Spartan-Light;
-}
-.ffsm {
-    font-family: Spartan-Medium;
-}
-.ffsr {
-    font-family: Spartan-Regular;
-}
+
 .ffssb {
     font-family: Spartan-SemiBold;
 }
-.ffst {
-    font-family: Spartan-Thin;
-}
+
 
 /* navbar */
 .navbar-default {
@@ -395,7 +376,7 @@ a {
 }
 
 .snig:hover {
-    background-image: url('./images/c_ig.png') !important;
+    background-image: url('./images/c_ig.webp') !important;
     transition: all .5s ease-in-out;
 }
 
